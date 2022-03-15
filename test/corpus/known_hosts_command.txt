@@ -1,0 +1,62 @@
+==================
+run command to get hosts
+==================
+
+KnownHostsCommand my-hosts
+
+---
+
+(client_config
+  (known_hosts_command
+    (known_hosts_command_value)))
+
+==================
+use irregular casing
+==================
+
+KnownHostsComMANd my-hosts
+
+---
+
+(client_config
+  (known_hosts_command
+    (known_hosts_command_value)))
+
+==================
+can use equals sign
+==================
+
+KnownHostsCommand=my-hosts
+
+---
+
+(client_config
+  (known_hosts_command
+    (known_hosts_command_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+KnownHostsCommand = my-hosts
+
+---
+
+(client_config
+  (known_hosts_command
+    (known_hosts_command_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  KnownHostsCommand my-hosts
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (known_hosts_command
+    (known_hosts_command_value)))

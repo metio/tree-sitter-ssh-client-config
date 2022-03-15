@@ -1,0 +1,74 @@
+==================
+specify provider
+==================
+
+PKCS11Provider some-provider
+
+---
+
+(client_config
+  (pkcs11_provider
+    (pkcs11_provider_value)))
+
+==================
+use no PKCS provider
+==================
+
+PKCS11Provider none
+
+---
+
+(client_config
+  (pkcs11_provider
+    (pkcs11_provider_value)))
+
+==================
+use irregular casing
+==================
+
+pkcs11Provider some-provider
+
+---
+
+(client_config
+  (pkcs11_provider
+    (pkcs11_provider_value)))
+
+==================
+can use equals sign
+==================
+
+PKCS11Provider=some-provider
+
+---
+
+(client_config
+  (pkcs11_provider
+    (pkcs11_provider_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+PKCS11Provider = some-provider
+
+---
+
+(client_config
+  (pkcs11_provider
+    (pkcs11_provider_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  PKCS11Provider some-provider
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (pkcs11_provider
+    (pkcs11_provider_value)))

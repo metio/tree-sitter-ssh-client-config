@@ -1,0 +1,29 @@
+# source: https://github.com/skeeto/dotfiles/blob/master/_ssh/config.d/010-control.conf
+# source: https://github.com/skeeto/dotfiles/blob/master/_ssh/config.d/030-mail.conf
+# source: https://github.com/skeeto/dotfiles/blob/master/_ssh/config.d/050-github.conf
+# archive: https://web.archive.org/web/20220327112109/https://github.com/skeeto/dotfiles/blob/master/_ssh/config.d/010-control.conf
+# archive: https://web.archive.org/web/20220327112136/https://github.com/skeeto/dotfiles/blob/master/_ssh/config.d/030-mail.conf
+# archive: https://web.archive.org/web/20220327112159/https://github.com/skeeto/dotfiles/blob/master/_ssh/config.d/050-github.conf
+
+ControlMaster auto
+ControlPath /tmp/ssh_mux_%h_%p_%r
+ServerAliveInterval 30
+GSSAPIAuthentication no
+UseRoaming no
+
+Host mail mail.nullprogram.com
+     HostName mail.nullprogram.com
+     User wellons
+     LocalForward 2525 127.0.0.1:26
+     Port 9418
+     LogLevel QUIET
+
+Host github.com
+     User git
+     HostName ssh.github.com
+     Port 443
+
+Host gist.github.com
+     User git
+     HostName ssh.github.com
+     Port 443

@@ -1,0 +1,7 @@
+# source: https://github.com/gabebw/dotfiles/blob/main/ssh/config
+# archive: https://web.archive.org/web/20220313113615/https://github.com/gabebw/dotfiles/blob/main/ssh/config
+
+Host i
+    HostName i.gabebw.com
+    Port 13425
+    User gabe

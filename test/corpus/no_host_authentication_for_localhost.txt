@@ -1,0 +1,86 @@
+==================
+disable host authentication for localhost
+==================
+
+NoHostAuthenticationForLocalhost yes
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+do not disable host authentication for localhost
+==================
+
+NoHostAuthenticationForLocalhost no
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+use irregular casing
+==================
+
+NoHostAuthenticationForLocalHOSt yes
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+can use equals sign
+==================
+
+NoHostAuthenticationForLocalHOSt=yes
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+NoHostAuthenticationForLocalHOSt = yes
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  NoHostAuthenticationForLocalhost no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+detect invalid values
+==================
+
+NoHostAuthenticationForLocalHOSt ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

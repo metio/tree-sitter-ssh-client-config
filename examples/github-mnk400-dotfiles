@@ -1,0 +1,10 @@
+# source: https://github.com/mnk400/dotfiles/blob/master/.ssh/config
+# archive: https://web.archive.org/web/20220327111411/https://github.com/mnk400/dotfiles/blob/master/.ssh/config
+
+Host waterfall
+	Hostname waterfall.lan
+	User pi
+
+Host pihole
+	Hostname pi.hole
+	User pi

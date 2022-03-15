@@ -1,0 +1,74 @@
+==================
+specify provider
+==================
+
+SecurityKeyProvider some-provider
+
+---
+
+(client_config
+  (security_key_provider
+    (security_key_provider_value)))
+
+==================
+use no security provider provider
+==================
+
+SecurityKeyProvider none
+
+---
+
+(client_config
+  (security_key_provider
+    (security_key_provider_value)))
+
+==================
+use irregular casing
+==================
+
+SecurityKeyProVIDer some-provider
+
+---
+
+(client_config
+  (security_key_provider
+    (security_key_provider_value)))
+
+==================
+can use equals sign
+==================
+
+SecurityKeyProvider=some-provider
+
+---
+
+(client_config
+  (security_key_provider
+    (security_key_provider_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+SecurityKeyProvider = some-provider
+
+---
+
+(client_config
+  (security_key_provider
+    (security_key_provider_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  SecurityKeyProvider some-provider
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (security_key_provider
+    (security_key_provider_value)))

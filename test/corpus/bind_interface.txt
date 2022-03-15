@@ -1,0 +1,74 @@
+==================
+bind on local host
+==================
+
+BindInterface 127.0.0.1
+
+---
+
+(client_config
+  (bind_interface
+    (bind_interface_value)))
+
+==================
+bind on all addresses
+==================
+
+BindInterface 0.0.0.0
+
+---
+
+(client_config
+  (bind_interface
+    (bind_interface_value)))
+
+==================
+use irregular casing
+==================
+
+BindInteRFAce 0.0.0.0
+
+---
+
+(client_config
+  (bind_interface
+    (bind_interface_value)))
+
+==================
+can use equals sign
+==================
+
+BindInteRFAce=0.0.0.0
+
+---
+
+(client_config
+  (bind_interface
+    (bind_interface_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+BindInteRFAce = 0.0.0.0
+
+---
+
+(client_config
+  (bind_interface
+    (bind_interface_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  BindInteRFAce 0.0.0.0
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (bind_interface
+    (bind_interface_value)))

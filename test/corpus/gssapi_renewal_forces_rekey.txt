@@ -1,0 +1,86 @@
+==================
+force rekeying of the SSH connection
+==================
+
+GSSAPIRenewalForcesRekey yes
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+do not force rekeying of the SSH connection
+==================
+
+GSSAPIRenewalForcesRekey no
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+use irregular casing
+==================
+
+GSSAPIRenEWAlForcesRekey yes
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+can use equals sign
+==================
+
+GSSAPIRenEWAlForcesRekey=yes
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+GSSAPIRenEWAlForcesRekey = yes
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  GSSAPIRenewalForcesRekey no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+detect invalid values
+==================
+
+GSSAPIRenEWAlForcesRekey ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

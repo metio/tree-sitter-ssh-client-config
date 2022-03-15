@@ -1,0 +1,62 @@
+==================
+enable verbose logging
+==================
+
+LogVerbose kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*
+
+---
+
+(client_config
+  (log_verbose
+    (log_verbose_value)))
+
+==================
+use irregular casing
+==================
+
+LogVerBOSe kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*
+
+---
+
+(client_config
+  (log_verbose
+    (log_verbose_value)))
+
+==================
+can use equals sign
+==================
+
+LogVerbose=kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*
+
+---
+
+(client_config
+  (log_verbose
+    (log_verbose_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+LogVerbose = kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*
+
+---
+
+(client_config
+  (log_verbose
+    (log_verbose_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  LogVerbose kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (log_verbose
+    (log_verbose_value)))

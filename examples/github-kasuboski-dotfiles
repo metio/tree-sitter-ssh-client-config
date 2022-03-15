@@ -1,0 +1,7 @@
+# source: https://github.com/kasuboski/dotfiles/blob/main/private_dot_ssh/config.tmpl
+# archive: https://web.archive.org/web/20220327111114/https://github.com/kasuboski/dotfiles/blob/main/private_dot_ssh/config.tmpl
+
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519

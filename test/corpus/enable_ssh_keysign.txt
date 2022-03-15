@@ -1,0 +1,86 @@
+==================
+enable ssh-keysign usage
+==================
+
+EnableSSHKeysign yes
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+disable ssh-keysign usage
+==================
+
+EnableSSHKeysign no
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+use irregular casing
+==================
+
+enabLEsshKEysign yes
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+can use equals sign
+==================
+
+enabLEsshKEysign=yes
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+enabLEsshKEysign = yes
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  enabLEsshKEysign no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+detect invalid values
+==================
+
+enabLEsshKEysign ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

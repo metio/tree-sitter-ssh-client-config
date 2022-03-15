@@ -1,0 +1,98 @@
+==================
+use SSH_AUTH_SOCK agent
+==================
+
+IdentityAgent SSH_AUTH_SOCK
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
+disable authentication agent
+==================
+
+IdentityAgent none
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
+use agent from environment variable
+==================
+
+IdentityAgent $SOME_VAR
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
+use agent from user home
+==================
+
+IdentityAgent ~/.ssh/agent
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
+use irregular casing
+==================
+
+IdentityAgENt ~/.ssh/agent
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
+can use equals sign
+==================
+
+IdentityAgENt=~/.ssh/agent
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+IdentityAgENt = ~/.ssh/agent
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  IdentityAgent ~/.ssh/agent
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (identity_agent
+    (identity_agent_value)))

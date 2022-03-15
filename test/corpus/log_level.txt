@@ -1,0 +1,266 @@
+==================
+log level INFO
+==================
+
+LogLevel INFO
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level info
+==================
+
+LogLevel info
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level QUIET
+==================
+
+LogLevel QUIET
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level quiet
+==================
+
+LogLevel quiet
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level FATAL
+==================
+
+LogLevel FATAL
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level fatal
+==================
+
+LogLevel fatal
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level ERROR
+==================
+
+LogLevel ERROR
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level error
+==================
+
+LogLevel error
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level VERBOSE
+==================
+
+LogLevel VERBOSE
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level verbose
+==================
+
+LogLevel verbose
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level DEBUG
+==================
+
+LogLevel DEBUG
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level debug
+==================
+
+LogLevel debug
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level DEBUG1
+==================
+
+LogLevel DEBUG1
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level debug1
+==================
+
+LogLevel debug1
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level DEBUG2
+==================
+
+LogLevel DEBUG2
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level debug2
+==================
+
+LogLevel debug2
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level DEBUG3
+==================
+
+LogLevel DEBUG3
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+log level debug3
+==================
+
+LogLevel debug3
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+use irregular casing
+==================
+
+LogLEVEl info
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+can use equals sign
+==================
+
+LogLevel=info
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+LogLevel = info
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  LogLevel info
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (log_level
+    (log_level_value)))

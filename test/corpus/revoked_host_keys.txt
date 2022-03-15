@@ -1,0 +1,62 @@
+==================
+use file from user home
+==================
+
+RevokedHostKeys ~/.ssh/revoked
+
+---
+
+(client_config
+  (revoked_host_keys
+    (revoked_host_keys_value)))
+
+==================
+use irregular casing
+==================
+
+RevoKEdHostKeys ~/.ssh/revoked
+
+---
+
+(client_config
+  (revoked_host_keys
+    (revoked_host_keys_value)))
+
+==================
+can use equals sign
+==================
+
+RevoKEdHostKeys=~/.ssh/revoked
+
+---
+
+(client_config
+  (revoked_host_keys
+    (revoked_host_keys_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+RevoKEdHostKeys = ~/.ssh/revoked
+
+---
+
+(client_config
+  (revoked_host_keys
+    (revoked_host_keys_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  RevokedHostKeys ~/.ssh/revoked
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (revoked_host_keys
+    (revoked_host_keys_value)))

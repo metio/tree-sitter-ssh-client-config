@@ -1,0 +1,98 @@
+==================
+specify accepted algorithms
+==================
+
+HostKeyAlgorithms ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
+add algorithm
+==================
+
+HostKeyAlgorithms +ssh-ed25519
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
+remove algorithm
+==================
+
+HostKeyAlgorithms -ssh-ed25519
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
+prepend algorithm
+==================
+
+HostKeyAlgorithms ^ssh-ed25519
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
+use irregular casing
+==================
+
+HostKeyAlgoritHMS ssh-ed25519
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
+can use equals sign
+==================
+
+HostKeyAlgorithms=ssh-ed25519
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+HostKeyAlgorithms = ssh-ed25519
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  HostKeyAlgorithms ssh-ed25519
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (host_key_algorithms
+    (host_key_algorithms_value)))

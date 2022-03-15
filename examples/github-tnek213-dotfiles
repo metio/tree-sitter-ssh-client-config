@@ -1,0 +1,4 @@
+# source: https://github.com/tnek213/dotfiles/blob/main/private_dot_ssh/config
+# archive: https://web.archive.org/web/20220327112322/https://github.com/tnek213/dotfiles/blob/main/private_dot_ssh/config
+
+Include config.d/*

@@ -1,0 +1,122 @@
+==================
+place connection in background
+==================
+
+ControlPersist yes
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+do not place connection in background
+==================
+
+ControlPersist no
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+connection remains in background indefinitely
+==================
+
+ControlPersist 0
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+connection remains for seconds
+==================
+
+ControlPersist 180
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+connection remains for minutes
+==================
+
+ControlPersist 10m
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+connection remains for hours
+==================
+
+ControlPersist 3h
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+use irregular casing
+==================
+
+ControlPerSISt 123m
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+can use equals sign
+==================
+
+ControlPersist=300
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ControlPersist = 5w
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ControlPersist 7D
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (control_persist
+    (control_persist_value)))

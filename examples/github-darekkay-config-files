@@ -1,0 +1,11 @@
+# source: https://github.com/darekkay/config-files/blob/master/ssh/config
+# archive: https://web.archive.org/web/20220327110108/https://github.com/darekkay/config-files/blob/master/ssh/config
+
+# Use only the identity files configured in the ssh_config files
+Host *
+  IdentitiesOnly yes
+
+Host example.com 11.22.33.44
+  User <username>
+  HostName 11.22.33.44
+  IdentityFile ~/.ssh/<key-file>

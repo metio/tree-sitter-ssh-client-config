@@ -1,0 +1,62 @@
+==================
+specify kex algorithms
+==================
+
+GSSAPIKexAlgorithms gss-gex-sha1-,gss-group1-sha1-,gss-curce25519-sha256-
+
+---
+
+(client_config
+  (gssapi_kex_algorithms
+    (gssapi_kex_algorithms_value)))
+
+==================
+use irregular casing
+==================
+
+GSSAPIKexAlgoRIThms gss-gex-sha1-
+
+---
+
+(client_config
+  (gssapi_kex_algorithms
+    (gssapi_kex_algorithms_value)))
+
+==================
+can use equals sign
+==================
+
+GSSAPIKexAlgorithms=gss-gex-sha1-
+
+---
+
+(client_config
+  (gssapi_kex_algorithms
+    (gssapi_kex_algorithms_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+GSSAPIKexAlgorithms = gss-gex-sha1-
+
+---
+
+(client_config
+  (gssapi_kex_algorithms
+    (gssapi_kex_algorithms_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  GSSAPIKexAlgorithms gss-gex-sha1-
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (gssapi_kex_algorithms
+    (gssapi_kex_algorithms_value)))

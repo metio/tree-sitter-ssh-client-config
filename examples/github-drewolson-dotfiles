@@ -1,0 +1,11 @@
+# source: https://github.com/drewolson/dotfiles/blob/master/ssh_config
+# archive: https://web.archive.org/web/20220327110501/https://github.com/drewolson/dotfiles/blob/master/ssh_config
+
+Host *
+  IgnoreUnknown UseRoaming,AddKeysToAgent,UseKeychain
+  Compression yes
+  ServerAliveInterval 60
+  UseRoaming no
+  User drew
+  AddKeysToAgent yes
+  UseKeychain yes

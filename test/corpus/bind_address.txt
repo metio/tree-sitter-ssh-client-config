@@ -1,0 +1,74 @@
+==================
+bind on local host
+==================
+
+BindAddress 127.0.0.1
+
+---
+
+(client_config
+  (bind_address
+    (bind_address_value)))
+
+==================
+bind on all addresses
+==================
+
+BindAddress 0.0.0.0
+
+---
+
+(client_config
+  (bind_address
+    (bind_address_value)))
+
+==================
+use irregular casing
+==================
+
+bINdaDDress 1.2.3.4
+
+---
+
+(client_config
+  (bind_address
+    (bind_address_value)))
+
+==================
+can use equals sign
+==================
+
+bINdaDDress=1.2.3.4
+
+---
+
+(client_config
+  (bind_address
+    (bind_address_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+bINdaDDress = 1.2.3.4
+
+---
+
+(client_config
+  (bind_address
+    (bind_address_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  bINdaDDress 127.0.0.1
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (bind_address
+    (bind_address_value)))

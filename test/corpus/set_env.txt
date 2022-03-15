@@ -1,0 +1,74 @@
+==================
+specify variable to set
+==================
+
+SetEnv RANDOM_VAR
+
+---
+
+(client_config
+  (set_env
+    (set_env_value)))
+
+==================
+set variable with wildcard
+==================
+
+SetEnv RANDOM_VA?
+
+---
+
+(client_config
+  (set_env
+    (set_env_value)))
+
+==================
+use irregular casing
+==================
+
+sETenv RANDOM_VA?
+
+---
+
+(client_config
+  (set_env
+    (set_env_value)))
+
+==================
+can use equals sign
+==================
+
+SetEnv=RANDOM_VA?
+
+---
+
+(client_config
+  (set_env
+    (set_env_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+SetEnv = RANDOM_VA?
+
+---
+
+(client_config
+  (set_env
+    (set_env_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  SetEnv RANDOM_VA?
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (set_env
+    (set_env_value)))

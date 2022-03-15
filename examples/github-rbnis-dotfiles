@@ -1,0 +1,16 @@
+# source: https://github.com/rbnis/dotfiles/blob/master/.ssh/config
+# archive: https://web.archive.org/web/20220327111848/https://github.com/rbnis/dotfiles/blob/master/.ssh/config
+
+Host aur.archlinux.org
+  IdentityFile ~/.ssh/aur
+  User aur
+
+Host github.com
+  IdentityFile ~/.ssh/github
+
+Host tripp.xyz
+  HostName host.tripp.xyz
+  User robin
+
+Host mqtt
+  User robin

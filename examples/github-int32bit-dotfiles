@@ -1,0 +1,10 @@
+# source: https://github.com/int32bit/dotfiles/blob/master/ssh/config
+# archive: https://web.archive.org/web/20220327110835/https://github.com/int32bit/dotfiles/blob/master/ssh/config
+
+# 设置session复用，在session生命周期内，不需要重复输入密码，在使用跳板机时特别有用
+Host *
+    KeepAlive yes
+    ServerAliveInterval 60
+    ControlMaster auto
+    ControlPersist yes
+    ControlPath ~/.ssh/socks/%h-%p-%r

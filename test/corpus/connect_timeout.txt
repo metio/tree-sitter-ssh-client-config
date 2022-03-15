@@ -1,0 +1,86 @@
+==================
+use one second timeouts
+==================
+
+ConnectTimeout 1
+
+---
+
+(client_config
+  (connect_timeout
+    (connect_timeout_value)))
+
+==================
+use one minute timeouts
+==================
+
+ConnectTimeout 60
+
+---
+
+(client_config
+  (connect_timeout
+    (connect_timeout_value)))
+
+==================
+use irregular casing
+==================
+
+ConnecttIMEout 5
+
+---
+
+(client_config
+  (connect_timeout
+    (connect_timeout_value)))
+
+==================
+can use equals sign
+==================
+
+ConnectTimeout=7
+
+---
+
+(client_config
+  (connect_timeout
+    (connect_timeout_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ConnectTimeout = 9
+
+---
+
+(client_config
+  (connect_timeout
+    (connect_timeout_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ConnectTimeout 2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (connect_timeout
+    (connect_timeout_value)))
+
+==================
+detect invalid values
+==================
+
+ConnectTimeout -1
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '-')))

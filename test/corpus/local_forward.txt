@@ -1,0 +1,98 @@
+==================
+forward port
+==================
+
+LocalForward 8080
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
+forward address:port
+==================
+
+LocalForward 0.0.0.0:1234
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
+forward using localhost
+==================
+
+LocalForward localhost:9095
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
+forward on all interfaces
+==================
+
+LocalForward *:3000
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
+use irregular casing
+==================
+
+LocalForwARD *:3000
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
+can use equals sign
+==================
+
+LocalForward=*:3000
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+LocalForward = *:3000
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  LocalForward *:3000
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (local_forward
+    (local_forward_value)))

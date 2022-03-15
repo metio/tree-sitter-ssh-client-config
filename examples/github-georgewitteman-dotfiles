@@ -1,0 +1,6 @@
+# source: https://github.com/georgewitteman/dotfiles/blob/master/private_dot_ssh/private_config.tmpl
+# archive: https://web.archive.org/web/20220327110736/https://github.com/georgewitteman/dotfiles/blob/master/private_dot_ssh/private_config.tmpl
+
+# https://serverfault.com/questions/515604/ssh-client-option-to-suppress-server-banners
+Host *
+  LogLevel error

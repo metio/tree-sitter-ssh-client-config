@@ -1,0 +1,38 @@
+# source: https://github.com/PeterDaveHello/Unitial/blob/master/ssh_config
+# archive: https://web.archive.org/web/20220327111717/https://github.com/PeterDaveHello/Unitial/blob/master/ssh_config
+
+Host *
+    GSSAPIAuthentication no
+    AddressFamily inet
+    TCPKeepAlive yes
+    ServerAliveInterval 55
+    Compression yes
+    #LogLevel DEBUG
+
+    #reuse connections
+    ControlMaster auto
+    ControlPersist 600
+    ControlPath ~/.ssh/.tmp_session/%h_%p_%r
+
+Host ec2-*.compute.amazonaws.com
+    # Note that this "%C" work on OpenSSH v6.7+, so comment out, disablle multiplexing by default.
+    # This will generates a hash from the concatenation of %l%h%p%r,
+    # SO it'll help if you got "ControlPath domain.blah.blah ... too long for Unix domain socket" problem.
+
+    # Need OpenSSH   v6.7+ :  (e.g. on Ubuntu 16.04 or homebrew)
+    #ControlPath ~/.ssh/.tmp_session/%C
+    # For OpenSSH  < v6.7  :
+    ControlMaster no
+
+Host do.not.use.multiplexing
+    ControlMaster no
+
+Host for.x11.forwarding
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host internal
+    ProxyCommand ssh jumphost.internal -W %h:%p
+
+Host internal2
+    ProxyJump jumphost.internal # OpenSSH v7.3+ shortcut

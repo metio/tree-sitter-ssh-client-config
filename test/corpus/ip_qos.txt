@@ -1,0 +1,388 @@
+==================
+use af11
+==================
+
+IPQoS af11
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af12
+==================
+
+IPQoS af12
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af13
+==================
+
+IPQoS af13
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af21
+==================
+
+IPQoS af21
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af22
+==================
+
+IPQoS af22
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af23
+==================
+
+IPQoS af23
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af31
+==================
+
+IPQoS af31
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af32
+==================
+
+IPQoS af32
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af33
+==================
+
+IPQoS af33
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af41
+==================
+
+IPQoS af41
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af42
+==================
+
+IPQoS af42
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use af43
+==================
+
+IPQoS af43
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs0
+==================
+
+IPQoS cs0
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs1
+==================
+
+IPQoS cs1
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs2
+==================
+
+IPQoS cs2
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs3
+==================
+
+IPQoS cs3
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs4
+==================
+
+IPQoS cs4
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs5
+==================
+
+IPQoS cs5
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs6
+==================
+
+IPQoS cs6
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use cs7
+==================
+
+IPQoS cs7
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use ef
+==================
+
+IPQoS ef
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use le
+==================
+
+IPQoS le
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use lowdelay
+==================
+
+IPQoS lowdelay
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use throughput
+==================
+
+IPQoS throughput
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use reliability
+==================
+
+IPQoS reliability
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use numeric value
+==================
+
+IPQoS 100
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use system default
+==================
+
+IPQoS none
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+use irregular casing
+==================
+
+IPqOs af11
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+can use equals sign
+==================
+
+IPqOs=af11
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+IPqOs = af11
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  IPQoS af11
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (ip_qos
+    (ip_qos_value)))
+
+==================
+detect invalid values
+==================
+
+IPQoS af51
+
+---
+
+(client_config
+  (ip_qos
+    (ERROR
+      (UNEXPECTED '5'))
+    (ip_qos_value)))

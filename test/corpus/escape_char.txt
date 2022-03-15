@@ -1,0 +1,86 @@
+==================
+use default escape char
+==================
+
+EscapeChar ^~
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
+use custom escape char
+==================
+
+EscapeChar ^|
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
+disable escape character
+==================
+
+EscapeChar none
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
+use irregular casing
+==================
+
+EscAPEchar none
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
+can use equals sign
+==================
+
+EscapeChar=none
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+EscapeChar = none
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  EscapeChar none
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (escape_char
+    (escape_char_value)))

@@ -1,0 +1,12 @@
+# source: https://github.com/lucax88x/configs/blob/master/dotfiles/.ssh/config
+# archive: https://web.archive.org/web/20220327111216/https://github.com/lucax88x/configs/blob/master/dotfiles/.ssh/config
+
+Host ssh.dev.azure.com
+  HostKeyAlgorithms +ssh-rsa
+  Identitiesonly yes
+  PubkeyAcceptedAlgorithms +ssh-rsa
+
+Host git-ssh.garaio.com
+  HostKeyAlgorithms +ssh-rsa
+  Identitiesonly yes
+  PubkeyAcceptedAlgorithms +ssh-rsa

@@ -1,0 +1,86 @@
+==================
+redirects stdin from /dev/null
+==================
+
+StdinNull yes
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+do not redirects stdin from /dev/null
+==================
+
+StdinNull no
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+use irregular casing
+==================
+
+StdINNull yes
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+can use equals sign
+==================
+
+StdINNull=yes
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+StdINNull = yes
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  StdinNull no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+detect invalid values
+==================
+
+StdINNull ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

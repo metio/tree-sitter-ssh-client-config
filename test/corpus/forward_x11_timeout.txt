@@ -1,0 +1,145 @@
+==================
+use timeout with implicit seconds
+==================
+
+ForwardX11Timeout 30
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+use timeout with explicit seconds
+==================
+
+ForwardX11Timeout 30s
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+use timeout with minutes
+==================
+
+ForwardX11Timeout 30M
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+use timeout with hours
+==================
+
+ForwardX11Timeout 30h
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+use timeout with days
+==================
+
+ForwardX11Timeout 30D
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+use timeout with weeks
+==================
+
+ForwardX11Timeout 30w
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+disable timeout
+==================
+
+ForwardX11Timeout 0
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+use irregular casing
+==================
+
+ForwardX11TimeOUT 0
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+can use equals sign
+==================
+
+ForwardX11TimeOUT=0
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ForwardX11TimeOUT = 0
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ForwardX11TimeOUT 0
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
+detect invalid values
+==================
+
+ForwardX11TimeOUT no
+
+---
+
+(client_config
+  (ERROR))

@@ -1,0 +1,59 @@
+# source: https://github.com/netj/dotfiles/blob/master/.ssh/config.d/00-common
+# source: https://github.com/netj/dotfiles/blob/master/.ssh/config.d/99-aws-ssm-ssh-proxy-magic
+# source: https://github.com/netj/dotfiles/blob/master/.ssh/config.d/99-cloud
+# source: https://github.com/netj/dotfiles/blob/master/.ssh/config.d/99-control-master
+# archive: https://web.archive.org/web/20220327111437/https://github.com/netj/dotfiles/blob/master/.ssh/config.d/00-common
+# archive: https://web.archive.org/web/20220327111502/https://github.com/netj/dotfiles/blob/master/.ssh/config.d/99-aws-ssm-ssh-proxy-magic
+# archive: https://web.archive.org/web/20220327111525/https://github.com/netj/dotfiles/blob/master/.ssh/config.d/99-cloud
+# archive: https://web.archive.org/web/20220327111549/https://github.com/netj/dotfiles/blob/master/.ssh/config.d/99-control-master
+
+Protocol 2
+HashKnownHosts no
+CheckHostIP no
+AddKeysToAgent yes
+
+# vim:ft=sshconfig
+
+# ~/.ssh/config snippet to utilize ~/.ssh/aws-ssm-ssh-proxy-magic.sh
+# See also: https://gist.github.com/netj/d9006a823163d7662d8ff105c9a49e0e
+
+# SSH over AWS Session Manager
+Host i-* mi-*  *.ec2.aws
+    #ProxyCommand sh -c "aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p'"
+    ProxyCommand sh ~/.ssh/aws-ssm-ssh-proxy-magic.sh ec2instanceid=%h sshuser=%r sshport=%p
+
+# share connection across sessions until idle for 1h
+Host i-* mi-*  *.ec2.aws
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ControlPersist 3600
+
+####################
+# trust instances set up with alias
+Host *.ec2.aws
+    ForwardAgent yes
+# default to ec2-user
+Host i-* mi-*
+    User ec2-user
+
+# vim:ft=sshconfig
+
+# AWS EC2
+Host *.amazonaws.com *.ec2
+    StrictHostKeyChecking no
+    User ubuntu
+
+# Azure
+Host *.cloudapp.net
+    StrictHostKeyChecking no
+    User azureuser
+
+# vim:ft=sshconfig
+
+# share connections across sessions, and persist each for 5mins
+Host *
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ControlPersist 300
+
+# vim:ft=sshconfig

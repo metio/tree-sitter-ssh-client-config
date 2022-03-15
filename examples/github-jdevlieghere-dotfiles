@@ -1,0 +1,12 @@
+# source: https://github.com/JDevlieghere/dotfiles/blob/main/.ssh/config
+# archive: https://web.archive.org/web/20220313113856/https://github.com/JDevlieghere/dotfiles/blob/main/.ssh/config
+
+Host *
+    KeepAlive yes
+    UseKeychain yes
+    AddKeysToAgent yes
+    ForwardAgent yes
+    ServerAliveInterval 60
+
+Include ~/.ssh/greendragon
+Include ~/.ssh/bluedragon

@@ -1,0 +1,119 @@
+==================
+single name match
+==================
+
+Match example
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match with TLD
+==================
+
+Match example.com
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using wildcard
+==================
+
+Match *
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match with comment
+==================
+
+Match company.com # whooops
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using multiple match_values
+==================
+
+Match example.com another.tld
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match with negation
+==================
+
+Match !example.com
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using multiple match_values with negation
+==================
+
+Match example.com !another.tld
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using wildcard as subdomain
+==================
+
+Match *.co.uk
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using wildcard last entry in IP address
+==================
+
+Match 192.168.0.?
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+use irregular casing
+==================
+
+mATch 192.168.0.?
+
+---
+
+(client_config
+  (match
+    (match_value)))

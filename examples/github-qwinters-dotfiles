@@ -1,0 +1,10 @@
+# source: https://github.com/qwinters/dotfiles/blob/main/home/dot_ssh/config
+# archive: https://web.archive.org/web/20220327111820/https://github.com/qwinters/dotfiles/blob/main/home/dot_ssh/config
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+
+Host github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_github

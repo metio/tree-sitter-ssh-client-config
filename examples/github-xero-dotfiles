@@ -1,0 +1,15 @@
+# source: https://github.com/xero/dotfiles/blob/master/ssh/.ssh/config
+# archive: https://web.archive.org/web/20220313114942/https://github.com/xero/dotfiles/blob/master/ssh/.ssh/config
+
+# CVE-2016-0777
+UseRoaming no
+
+Host *
+  ServerAliveInterval 60
+
+Host */*
+  ProxyCommand ssh $(dirname %h) -W $(basename %h):%p
+
+Host github.com
+  IdentityFile ~/.ssh/personal
+# IdentityFile ~/.ssh/work

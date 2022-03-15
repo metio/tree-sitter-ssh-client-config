@@ -1,0 +1,98 @@
+==================
+use session type none
+==================
+
+SessionType none
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
+use session type subsystem
+==================
+
+SessionType subsystem
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
+use session type default
+==================
+
+SessionType default
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
+use irregular casing
+==================
+
+SessionTYPe default
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
+can use equals sign
+==================
+
+SessionTYPe=default
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+SessionTYPe = default
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  SessionType default
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (session_type
+    (session_type_value)))
+
+==================
+detect invalid values
+==================
+
+SessionTYPe ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

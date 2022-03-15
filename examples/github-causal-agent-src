@@ -1,0 +1,23 @@
+# source: https://github.com/causal-agent/src/blob/master/home/.ssh/config
+# archive: https://web.archive.org/web/20220327105954/https://github.com/causal-agent/src/blob/master/home/.ssh/config
+
+IgnoreUnknown Include
+Include config_private
+
+SendEnv LANG LC_*
+
+Host monday beastie puffy toaster tux progynova
+	HostName %h.local
+	ForwardAgent yes
+	RemoteForward 7062 127.0.0.1:7062
+
+Host scout pyro
+	HostName %h.causal.agency
+	Port 2222
+
+Host june july
+	HostName %h.nyc3.do.causal.agency
+	Port 2222
+
+Host git.causal.agency temp.causal.agency
+	Port 2222

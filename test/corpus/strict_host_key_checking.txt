@@ -1,0 +1,110 @@
+==================
+strict host key checking = yes
+==================
+
+StrictHostKeyChecking yes
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = no
+==================
+
+StrictHostKeyChecking no
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = off
+==================
+
+StrictHostKeyChecking off
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = accept-new
+==================
+
+StrictHostKeyChecking accept-new
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+use irregular casing
+==================
+
+StricthOStKeyChecking yes
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+can use equals sign
+==================
+
+StricthOStKeyChecking=yes
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+StricthOStKeyChecking = yes
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  StrictHostKeyChecking no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+detect invalid values
+==================
+
+StricthOStKeyChecking ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

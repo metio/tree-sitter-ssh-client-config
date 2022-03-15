@@ -1,0 +1,7 @@
+# source: https://github.com/sobolevn/dotfiles/blob/master/config/ssh_config
+# archive: https://web.archive.org/web/20220313114706/https://github.com/sobolevn/dotfiles/blob/master/config/ssh_config
+
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa

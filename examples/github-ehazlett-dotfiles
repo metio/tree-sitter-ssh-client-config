@@ -1,0 +1,52 @@
+# source: https://github.com/ehazlett/.dotfiles/blob/master/ssh_config
+# archive: https://web.archive.org/web/20220327110537/https://github.com/ehazlett/.dotfiles/blob/master/ssh_config
+
+Host *
+    UseRoaming no
+
+Host git.local
+    IdentityFile ~/.keys/vcs-ehazlett-20190111
+    Port 10022
+
+Host vcs.evanhazlett.com
+    IdentityFile ~/.keys/vcs-ehazlett-20190111
+    Port 10022
+
+Host github.com
+    IdentityFile ~/.keys/vcs-ehazlett-20190111
+    Hostname ssh.github.com
+    Port 443
+
+Host underland
+    IdentityFile ~/.keys/home_ehazlett
+    Hostname work.evanhazlett.com
+    Port 2022
+
+Host underland.indy
+    IdentityFile ~/.keys/home_ehazlett
+    Hostname 192.168.1.85
+    Port 22
+
+Host git.int
+    IdentityFile ~/.keys/vcs-ehazlett-20190111
+
+Host localhost
+    IdentityFile ~/.keys/vcs-ehazlett-20190111
+
+Host bitbucket.org
+    IdentityFile ~/.keys/vcs-ehazlett-20190111
+
+Host gist.github.com
+    IdentityFile ~/.keys/vcs-ehazlett-20190111
+
+Host dev
+    IdentityFile ~/.keys/home_ehazlett
+    Hostname 192.168.100.100
+
+Host sandbox
+    IdentityFile ~/.keys/home_ehazlett
+    Hostname 192.168.100.250
+
+Host palisade-bitbucket
+    HostName bitbucket.org
+    IdentityFile ~/.keys/madhatter.rsa

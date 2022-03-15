@@ -1,0 +1,86 @@
+==================
+enable X11 trust
+==================
+
+ForwardX11Trusted yes
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+disable X11 trust
+==================
+
+ForwardX11Trusted no
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+use irregular casing
+==================
+
+FORwardX11TrUSted yes
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+can use equals sign
+==================
+
+FORwardX11TrUSted=yes
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+FORwardX11TrUSted = yes
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  FORwardX11TrUSted no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+detect invalid values
+==================
+
+FORwardX11TrUSted ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

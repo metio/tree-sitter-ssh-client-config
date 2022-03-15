@@ -1,0 +1,9 @@
+# source: https://github.com/mattorb/dotfiles/blob/master/ssh/config
+# archive: https://web.archive.org/web/20220327111312/https://github.com/mattorb/dotfiles/blob/master/ssh/config
+
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_rsa
+
+Include ~/.ssh/config_locals

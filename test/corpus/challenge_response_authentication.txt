@@ -1,0 +1,86 @@
+==================
+enable challenge response authentication
+==================
+
+ChallengeResponseAuthentication yes
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+disable challenge response authentication
+==================
+
+ChallengeResponseAuthentication no
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+use irregular casing
+==================
+
+chALLengeResponseAuthentication yes
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+can use equals sign
+==================
+
+chALLengeResponseAuthentication=yes
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+chALLengeResponseAuthentication = yes
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  chALLengeResponseAuthentication no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+detect invalid values
+==================
+
+chALLengeResponseAuthentication ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

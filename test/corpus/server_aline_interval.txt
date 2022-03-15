@@ -1,0 +1,86 @@
+==================
+specify interval in seconds
+==================
+
+ServerAliveInterval 15
+
+---
+
+(client_config
+  (server_alive_interval
+    (server_alive_interval_value)))
+
+==================
+do not send alive messages
+==================
+
+ServerAliveInterval 0
+
+---
+
+(client_config
+  (server_alive_interval
+    (server_alive_interval_value)))
+
+==================
+use irregular casing
+==================
+
+ServerAlIVEInterval 5
+
+---
+
+(client_config
+  (server_alive_interval
+    (server_alive_interval_value)))
+
+==================
+can use equals sign
+==================
+
+ServerAliveInterval=7
+
+---
+
+(client_config
+  (server_alive_interval
+    (server_alive_interval_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ServerAliveInterval = 9
+
+---
+
+(client_config
+  (server_alive_interval
+    (server_alive_interval_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ServerAliveInterval 2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (server_alive_interval
+    (server_alive_interval_value)))
+
+==================
+detect invalid values
+==================
+
+ServerAliveInterval -1
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '-')))

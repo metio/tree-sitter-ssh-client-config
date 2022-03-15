@@ -1,0 +1,10 @@
+# source: https://github.com/searls/icloud-dotfiles/blob/master/.ssh/config
+# archive: https://web.archive.org/web/20220327112014/https://github.com/searls/icloud-dotfiles/blob/master/.ssh/config
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_ed25519
+
+Host github.com
+    UpdateHostKeys yes

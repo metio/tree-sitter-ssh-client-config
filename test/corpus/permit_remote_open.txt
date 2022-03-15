@@ -1,0 +1,122 @@
+==================
+permit any
+==================
+
+PermitRemoteOpen any
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+permit address:port
+==================
+
+PermitRemoteOpen 0.0.0.0:1234
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+permit ip:port
+==================
+
+PermitRemoteOpen 192.168.0.1:9095
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+permit all hosts
+==================
+
+PermitRemoteOpen *:3000
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+permit all ports
+==================
+
+PermitRemoteOpen 127.0.0.1:*
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+permit all hosts and ports
+==================
+
+PermitRemoteOpen *:*
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+use irregular casing
+==================
+
+PermitRemOTEopen *:3000
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+can use equals sign
+==================
+
+PermitRemoteOpen=*:3000
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+PermitRemoteOpen = *:3000
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  PermitRemoteOpen *:3000
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (permit_remote_open
+    (permit_remote_open_value)))

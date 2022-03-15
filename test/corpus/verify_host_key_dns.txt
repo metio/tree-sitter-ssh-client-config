@@ -1,0 +1,98 @@
+==================
+verify host key DNS = yes
+==================
+
+VerifyHostKeyDNS yes
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+verify host key DNS = no
+==================
+
+VerifyHostKeyDNS no
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+verify host key DNS = ask
+==================
+
+VerifyHostKeyDNS ask
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+use irregular casing
+==================
+
+veRIFyHostKeyDNS yes
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+can use equals sign
+==================
+
+veRIFyHostKeyDNS=yes
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+veRIFyHostKeyDNS = yes
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  VerifyHostKeyDNS no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+detect invalid values
+==================
+
+veRIFyHostKeyDNS ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

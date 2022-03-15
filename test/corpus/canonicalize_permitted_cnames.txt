@@ -1,0 +1,62 @@
+==================
+specify host_value-list for source and target domains
+==================
+
+CanonicalizePermittedCNAMEs *.a.example.com:*.b.example.com,*.c.example.com
+
+---
+
+(client_config
+  (canonicalize_permitted_cnames
+    (canonicalize_permitted_cnames_value)))
+
+==================
+use irregular casing
+==================
+
+CanonicalizePermittedCNAMEs *.a.example.com:*.b.example.com,*.c.example.com
+
+---
+
+(client_config
+  (canonicalize_permitted_cnames
+    (canonicalize_permitted_cnames_value)))
+
+==================
+can use equals sign
+==================
+
+CanonicalizePermittedCNAMEs=*.a.example.com:*.b.example.com,*.c.example.com
+
+---
+
+(client_config
+  (canonicalize_permitted_cnames
+    (canonicalize_permitted_cnames_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CanonicalizePermittedCNAMEs = *.a.example.com:*.b.example.com,*.c.example.com
+
+---
+
+(client_config
+  (canonicalize_permitted_cnames
+    (canonicalize_permitted_cnames_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  CanonicalizePermittedCNAMEs *.a.example.com:*.b.example.com,*.c.example.com
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (canonicalize_permitted_cnames
+    (canonicalize_permitted_cnames_value)))

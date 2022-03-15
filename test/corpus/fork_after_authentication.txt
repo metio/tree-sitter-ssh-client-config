@@ -1,0 +1,86 @@
+==================
+enable forking
+==================
+
+ForkAfterAuthentication yes
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+disable forking
+==================
+
+ForkAfterAuthentication no
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+use irregular casing
+==================
+
+fORkAftERAuthentication yes
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+can use equals sign
+==================
+
+fORkAftERAuthentication=yes
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+fORkAftERAuthentication = yes
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  fORkAftERAuthentication no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+detect invalid values
+==================
+
+fORkAftERAuthentication ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

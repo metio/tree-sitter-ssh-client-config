@@ -1,0 +1,6 @@
+# source: https://github.com/BasixKOR/.dotfiles/blob/main/dot_ssh/config.tmpl
+# archive: https://web.archive.org/web/20220327105627/https://github.com/BasixKOR/.dotfiles/blob/main/dot_ssh/config.tmpl
+
+Host *
+    SecurityKeyProvider winhello.dll
+    IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

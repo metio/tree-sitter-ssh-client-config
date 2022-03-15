@@ -1,0 +1,81 @@
+==================
+file comment
+==================
+
+# file comment
+
+---
+
+(client_config
+  (comment))
+
+==================
+file comments
+==================
+
+# file comment 1
+# file comment 2
+
+---
+
+(client_config
+  (comment)
+  (comment))
+
+==================
+file comments with newlines
+==================
+
+# file comment 1
+
+# file comment 2
+
+---
+
+(client_config
+  (comment)
+  (comment))
+
+==================
+comment before host block
+==================
+
+# some text here
+host example
+
+---
+
+(client_config
+  (comment)
+  (host
+    (host_value)))
+
+==================
+comment in host block
+==================
+
+host example
+    # some text here
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (comment))
+
+==================
+comment before and after host block
+==================
+
+# some text here
+host example
+# some text here
+
+---
+
+(client_config
+  (comment)
+  (host
+    (host_value))
+  (comment))

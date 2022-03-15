@@ -1,0 +1,23 @@
+# source: https://github.com/fredoliveira/dotfiles/blob/main/dot_ssh/private_config.tmpl
+# archive: https://web.archive.org/web/20220327110708/https://github.com/fredoliveira/dotfiles/blob/main/dot_ssh/private_config.tmpl
+
+# Skip newer or system-specific unmatched options
+IgnoreUnknown AddKeysToAgent,UseKeychain
+
+Host *
+  # Allow storing passphrases in the macOS keychain
+  AddKeysToAgent yes
+  UseKeychain yes
+
+  # Keep the connection temporarily open by sending a data every few minutes.
+  ServerAliveCountMax 6
+  ServerAliveInterval 300
+
+  # Disable client-side roaming support for security reasons.
+  # See https://www.upguard.com/blog/fixing-the-new-openssh-roaming-bug
+  UseRoaming no
+
+  # Use the 1password agent
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Include ~/.ssh/config-hosts

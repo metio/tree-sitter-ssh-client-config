@@ -1,0 +1,65 @@
+# source: https://github.com/brandon-rhodes/homedir/blob/master/.ssh/config.default
+# archive: https://web.archive.org/web/20220327105754/https://github.com/brandon-rhodes/homedir/blob/master/.ssh/config.default
+
+# Hint.  To successfully make a "mosh" connection to a ufw-firewalled
+# machine to which we can already SSH, run this extra firewall command
+# on the server:
+#
+#     ufw allow 60000:61000/udp
+
+# Keep secret the hostnames I have connected to.
+
+HashKnownHosts yes
+
+# The Debian "SendEnv" default "LANG LC_*" sends my LC_PAPER environment
+# variable to several git servers I use that all respond "perl: warning:
+# Setting locale failed."  So let's only send the two important ones.
+
+SendEnv LANG LC_COLLATE
+
+# When SSH cannot set up a -D, -L, or -R port-forward, I would rather
+# that it fail and return me to the command line than for it to show me
+# that it succeeded in getting a prompt.
+
+ExitOnForwardFailure yes
+
+# Since Amazon instances are transitory and IP addresses get re-used,
+# there is no point in SSH remembering their IP address and identity.
+# Also, I chronically forget to use "ubuntu" as the username.
+
+Host *.amazonaws.com
+  User ubuntu
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+
+# Connect to git servers using a port that is never blocked.
+
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+Host bitbucket.org
+  Hostname altssh.bitbucket.org
+  Port 443
+
+# Note that hostnames included in this file get the benefit of tab
+# completion at the zsh and bash command lines.  Personal host entries
+# might look like this:
+
+Host founders
+  User brandon
+  ForwardAgent yes
+  ForwardX11 yes
+
+Host wf-rhodesmill
+  User rhodesmill
+  HostName www.rhodesmill.org
+
+Host bitbucket.org
+  User hg
+
+Host h1
+  Hostname localhost
+  User brandon
+  Port 2201
+
+# Everything below will be ignored by git.

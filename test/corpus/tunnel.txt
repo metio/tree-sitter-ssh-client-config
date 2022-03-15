@@ -1,0 +1,110 @@
+==================
+tunnel = yes
+==================
+
+Tunnel yes
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+tunnel = no
+==================
+
+Tunnel no
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+tunnel = point-to-point
+==================
+
+Tunnel point-to-point
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+tunnel = ethernet
+==================
+
+Tunnel ethernet
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+use irregular casing
+==================
+
+tUNnel yes
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+can use equals sign
+==================
+
+tUNnel=yes
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+tUNnel = yes
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  Tunnel no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (tunnel
+    (tunnel_value)))
+
+==================
+detect invalid values
+==================
+
+tUNnel ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

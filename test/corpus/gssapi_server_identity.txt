@@ -1,0 +1,62 @@
+==================
+specify custom server identity
+==================
+
+GSSAPIServerIdentity some-user
+
+---
+
+(client_config
+  (gssapi_server_identity
+    (gssapi_server_identity_value)))
+
+==================
+use irregular casing
+==================
+
+GSSAPIServerIdENTity some-user
+
+---
+
+(client_config
+  (gssapi_server_identity
+    (gssapi_server_identity_value)))
+
+==================
+can use equals sign
+==================
+
+GSSAPIServerIdentity=some-user
+
+---
+
+(client_config
+  (gssapi_server_identity
+    (gssapi_server_identity_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+GSSAPIServerIdentity = some-user
+
+---
+
+(client_config
+  (gssapi_server_identity
+    (gssapi_server_identity_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  GSSAPIServerIdentity some-user
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (gssapi_server_identity
+    (gssapi_server_identity_value)))

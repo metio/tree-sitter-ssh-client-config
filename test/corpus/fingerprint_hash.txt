@@ -1,0 +1,74 @@
+==================
+use sha256 algorithm
+==================
+
+FingerprintHash sha256
+
+---
+
+(client_config
+  (fingerprint_hash
+    (fingerprint_hash_value)))
+
+==================
+use md5 algorithm
+==================
+
+FingerprintHash md5
+
+---
+
+(client_config
+  (fingerprint_hash
+    (fingerprint_hash_value)))
+
+==================
+use irregular casing
+==================
+
+fINGerprintHash md5
+
+---
+
+(client_config
+  (fingerprint_hash
+    (fingerprint_hash_value)))
+
+==================
+can use equals sign
+==================
+
+FingerprintHash=md5
+
+---
+
+(client_config
+  (fingerprint_hash
+    (fingerprint_hash_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+FingerprintHash = md5
+
+---
+
+(client_config
+  (fingerprint_hash
+    (fingerprint_hash_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  FingerprintHash md5
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (fingerprint_hash
+    (fingerprint_hash_value)))

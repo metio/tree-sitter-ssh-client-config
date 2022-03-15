@@ -1,0 +1,86 @@
+==================
+use keychain
+==================
+
+UseKeychain yes
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+do not use keychain
+==================
+
+UseKeychain no
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+use irregular casing
+==================
+
+usekEYChain yes
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+can use equals sign
+==================
+
+usekEYChain=yes
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+usekEYChain = yes
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  UseKeychain no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+detect invalid values
+==================
+
+usekEYChain ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

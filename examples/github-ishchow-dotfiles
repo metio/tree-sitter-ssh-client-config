@@ -1,0 +1,10 @@
+# source: https://github.com/ishchow/dotfiles/blob/master/private_dot_ssh/private_config
+# archive: https://web.archive.org/web/20220327110921/https://github.com/ishchow/dotfiles/blob/master/private_dot_ssh/private_config
+
+Include config.d/*
+
+AddKeysToAgent yes
+
+Host github.com
+    HostName github.com
+    IdentityFile ~/.ssh/personal-gh

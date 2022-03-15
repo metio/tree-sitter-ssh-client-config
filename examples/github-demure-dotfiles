@@ -1,0 +1,150 @@
+# source: https://github.com/demure/dotfiles/blob/master/ssh/config
+# archive: https://web.archive.org/web/20220327110349/https://github.com/demure/dotfiles/blob/master/ssh/config
+
+##### My (demuredemeanor) ~/.ssh/config
+# Uses tabstop=4; shiftwidth=4 tabs; foldmarker={{{,}}};
+# https://notabug.org/demure/dotfiles/
+# legacy repo http://github.com/demure/dotfiles
+
+## If you are reading this, read:
+# http://blogs.perl.org/users/smylers/2011/08/ssh-productivity-tips.html
+
+### Internet Places ### {{{
+    ### DD ### {{{
+    host dd
+        hostName demu.red
+        Port 500
+
+    host ddx
+        hostName demu.red
+        Port 500
+        ForwardX11 yes
+        ForwardX11Trusted no
+
+    Host ddgpg
+        HostName demu.red
+        Port 500
+        #RemoteForward /home/demure/.gnupg/S.gpg-agent /home/demure/.gnupg/S.gpg-agent.extra
+        #RemoteForward /run/user/1000/gnupg/S.gpg-agent /run/user/1000/gnupg/S.gpg-agent.extra
+        RemoteForward /home/demure/.gnupg/S.gpg-agent /run/user/1000/gnupg/S.gpg-agent.extra
+
+    ## for dd to sdf irc
+    Host ddirc
+    HostName ma.sdf.org
+    LocalForward 2003 irc.sdf.org:6667
+    User demure
+    ServerAliveCountMax 300
+    ServerAliveInterval 15
+    ### End DD ### }}}
+
+    ### SDF ### {{{
+    host ma
+        HostName ma.sdf.org
+
+    host meta
+        HostName meta.sdf.org
+
+    host bb
+        HostName meta.sdf.org
+        RemoteCommand bboard
+        RequestTTY yes
+
+    host max
+        HostName ma.sdf.org
+        #ForwardAgent no
+        ForwardX11 yes
+        #ForwardX11Timeout 596h
+        ForwardX11Trusted no
+
+    host sdf
+        HostName tty.sdf.org
+
+    host cork
+        hostName ma.sdf.org
+        ProxyCommand corkscrew proxy.example.com 8080 %h %p
+
+    host matiny
+        hostName localhost
+        Port 63753
+
+    host ircd
+        hostName irc.sdf.org
+        Port 222
+        User ircd
+    ### End SDF ### }}}
+
+    ### Tilde ### {{{
+    host team
+        hostName tilde.team
+    ### End Tilde ### }}}
+
+host mdns
+    hostName demure.mdns.org
+    Port 8080
+
+host sleep
+    hostName sleepermud.net
+
+host gnu
+    hostName fencepost.gnu.org
+### End Internet Places ### }}}
+
+### VPN ### {{{
+host wgvps
+    hostName 10.0.10.1
+
+host wgroute
+    hostName 10.0.10.2
+
+host wgdoom
+    hostName 10.0.10.3
+### End VPN ### }}}
+
+### Local Places ### {{{
+host comp doom
+    hostName moving-computer-of-doom.lan
+
+host tiny
+    HostName tiny-server-of-doom.lan
+
+host net
+    HostName moving-netbook-of-doom.lan
+
+host device
+    HostName moving-device-of-doom.lan
+    User mobile
+
+host route
+    hostName 10.0.0.1
+    Port 500
+    User root
+
+host wifi
+    hostName 10.0.0.2
+    Port 500
+    User root
+
+## NAS container for easy rsync
+host nas_fs nfs
+    hostName 10.0.0.10
+    Port 502
+    User root
+
+host clock
+    hostName pi-clock.lan
+    User pi
+### End Local Places ### }}}
+
+## Default settings, unless overridden above
+host *
+    User demure
+    Port 22
+    ## Disabled to speed up connections
+    ## Default should be off anyway
+    #GSSAPIAuthentication no
+    ## https://pthree.org/2013/05/30/openssh-keys-and-the-drunken-bishop/
+    VisualHostKey yes
+    ## Speed up subsequent connections
+    ControlMaster auto
+    ControlPath /tmp/ssh_mux_%h_%p_%r
+    ControlPersist 1h

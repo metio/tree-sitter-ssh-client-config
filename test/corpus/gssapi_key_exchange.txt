@@ -1,0 +1,86 @@
+==================
+use key exchange based on GSSAPI
+==================
+
+GSSAPIKeyExchange yes
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+do not use key exchange based on GSSAPI
+==================
+
+GSSAPIKeyExchange no
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+use irregular casing
+==================
+
+GSSAPIKeyEXCHange yes
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+can use equals sign
+==================
+
+GSSAPIKeyEXCHange=yes
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+GSSAPIKeyEXCHange = yes
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  GSSAPIKeyExchange no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+detect invalid values
+==================
+
+GSSAPIKeyEXCHange ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

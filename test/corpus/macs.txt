@@ -1,0 +1,98 @@
+==================
+specify accepted algorithms
+==================
+
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
+add algorithm
+==================
+
+MACs +hmac-sha2-512-etm@openssh.com
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
+remove algorithm
+==================
+
+MACs -hmac-sha2-512-etm@openssh.com
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
+prepend algorithm
+==================
+
+MACs ^hmac-sha2-512-etm@openssh.com
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
+use irregular casing
+==================
+
+macS hmac-sha2-512-etm@openssh.com
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
+can use equals sign
+==================
+
+MACs=hmac-sha2-512-etm@openssh.com
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+MACs = hmac-sha2-512-etm@openssh.com
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  MACs hmac-sha2-512-etm@openssh.com
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (macs
+    (macs_value)))

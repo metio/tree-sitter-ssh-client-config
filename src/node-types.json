@@ -1,0 +1,3209 @@
+[
+  {
+    "type": "add_keys_to_agent",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "add_keys_to_agent_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "add_keys_to_agent_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "address_family",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "address_family_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "address_family_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "batch_mode",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "batch_mode_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "batch_mode_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "bind_address",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bind_address_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bind_address_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "bind_interface",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bind_interface_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bind_interface_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ca_signature_algorithms",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ca_signature_algorithms_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ca_signature_algorithms_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "canonical_domains",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "canonical_domains_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "canonical_domains_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "canonicalize_fallback_local",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "canonicalize_fallback_local_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "canonicalize_fallback_local_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "canonicalize_hostname",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "canonicalize_hostname_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "canonicalize_hostname_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "canonicalize_max_dots",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "canonicalize_max_dots_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "canonicalize_max_dots_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "canonicalize_permitted_cnames",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "canonicalize_permitted_cnames_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "canonicalize_permitted_cnames_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "certificate_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "certificate_file_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "certificate_file_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "challenge_response_authentication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "challenge_response_authentication_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "challenge_response_authentication_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "check_host_ip",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "check_host_ip_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "check_host_ip_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "cipher",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "cipher_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cipher_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ciphers",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ciphers_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ciphers_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "clear_all_forwardings",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "clear_all_forwardings_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "clear_all_forwardings_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "client_config",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "add_keys_to_agent",
+          "named": true
+        },
+        {
+          "type": "address_family",
+          "named": true
+        },
+        {
+          "type": "batch_mode",
+          "named": true
+        },
+        {
+          "type": "bind_address",
+          "named": true
+        },
+        {
+          "type": "bind_interface",
+          "named": true
+        },
+        {
+          "type": "ca_signature_algorithms",
+          "named": true
+        },
+        {
+          "type": "canonical_domains",
+          "named": true
+        },
+        {
+          "type": "canonicalize_fallback_local",
+          "named": true
+        },
+        {
+          "type": "canonicalize_hostname",
+          "named": true
+        },
+        {
+          "type": "canonicalize_max_dots",
+          "named": true
+        },
+        {
+          "type": "canonicalize_permitted_cnames",
+          "named": true
+        },
+        {
+          "type": "certificate_file",
+          "named": true
+        },
+        {
+          "type": "challenge_response_authentication",
+          "named": true
+        },
+        {
+          "type": "check_host_ip",
+          "named": true
+        },
+        {
+          "type": "cipher",
+          "named": true
+        },
+        {
+          "type": "ciphers",
+          "named": true
+        },
+        {
+          "type": "clear_all_forwardings",
+          "named": true
+        },
+        {
+          "type": "compression",
+          "named": true
+        },
+        {
+          "type": "connect_timeout",
+          "named": true
+        },
+        {
+          "type": "connection_attempts",
+          "named": true
+        },
+        {
+          "type": "control_master",
+          "named": true
+        },
+        {
+          "type": "control_path",
+          "named": true
+        },
+        {
+          "type": "control_persist",
+          "named": true
+        },
+        {
+          "type": "dynamic_forward",
+          "named": true
+        },
+        {
+          "type": "enable_ssh_keysign",
+          "named": true
+        },
+        {
+          "type": "escape_char",
+          "named": true
+        },
+        {
+          "type": "exit_on_forward_failure",
+          "named": true
+        },
+        {
+          "type": "fingerprint_hash",
+          "named": true
+        },
+        {
+          "type": "fork_after_authentication",
+          "named": true
+        },
+        {
+          "type": "forward_agent",
+          "named": true
+        },
+        {
+          "type": "forward_x11",
+          "named": true
+        },
+        {
+          "type": "forward_x11_timeout",
+          "named": true
+        },
+        {
+          "type": "forward_x11_trusted",
+          "named": true
+        },
+        {
+          "type": "gateway_ports",
+          "named": true
+        },
+        {
+          "type": "global_known_hosts_file",
+          "named": true
+        },
+        {
+          "type": "gssapi_authentication",
+          "named": true
+        },
+        {
+          "type": "gssapi_client_identity",
+          "named": true
+        },
+        {
+          "type": "gssapi_delegate_credentials",
+          "named": true
+        },
+        {
+          "type": "gssapi_kex_algorithms",
+          "named": true
+        },
+        {
+          "type": "gssapi_key_exchange",
+          "named": true
+        },
+        {
+          "type": "gssapi_renewal_forces_rekey",
+          "named": true
+        },
+        {
+          "type": "gssapi_server_identity",
+          "named": true
+        },
+        {
+          "type": "gssapi_trust_dns",
+          "named": true
+        },
+        {
+          "type": "hash_known_hosts",
+          "named": true
+        },
+        {
+          "type": "host",
+          "named": true
+        },
+        {
+          "type": "host_key_algorithms",
+          "named": true
+        },
+        {
+          "type": "host_key_alias",
+          "named": true
+        },
+        {
+          "type": "hostbased_accepted_algorithms",
+          "named": true
+        },
+        {
+          "type": "hostbased_authentication",
+          "named": true
+        },
+        {
+          "type": "hostname",
+          "named": true
+        },
+        {
+          "type": "identities_only",
+          "named": true
+        },
+        {
+          "type": "identity_agent",
+          "named": true
+        },
+        {
+          "type": "identity_file",
+          "named": true
+        },
+        {
+          "type": "ignore_unknown",
+          "named": true
+        },
+        {
+          "type": "include",
+          "named": true
+        },
+        {
+          "type": "ip_qos",
+          "named": true
+        },
+        {
+          "type": "kbd_interactive_authentication",
+          "named": true
+        },
+        {
+          "type": "kbd_interactive_devices",
+          "named": true
+        },
+        {
+          "type": "keep_alive",
+          "named": true
+        },
+        {
+          "type": "kex_algorithms",
+          "named": true
+        },
+        {
+          "type": "known_hosts_command",
+          "named": true
+        },
+        {
+          "type": "local_command",
+          "named": true
+        },
+        {
+          "type": "local_forward",
+          "named": true
+        },
+        {
+          "type": "log_level",
+          "named": true
+        },
+        {
+          "type": "log_verbose",
+          "named": true
+        },
+        {
+          "type": "macs",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "no_host_authentication_for_localhost",
+          "named": true
+        },
+        {
+          "type": "number_of_password_prompts",
+          "named": true
+        },
+        {
+          "type": "password_authentication",
+          "named": true
+        },
+        {
+          "type": "permit_local_command",
+          "named": true
+        },
+        {
+          "type": "permit_remote_open",
+          "named": true
+        },
+        {
+          "type": "pkcs11_provider",
+          "named": true
+        },
+        {
+          "type": "port",
+          "named": true
+        },
+        {
+          "type": "preferred_authentications",
+          "named": true
+        },
+        {
+          "type": "protocol",
+          "named": true
+        },
+        {
+          "type": "proxy_command",
+          "named": true
+        },
+        {
+          "type": "proxy_jump",
+          "named": true
+        },
+        {
+          "type": "proxy_use_fdpass",
+          "named": true
+        },
+        {
+          "type": "pubkey_accepted_algorithms",
+          "named": true
+        },
+        {
+          "type": "pubkey_accepted_key_types",
+          "named": true
+        },
+        {
+          "type": "pubkey_authentication",
+          "named": true
+        },
+        {
+          "type": "rekey_limit",
+          "named": true
+        },
+        {
+          "type": "remote_command",
+          "named": true
+        },
+        {
+          "type": "remote_forward",
+          "named": true
+        },
+        {
+          "type": "request_tty",
+          "named": true
+        },
+        {
+          "type": "revoked_host_keys",
+          "named": true
+        },
+        {
+          "type": "security_key_provider",
+          "named": true
+        },
+        {
+          "type": "send_env",
+          "named": true
+        },
+        {
+          "type": "server_alive_count_max",
+          "named": true
+        },
+        {
+          "type": "server_alive_interval",
+          "named": true
+        },
+        {
+          "type": "session_type",
+          "named": true
+        },
+        {
+          "type": "set_env",
+          "named": true
+        },
+        {
+          "type": "stdin_null",
+          "named": true
+        },
+        {
+          "type": "stream_local_bind_mask",
+          "named": true
+        },
+        {
+          "type": "stream_local_bind_unlink",
+          "named": true
+        },
+        {
+          "type": "strict_host_key_checking",
+          "named": true
+        },
+        {
+          "type": "syslog_facility",
+          "named": true
+        },
+        {
+          "type": "tcp_keep_alive",
+          "named": true
+        },
+        {
+          "type": "tunnel",
+          "named": true
+        },
+        {
+          "type": "tunnel_device",
+          "named": true
+        },
+        {
+          "type": "update_host_keys",
+          "named": true
+        },
+        {
+          "type": "use_keychain",
+          "named": true
+        },
+        {
+          "type": "user",
+          "named": true
+        },
+        {
+          "type": "user_known_hosts_file",
+          "named": true
+        },
+        {
+          "type": "verify_host_key_dns",
+          "named": true
+        },
+        {
+          "type": "visual_host_key",
+          "named": true
+        },
+        {
+          "type": "xauth_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "compression_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "compression_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "connect_timeout",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "connect_timeout_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "connect_timeout_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "connection_attempts",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "connection_attempts_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "connection_attempts_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "control_master",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "control_master_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "control_master_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "control_path",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "control_path_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "control_path_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "control_persist",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "control_persist_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "control_persist_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "dynamic_forward",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "dynamic_forward_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dynamic_forward_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "enable_ssh_keysign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "enable_ssh_keysign_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enable_ssh_keysign_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "escape_char",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "escape_char_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "escape_char_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "exit_on_forward_failure",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "exit_on_forward_failure_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exit_on_forward_failure_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "fingerprint_hash",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "fingerprint_hash_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fingerprint_hash_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "fork_after_authentication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "fork_after_authentication_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fork_after_authentication_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "forward_agent",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "forward_agent_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "forward_agent_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "forward_x11",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "forward_x11_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "forward_x11_timeout",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "forward_x11_timeout_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "forward_x11_timeout_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "forward_x11_trusted",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "forward_x11_trusted_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "forward_x11_trusted_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "forward_x11_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "gateway_ports",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gateway_ports_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gateway_ports_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "global_known_hosts_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "global_known_hosts_file_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "global_known_hosts_file_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_authentication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_authentication_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_authentication_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_client_identity",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_client_identity_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_client_identity_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_delegate_credentials",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_delegate_credentials_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_delegate_credentials_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_kex_algorithms",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_kex_algorithms_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_kex_algorithms_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_key_exchange",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_key_exchange_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_key_exchange_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_renewal_forces_rekey",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_renewal_forces_rekey_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_renewal_forces_rekey_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_server_identity",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_server_identity_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_server_identity_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "gssapi_trust_dns",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "gssapi_trust_dns_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gssapi_trust_dns_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "hash_known_hosts",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "hash_known_hosts_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "hash_known_hosts_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "host",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "host_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "host_key_algorithms",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "host_key_algorithms_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "host_key_algorithms_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "host_key_alias",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "host_key_alias_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "host_key_alias_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "host_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "hostbased_accepted_algorithms",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "hostbased_accepted_algorithms_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "hostbased_accepted_algorithms_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "hostbased_authentication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "hostbased_authentication_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "hostbased_authentication_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "hostname",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "hostname_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "hostname_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "identities_only",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identities_only_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identities_only_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "identity_agent",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identity_agent_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identity_agent_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "identity_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identity_file_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identity_file_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ignore_unknown",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ignore_unknown_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ignore_unknown_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "include",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "include_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ip_qos",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ip_qos_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ip_qos_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "kbd_interactive_authentication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "kbd_interactive_authentication_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "kbd_interactive_authentication_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "kbd_interactive_devices",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "kbd_interactive_devices_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "kbd_interactive_devices_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "keep_alive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "keep_alive_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keep_alive_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "kex_algorithms",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "kex_algorithms_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "kex_algorithms_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "known_hosts_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "known_hosts_command_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "known_hosts_command_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "local_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "local_command_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "local_command_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "local_forward",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "local_forward_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "local_forward_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "log_level",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "log_level_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "log_level_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "log_verbose",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "log_verbose_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "log_verbose_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "macs",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "macs_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macs_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "match",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "match_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "match_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "no_host_authentication_for_localhost",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "no_host_authentication_for_localhost_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "no_host_authentication_for_localhost_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "number_of_password_prompts",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "number_of_password_prompts_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "number_of_password_prompts_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "password_authentication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "password_authentication_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "password_authentication_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "permit_local_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "permit_local_command_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "permit_local_command_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "permit_remote_open",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "permit_remote_open_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "permit_remote_open_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pkcs11_provider",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "pkcs11_provider_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pkcs11_provider_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "port",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "port_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "port_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "preferred_authentications",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "preferred_authentications_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "preferred_authentications_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "protocol",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "protocol_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "protocol_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "proxy_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "proxy_command_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proxy_command_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "proxy_jump",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "proxy_jump_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proxy_jump_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "proxy_use_fdpass",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "proxy_use_fdpass_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "proxy_use_fdpass_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "pubkey_accepted_algorithms",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "pubkey_accepted_algorithms_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pubkey_accepted_algorithms_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pubkey_accepted_key_types",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "pubkey_accepted_key_types_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pubkey_accepted_key_types_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pubkey_authentication",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "pubkey_authentication_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pubkey_authentication_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "rekey_limit",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "rekey_limit_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "rekey_limit_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "remote_command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "remote_command_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "remote_command_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "remote_forward",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "remote_forward_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "remote_forward_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "request_tty",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "request_tty_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "request_tty_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "revoked_host_keys",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "revoked_host_keys_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "revoked_host_keys_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "security_key_provider",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "security_key_provider_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "security_key_provider_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "send_env",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "send_env_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "send_env_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "server_alive_count_max",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "server_alive_count_max_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "server_alive_count_max_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "server_alive_interval",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "server_alive_interval_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "server_alive_interval_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "session_type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "session_type_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "session_type_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "set_env",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "set_env_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "set_env_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "stdin_null",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "stdin_null_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "stdin_null_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "stream_local_bind_mask",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "stream_local_bind_mask_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "stream_local_bind_mask_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "stream_local_bind_unlink",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "stream_local_bind_unlink_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "stream_local_bind_unlink_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "strict_host_key_checking",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "strict_host_key_checking_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "strict_host_key_checking_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "syslog_facility",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "syslog_facility_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "syslog_facility_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "tcp_keep_alive",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "tcp_keep_alive_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tcp_keep_alive_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "tunnel",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "tunnel_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tunnel_device",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "tunnel_device_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tunnel_device_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "tunnel_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "update_host_keys",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "update_host_keys_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "update_host_keys_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "use_keychain",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "use_keychain_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "use_keychain_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "user",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "user_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "user_known_hosts_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "user_known_hosts_file_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "user_known_hosts_file_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "user_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "verify_host_key_dns",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "verify_host_key_dns_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "verify_host_key_dns_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "visual_host_key",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "visual_host_key_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "visual_host_key_value",
+    "named": false,
+    "fields": {}
+  },
+  {
+    "type": "xauth_location",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "xauth_location_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "xauth_location_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "1",
+    "named": false
+  },
+  {
+    "type": "2",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "AUTH",
+    "named": false
+  },
+  {
+    "type": "AddKeysToAgent",
+    "named": false
+  },
+  {
+    "type": "AddressFamily",
+    "named": false
+  },
+  {
+    "type": "BatchMode",
+    "named": false
+  },
+  {
+    "type": "BindAddress",
+    "named": false
+  },
+  {
+    "type": "BindInterface",
+    "named": false
+  },
+  {
+    "type": "CASignatureAlgorithms",
+    "named": false
+  },
+  {
+    "type": "CanonicalDomains",
+    "named": false
+  },
+  {
+    "type": "CanonicalizeFallbackLocal",
+    "named": false
+  },
+  {
+    "type": "CanonicalizeHostname",
+    "named": false
+  },
+  {
+    "type": "CanonicalizeMaxDots",
+    "named": false
+  },
+  {
+    "type": "CanonicalizePermittedCNAMEs",
+    "named": false
+  },
+  {
+    "type": "CertificateFile",
+    "named": false
+  },
+  {
+    "type": "ChallengeResponseAuthentication",
+    "named": false
+  },
+  {
+    "type": "CheckHostIP",
+    "named": false
+  },
+  {
+    "type": "Cipher",
+    "named": false
+  },
+  {
+    "type": "Ciphers",
+    "named": false
+  },
+  {
+    "type": "ClearAllForwardings",
+    "named": false
+  },
+  {
+    "type": "Compression",
+    "named": false
+  },
+  {
+    "type": "ConnectTimeout",
+    "named": false
+  },
+  {
+    "type": "ConnectionAttempts",
+    "named": false
+  },
+  {
+    "type": "ControlMaster",
+    "named": false
+  },
+  {
+    "type": "ControlPath",
+    "named": false
+  },
+  {
+    "type": "ControlPersist",
+    "named": false
+  },
+  {
+    "type": "DAEMON",
+    "named": false
+  },
+  {
+    "type": "DynamicForward",
+    "named": false
+  },
+  {
+    "type": "EnableSSHKeysign",
+    "named": false
+  },
+  {
+    "type": "EscapeChar",
+    "named": false
+  },
+  {
+    "type": "ExitOnForwardFailure",
+    "named": false
+  },
+  {
+    "type": "FingerprintHash",
+    "named": false
+  },
+  {
+    "type": "ForkAfterAuthentication",
+    "named": false
+  },
+  {
+    "type": "ForwardAgent",
+    "named": false
+  },
+  {
+    "type": "ForwardX11",
+    "named": false
+  },
+  {
+    "type": "ForwardX11Timeout",
+    "named": false
+  },
+  {
+    "type": "ForwardX11Trusted",
+    "named": false
+  },
+  {
+    "type": "GSSAPIAuthentication",
+    "named": false
+  },
+  {
+    "type": "GSSAPIClientIdentity",
+    "named": false
+  },
+  {
+    "type": "GSSAPIDelegateCredentials",
+    "named": false
+  },
+  {
+    "type": "GSSAPIKexAlgorithms",
+    "named": false
+  },
+  {
+    "type": "GSSAPIKeyExchange",
+    "named": false
+  },
+  {
+    "type": "GSSAPIRenewalForcesRekey",
+    "named": false
+  },
+  {
+    "type": "GSSAPIServerIdentity",
+    "named": false
+  },
+  {
+    "type": "GSSAPITrustDns",
+    "named": false
+  },
+  {
+    "type": "GatewayPorts",
+    "named": false
+  },
+  {
+    "type": "GlobalKnownHostsFile",
+    "named": false
+  },
+  {
+    "type": "HashKnownHosts",
+    "named": false
+  },
+  {
+    "type": "Host",
+    "named": false
+  },
+  {
+    "type": "HostKeyAlgorithms",
+    "named": false
+  },
+  {
+    "type": "HostKeyAlias",
+    "named": false
+  },
+  {
+    "type": "HostbasedAcceptedAlgorithms",
+    "named": false
+  },
+  {
+    "type": "HostbasedAuthentication",
+    "named": false
+  },
+  {
+    "type": "Hostname",
+    "named": false
+  },
+  {
+    "type": "IPQoS",
+    "named": false
+  },
+  {
+    "type": "IdentitiesOnly",
+    "named": false
+  },
+  {
+    "type": "IdentityAgent",
+    "named": false
+  },
+  {
+    "type": "IdentityFile",
+    "named": false
+  },
+  {
+    "type": "IgnoreUnknown",
+    "named": false
+  },
+  {
+    "type": "Include",
+    "named": false
+  },
+  {
+    "type": "KbdInteractiveAuthentication",
+    "named": false
+  },
+  {
+    "type": "KbdInteractiveDevices",
+    "named": false
+  },
+  {
+    "type": "KeepAlive",
+    "named": false
+  },
+  {
+    "type": "KexAlgorithms",
+    "named": false
+  },
+  {
+    "type": "KnownHostsCommand",
+    "named": false
+  },
+  {
+    "type": "LOCAL0",
+    "named": false
+  },
+  {
+    "type": "LOCAL1",
+    "named": false
+  },
+  {
+    "type": "LOCAL2",
+    "named": false
+  },
+  {
+    "type": "LOCAL3",
+    "named": false
+  },
+  {
+    "type": "LOCAL4",
+    "named": false
+  },
+  {
+    "type": "LOCAL5",
+    "named": false
+  },
+  {
+    "type": "LOCAL6",
+    "named": false
+  },
+  {
+    "type": "LOCAL7",
+    "named": false
+  },
+  {
+    "type": "LocalCommand",
+    "named": false
+  },
+  {
+    "type": "LocalForward",
+    "named": false
+  },
+  {
+    "type": "LogLevel",
+    "named": false
+  },
+  {
+    "type": "LogVerbose",
+    "named": false
+  },
+  {
+    "type": "MACs",
+    "named": false
+  },
+  {
+    "type": "Match",
+    "named": false
+  },
+  {
+    "type": "NoHostAuthenticationForLocalhost",
+    "named": false
+  },
+  {
+    "type": "NumberOfPasswordPrompts",
+    "named": false
+  },
+  {
+    "type": "PKCS11Provider",
+    "named": false
+  },
+  {
+    "type": "PasswordAuthentication",
+    "named": false
+  },
+  {
+    "type": "PermitLocalCommand",
+    "named": false
+  },
+  {
+    "type": "PermitRemoteOpen",
+    "named": false
+  },
+  {
+    "type": "Port",
+    "named": false
+  },
+  {
+    "type": "PreferredAuthentications",
+    "named": false
+  },
+  {
+    "type": "Protocol",
+    "named": false
+  },
+  {
+    "type": "ProxyCommand",
+    "named": false
+  },
+  {
+    "type": "ProxyJump",
+    "named": false
+  },
+  {
+    "type": "ProxyUseFdpass",
+    "named": false
+  },
+  {
+    "type": "PubkeyAcceptedAlgorithms",
+    "named": false
+  },
+  {
+    "type": "PubkeyAcceptedKeyTypes",
+    "named": false
+  },
+  {
+    "type": "PubkeyAuthentication",
+    "named": false
+  },
+  {
+    "type": "RekeyLimit",
+    "named": false
+  },
+  {
+    "type": "RemoteCommand",
+    "named": false
+  },
+  {
+    "type": "RemoteForward",
+    "named": false
+  },
+  {
+    "type": "RequestTTY",
+    "named": false
+  },
+  {
+    "type": "RevokedHostKeys",
+    "named": false
+  },
+  {
+    "type": "SecurityKeyProvider",
+    "named": false
+  },
+  {
+    "type": "SendEnv",
+    "named": false
+  },
+  {
+    "type": "ServerAliveCountMax",
+    "named": false
+  },
+  {
+    "type": "ServerAliveInterval",
+    "named": false
+  },
+  {
+    "type": "SessionType",
+    "named": false
+  },
+  {
+    "type": "SetEnv",
+    "named": false
+  },
+  {
+    "type": "StdinNull",
+    "named": false
+  },
+  {
+    "type": "StreamLocalBindMask",
+    "named": false
+  },
+  {
+    "type": "StreamLocalBindUnlink",
+    "named": false
+  },
+  {
+    "type": "StrictHostKeyChecking",
+    "named": false
+  },
+  {
+    "type": "SyslogFacility",
+    "named": false
+  },
+  {
+    "type": "TCPKeepAlive",
+    "named": false
+  },
+  {
+    "type": "Tunnel",
+    "named": false
+  },
+  {
+    "type": "TunnelDevice",
+    "named": false
+  },
+  {
+    "type": "USER",
+    "named": false
+  },
+  {
+    "type": "UpdateHostKeys",
+    "named": false
+  },
+  {
+    "type": "UseKeychain",
+    "named": false
+  },
+  {
+    "type": "User",
+    "named": false
+  },
+  {
+    "type": "UserKnownHostsFile",
+    "named": false
+  },
+  {
+    "type": "VerifyHostKeyDNS",
+    "named": false
+  },
+  {
+    "type": "VisualHostKey",
+    "named": false
+  },
+  {
+    "type": "XAuthLocation",
+    "named": false
+  },
+  {
+    "type": "accept-new",
+    "named": false
+  },
+  {
+    "type": "any",
+    "named": false
+  },
+  {
+    "type": "ask",
+    "named": false
+  },
+  {
+    "type": "auto",
+    "named": false
+  },
+  {
+    "type": "autoask",
+    "named": false
+  },
+  {
+    "type": "canonicalize_max_dots_value",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "connect_timeout_value",
+    "named": false
+  },
+  {
+    "type": "connection_attempts_value",
+    "named": false
+  },
+  {
+    "type": "control_persist_value",
+    "named": false
+  },
+  {
+    "type": "default",
+    "named": false
+  },
+  {
+    "type": "ethernet",
+    "named": false
+  },
+  {
+    "type": "force",
+    "named": false
+  },
+  {
+    "type": "forward_x11_timeout_value",
+    "named": false
+  },
+  {
+    "type": "inet",
+    "named": false
+  },
+  {
+    "type": "inet6",
+    "named": false
+  },
+  {
+    "type": "ip_qos_value",
+    "named": false
+  },
+  {
+    "type": "md5",
+    "named": false
+  },
+  {
+    "type": "no",
+    "named": false
+  },
+  {
+    "type": "none",
+    "named": false
+  },
+  {
+    "type": "number_of_password_prompts_value",
+    "named": false
+  },
+  {
+    "type": "off",
+    "named": false
+  },
+  {
+    "type": "point-to-point",
+    "named": false
+  },
+  {
+    "type": "port_value",
+    "named": false
+  },
+  {
+    "type": "server_alive_count_max_value",
+    "named": false
+  },
+  {
+    "type": "server_alive_interval_value",
+    "named": false
+  },
+  {
+    "type": "sha256",
+    "named": false
+  },
+  {
+    "type": "subsystem",
+    "named": false
+  },
+  {
+    "type": "yes",
+    "named": false
+  }
+]

@@ -1,0 +1,17 @@
+# source: https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files
+# archive: https://web.archive.org/web/20220313083858/https://en.wikibooks.org/wiki/OpenSSH/Client_Configuration_Files
+
+Host arc
+        Port 2022
+        HostName arc.example.org
+        User fred
+        IdentityFile ~/.ssh/id_rsa_arc
+
+Host server1
+        ServerAliveInterval	200
+        HostName	203.0.113.76
+
+Host *
+        ExitOnForwardFailure	yes
+        Protocol	2
+        ServerAliveInterval	400

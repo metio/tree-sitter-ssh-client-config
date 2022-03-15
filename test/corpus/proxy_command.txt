@@ -1,0 +1,62 @@
+==================
+use command to connect to server
+==================
+
+ProxyCommand some-command arg1 arg2
+
+---
+
+(client_config
+  (proxy_command
+    (proxy_command_value)))
+
+==================
+use irregular casing
+==================
+
+ProxyCoMMand some-command arg1 arg2
+
+---
+
+(client_config
+  (proxy_command
+    (proxy_command_value)))
+
+==================
+can use equals sign
+==================
+
+ProxyCommand=some-command arg1 arg2
+
+---
+
+(client_config
+  (proxy_command
+    (proxy_command_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ProxyCommand = some-command arg1 arg2
+
+---
+
+(client_config
+  (proxy_command
+    (proxy_command_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ProxyCommand some-command arg1 arg2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (proxy_command
+    (proxy_command_value)))

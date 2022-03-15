@@ -1,0 +1,86 @@
+==================
+specify accepted key types
+==================
+
+PubkeyAcceptedKeyTypes ssh-dss
+
+---
+
+(client_config
+  (pubkey_accepted_key_types
+    (pubkey_accepted_key_types_value)))
+
+==================
+add key type
+==================
+
+PubkeyAcceptedKeyTypes +ssh-dss
+
+---
+
+(client_config
+  (pubkey_accepted_key_types
+    (pubkey_accepted_key_types_value)))
+
+==================
+remove key type
+==================
+
+PubkeyAcceptedKeyTypes -ssh-dss
+
+---
+
+(client_config
+  (pubkey_accepted_key_types
+    (pubkey_accepted_key_types_value)))
+
+==================
+use irregular casing
+==================
+
+PubkeyACCEptedKeyTypes ssh-dss
+
+---
+
+(client_config
+  (pubkey_accepted_key_types
+    (pubkey_accepted_key_types_value)))
+
+==================
+can use equals sign
+==================
+
+PubkeyAcceptedKeyTypes=ssh-dss
+
+---
+
+(client_config
+  (pubkey_accepted_key_types
+    (pubkey_accepted_key_types_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+PubkeyAcceptedKeyTypes = ssh-dss
+
+---
+
+(client_config
+  (pubkey_accepted_key_types
+    (pubkey_accepted_key_types_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  PubkeyAcceptedKeyTypes ssh-dss
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (pubkey_accepted_key_types
+    (pubkey_accepted_key_types_value)))

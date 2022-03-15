@@ -1,0 +1,110 @@
+==================
+request a pseudo-tty for the session
+==================
+
+RequestTTY yes
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+do not request a pseudo-tty for the session
+==================
+
+RequestTTY no
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+auto request a pseudo-tty for the session
+==================
+
+RequestTTY auto
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+force request a pseudo-tty for the session
+==================
+
+RequestTTY force
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+use irregular casing
+==================
+
+RequEStTTY yes
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+can use equals sign
+==================
+
+RequEStTTY=yes
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+RequEStTTY = yes
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  RequestTTY no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (request_tty
+    (request_tty_value)))
+
+==================
+detect invalid values
+==================
+
+RequEStTTY ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

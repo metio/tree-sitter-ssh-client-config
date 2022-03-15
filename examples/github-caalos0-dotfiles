@@ -1,0 +1,9 @@
+# source: https://github.com/caarlos0/dotfiles/blob/master/ssh/config
+# archive: https://web.archive.org/web/20220313113536/https://github.com/caarlos0/dotfiles/blob/master/ssh/config
+
+Host *
+  ServerAliveInterval 60
+  StrictHostKeyChecking no
+  UseKeychain yes
+
+Include ~/.ssh/config.local

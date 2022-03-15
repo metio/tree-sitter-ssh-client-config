@@ -1,0 +1,5 @@
+# source: https://github.com/ashishb/dotfiles/blob/master/_sshconfig
+# archive: https://web.archive.org/web/20220327105403/https://github.com/ashishb/dotfiles/blob/master/_sshconfig
+
+Host *
+    StrictHostKeyChecking no

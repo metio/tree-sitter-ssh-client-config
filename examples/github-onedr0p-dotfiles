@@ -1,0 +1,22 @@
+# source: https://github.com/onedr0p/dotfiles/blob/main/private_dot_ssh/private_config.tmpl
+# archive: https://web.archive.org/web/20220327111617/https://github.com/onedr0p/dotfiles/blob/main/private_dot_ssh/private_config.tmpl
+
+Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/control-%h-%p-%r
+  ControlPersist 600
+  PKCS11Provider /usr/lib64/libykcs11.so
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+  IgnoreUnknown UseKeychain
+  UseKeychain yes
+
+Host 192.168.*.*
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+Host 172.16.*.*
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+Host 10.*.*.*
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null

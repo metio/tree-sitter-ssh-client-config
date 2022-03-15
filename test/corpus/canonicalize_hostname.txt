@@ -1,0 +1,86 @@
+==================
+perform hostname canonicalization
+==================
+
+CanonicalizeHostname yes
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+do not perform hostname canonicalization
+==================
+
+CanonicalizeHostname no
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+use irregular casing
+==================
+
+CanonICalizeHostname yes
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+can use equals sign
+==================
+
+CanonicalizeHostname=yes
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CanonicalizeHostname = yes
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  CanonicalizeHostname no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+detect invalid values
+==================
+
+CanonicalizeHostname ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

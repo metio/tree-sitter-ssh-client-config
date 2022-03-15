@@ -1,0 +1,69 @@
+# source: https://github.com/whiteinge/dotfiles/blob/master/.ssh/config.tmpl
+# archive: https://web.archive.org/web/20220313114830/https://github.com/whiteinge/dotfiles/blob/master/.ssh/config.tmpl
+
+# Global Settings
+# #############################################################################
+
+# Include other ssh_config files.
+# Include ~/.ssh/config-some-generated-file
+
+Compression yes
+AddKeysToAgent yes
+
+
+# Enable connection sharing
+# #############################################################################
+
+Host *
+    ControlMaster auto
+    ControlPersist 1m
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ServerAliveInterval 300
+    TCPKeepAlive yes
+
+
+# Host-specific settings
+# #############################################################################
+
+# Example for accessing a private machine behind a bastion machine:
+# Host inaccessible-host
+#     Hostname inaccessible-host
+#     User someuser-on-inaccessible-host
+#     ServerAliveInterval 30
+#     ProxyCommand ssh accessible-host -W %h:%p
+
+# Example for connecting to a (variety of) local virtualbox machine(s)
+# Host vboxlocal 127.0.0.1
+#     Hostname 127.0.0.1
+#     Port 2222
+#     StrictHostKeyChecking no
+#     UserKnownHostsFile /dev/null
+
+# Example for connecting to an Android device over adb via Termux.
+# Req's port forwarding: adb forward tcp:8022 tcp:8022
+# Host adbhost 127.0.0.1
+#     Hostname 127.0.0.1
+#     Port 8022
+#     User u0_a155
+
+# Example of various port forwarding
+# Host somehost
+#     Hostname somehostname
+#     ForwardAgent yes
+#     ForwardX11 yes
+#     DynamicForward 8009 # socks proxy
+#     LocalForward 8008 localhost:8008
+#     PermitLocalCommand yes
+#     LocalCommand print "\e[1;32mWelcome from wherever you are\e[0;m"
+
+# Creating a reverse tunnel in cron
+# #############################################################################
+#
+# Script (+x!)
+# a=`ps -ef | grep 19999 | grep -v grep`
+# if [ ! "$a" ]; then
+#     ssh -fN -R 19999:localhost:<remoteport> <remoteuse>@<remotehost>
+# fi
+#
+# crontab -e
+# * * * * * /path/to/your/script/launch-reverse-ssh-tunneling.sh

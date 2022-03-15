@@ -1,0 +1,86 @@
+==================
+allow single dot
+==================
+
+CanonicalizeMaxDots 1
+
+---
+
+(client_config
+  (canonicalize_max_dots
+    (canonicalize_max_dots_value)))
+
+==================
+allow multiple dots
+==================
+
+CanonicalizeMaxDots 3
+
+---
+
+(client_config
+  (canonicalize_max_dots
+    (canonicalize_max_dots_value)))
+
+==================
+use irregular casing
+==================
+
+CanoniCAlizeMaxDots 5
+
+---
+
+(client_config
+  (canonicalize_max_dots
+    (canonicalize_max_dots_value)))
+
+==================
+can use equals sign
+==================
+
+CanonicalizeMaxDots=7
+
+---
+
+(client_config
+  (canonicalize_max_dots
+    (canonicalize_max_dots_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CanonicalizeMaxDots = 9
+
+---
+
+(client_config
+  (canonicalize_max_dots
+    (canonicalize_max_dots_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  CanonicalizeMaxDots 2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (canonicalize_max_dots
+    (canonicalize_max_dots_value)))
+
+==================
+detect invalid values
+==================
+
+CanonicalizeMaxDots -1
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '-')))

@@ -1,0 +1,119 @@
+==================
+single name host
+==================
+
+Host example
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host with TLD
+==================
+
+host example.com
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host using wildcard
+==================
+
+host *
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host with comment
+==================
+
+host company.com # whooops
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host using multiple host_values
+==================
+
+host example.com another.tld
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host with negation
+==================
+
+host !example.com
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host using multiple host_values with negation
+==================
+
+host example.com !another.tld
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host using wildcard as subdomain
+==================
+
+host *.co.uk
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host using wildcard last entry in IP address
+==================
+
+host 192.168.0.?
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+use irregular casing
+==================
+
+hOSt 192.168.0.?
+
+---
+
+(client_config
+  (host
+    (host_value)))

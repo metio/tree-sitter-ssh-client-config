@@ -1,0 +1,18 @@
+# source: https://github.com/halostatue/dotfiles/blob/main/private_dot_ssh/private_config.tmpl
+# archive: https://web.archive.org/web/20220327110803/https://github.com/halostatue/dotfiles/blob/main/private_dot_ssh/private_config.tmpl
+
+# General SSH configuration
+ForwardAgent yes
+HashKnownHosts no
+ServerAliveCountMax 6
+ServerAliveInterval 30
+VerifyHostKeyDNS yes
+
+Host *
+  IdentityAgent $secretive
+  UseKeychain yes
+  AddKeysToAgent yes
+
+Host github.com
+  UpdateHostKeys yes
+

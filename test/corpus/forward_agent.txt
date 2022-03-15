@@ -1,0 +1,86 @@
+==================
+enable agent forward
+==================
+
+ForwardAgent yes
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
+disable agent forward
+==================
+
+ForwardAgent no
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
+use irregular casing
+==================
+
+fORwARDagent yes
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
+can use equals sign
+==================
+
+fORwARDagent=yes
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+fORwARDagent = yes
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  fORwARDagent no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (forward_agent
+    (forward_agent_value)))
+
+==================
+detect invalid values
+==================
+
+fORwARDagent ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

@@ -1,0 +1,86 @@
+==================
+allow GSSAPI authentication
+==================
+
+GSSAPIAuthentication yes
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+disallow GSSAPI authentication
+==================
+
+GSSAPIAuthentication no
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+use irregular casing
+==================
+
+GSSAPIAuthentiCATion yes
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+can use equals sign
+==================
+
+GSSAPIAuthentiCATion=yes
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+GSSAPIAuthentiCATion = yes
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  GSSAPIAuthentication no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+detect invalid values
+==================
+
+GSSAPIAuthentiCATion ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

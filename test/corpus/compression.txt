@@ -1,0 +1,86 @@
+==================
+enable compression
+==================
+
+Compression yes
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+disable compression
+==================
+
+Compression no
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+use irregular casing
+==================
+
+CompressiON yes
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+can use equals sign
+==================
+
+CompressiON=yes
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CompressiON = yes
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  Compression no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (compression
+    (compression_value)))
+
+==================
+detect invalid values
+==================
+
+CompressiON ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

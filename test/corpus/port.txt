@@ -1,0 +1,62 @@
+==================
+specify port
+==================
+
+Port 12345
+
+---
+
+(client_config
+  (port
+    (port_value)))
+
+==================
+use irregular casing
+==================
+
+pORt 12345
+
+---
+
+(client_config
+  (port
+    (port_value)))
+
+==================
+can use equals sign
+==================
+
+Port=12345
+
+---
+
+(client_config
+  (port
+    (port_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+Port = 12345
+
+---
+
+(client_config
+  (port
+    (port_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  Port 12345
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (port
+    (port_value)))

@@ -1,0 +1,86 @@
+==================
+error when hostname canonicalization fails
+==================
+
+CanonicalizeFallbackLocal yes
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+do not error when hostname canonicalization fails
+==================
+
+CanonicalizeFallbackLocal no
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+use irregular casing
+==================
+
+CanonicalizeFALLbackLocal yes
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+can use equals sign
+==================
+
+CanonicalizeFALLbackLocal=yes
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CanonicalizeFALLbackLocal = yes
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  CanonicalizeFALLbackLocal no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+detect invalid values
+==================
+
+CanonicalizeFALLbackLocal ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

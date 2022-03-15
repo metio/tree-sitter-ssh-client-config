@@ -1,0 +1,62 @@
+==================
+specify bind mask
+==================
+
+StreamLocalBindMask 0177
+
+---
+
+(client_config
+  (stream_local_bind_mask
+    (stream_local_bind_mask_value)))
+
+==================
+use irregular casing
+==================
+
+StreamLoCALbindMask 0177
+
+---
+
+(client_config
+  (stream_local_bind_mask
+    (stream_local_bind_mask_value)))
+
+==================
+can use equals sign
+==================
+
+StreamLocalBindMask=0177
+
+---
+
+(client_config
+  (stream_local_bind_mask
+    (stream_local_bind_mask_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+StreamLocalBindMask = 0177
+
+---
+
+(client_config
+  (stream_local_bind_mask
+    (stream_local_bind_mask_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  StreamLocalBindMask 0177
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (stream_local_bind_mask
+    (stream_local_bind_mask_value)))

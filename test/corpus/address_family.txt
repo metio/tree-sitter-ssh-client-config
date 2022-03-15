@@ -1,0 +1,98 @@
+==================
+use any address family
+==================
+
+AddressFamily any
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
+use IPv4 address family
+==================
+
+AddressFamily inet
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
+use IPv6 address family
+==================
+
+AddressFamily inet6
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
+can use equals sign
+==================
+
+AddressFamily=inet6
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+AddressFamily = inet6
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  AddressFamily inet6
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (address_family
+    (address_family_value)))
+
+==================
+use irregular casing
+==================
+
+ADDRESSfamily inet6
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
+detect invalid values
+==================
+
+AddressFamily net
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'e')))

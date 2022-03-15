@@ -1,0 +1,62 @@
+==================
+specify cipher to use
+==================
+
+Cipher some-algo
+
+---
+
+(client_config
+  (cipher
+    (cipher_value)))
+
+==================
+use irregular casing
+==================
+
+cIPher some-algo
+
+---
+
+(client_config
+  (cipher
+    (cipher_value)))
+
+==================
+can use equals sign
+==================
+
+Cipher=some-algo
+
+---
+
+(client_config
+  (cipher
+    (cipher_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+Cipher = some-algo
+
+---
+
+(client_config
+  (cipher
+    (cipher_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  Cipher some-algo
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (cipher
+    (cipher_value)))

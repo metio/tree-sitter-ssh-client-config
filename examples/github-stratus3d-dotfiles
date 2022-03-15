@@ -1,0 +1,14 @@
+# source: https://github.com/Stratus3D/dotfiles/blob/master/ssh/config
+# archive: https://web.archive.org/web/20220313114758/https://github.com/Stratus3D/dotfiles/blob/master/ssh/config
+
+# Example Configuration
+#
+# All servers
+#Host *
+#
+# Trusted servers
+#Host *.stratus3d.com
+#    ForwardAgent yes
+#    # Also need these settings on OSX Sierra
+#    UseKeychain    no
+#    AddKeysToAgent yes

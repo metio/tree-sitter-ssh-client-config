@@ -1,0 +1,19 @@
+# source: https://github.com/eti0/dots/blob/master/ssh/config
+# archive: https://web.archive.org/web/20220327110640/https://github.com/eti0/dots/blob/master/ssh/config
+
+Host lemon
+     HostName 149.91.81.111
+     User eti
+     ServerAliveInterval 120
+     ForwardX11Trusted yes
+     ForwardX11 yes
+
+Host europe
+    HostName 199.247.11.225
+    User eti
+    ServerAliveInterval 120
+
+Host souls
+     HostName souls.local
+     User eti
+     ServerAliveInterval 120

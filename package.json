@@ -1,0 +1,43 @@
+{
+  "name": "tree-sitter-ssh-client-config",
+  "version": "1.0.0",
+  "description": "tree-sitter grammar for SSH client configuration files",
+  "keywords": [
+    "parser",
+    "lexer"
+  ],
+  "main": "bindings/node",
+  "scripts": {
+    "init": "tree-sitter init-config",
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse",
+    "examples": "tree-sitter generate && tree-sitter parse 'examples/*' --quiet --stat"
+  },
+  "homepage": "https://github.com/metio/tree-sitter-ssh-client-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metio/tree-sitter-ssh-client-config.git"
+  },
+  "author": {
+    "name": "Sebastian Hoß",
+    "email": "seb@hoß.de",
+    "url": "https://seb.people.metio.wtf/"
+  },
+  "contributors": [],
+  "license": "CC0",
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.1"
+  },
+  "tree-sitter": [
+    {
+      "scope": "text.ssh_client_config",
+      "file-types": [
+        "config"
+      ]
+    }
+  ]
+}

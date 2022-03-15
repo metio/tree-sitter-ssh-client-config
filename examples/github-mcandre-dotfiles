@@ -1,0 +1,13 @@
+# source: https://github.com/mcandre/dotfiles/blob/master/ssh-config
+# archive: https://web.archive.org/web/20220327111341/https://github.com/mcandre/dotfiles/blob/master/ssh-config
+
+# cp ssh-config ~/.ssh/config
+
+# Fix tab completion
+HashKnownHosts no
+
+# Fix VSCode remote authentication
+# Host foo
+#   HostName foo
+#   User bar
+#   IdentityFile ~/.ssh/id_rsa

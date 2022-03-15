@@ -1,0 +1,62 @@
+==================
+specify custom client identity
+==================
+
+GSSAPIClientIdentity some-user
+
+---
+
+(client_config
+  (gssapi_client_identity
+    (gssapi_client_identity_value)))
+
+==================
+use irregular casing
+==================
+
+GSSAPIClientIdENTity some-user
+
+---
+
+(client_config
+  (gssapi_client_identity
+    (gssapi_client_identity_value)))
+
+==================
+can use equals sign
+==================
+
+GSSAPIClientIdentity=some-user
+
+---
+
+(client_config
+  (gssapi_client_identity
+    (gssapi_client_identity_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+GSSAPIClientIdentity = some-user
+
+---
+
+(client_config
+  (gssapi_client_identity
+    (gssapi_client_identity_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  GSSAPIClientIdentity some-user
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (gssapi_client_identity
+    (gssapi_client_identity_value)))

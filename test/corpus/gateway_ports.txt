@@ -1,0 +1,86 @@
+==================
+enable gateway ports
+==================
+
+GatewayPorts yes
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+disable gateway ports
+==================
+
+GatewayPorts no
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+use irregular casing
+==================
+
+GateWAYpORts yes
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+can use equals sign
+==================
+
+GateWAYpORts=yes
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+GateWAYpORts = yes
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  GateWAYpORts no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+detect invalid values
+==================
+
+GateWAYpORts ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

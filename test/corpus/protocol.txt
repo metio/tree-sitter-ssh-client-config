@@ -1,0 +1,85 @@
+==================
+use SSH 1
+==================
+
+Protocol 1
+
+---
+
+(client_config
+  (protocol
+    (protocol_value)))
+
+==================
+use SSH 2
+==================
+
+Protocol 2
+
+---
+
+(client_config
+  (protocol
+    (protocol_value)))
+
+==================
+use irregular casing
+==================
+
+ProTOcOL 2
+
+---
+
+(client_config
+  (protocol
+    (protocol_value)))
+
+==================
+can use equals sign
+==================
+
+ProTOcOL=2
+
+---
+
+(client_config
+  (protocol
+    (protocol_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ProTOcOL = 1
+
+---
+
+(client_config
+  (protocol
+    (protocol_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ProTOcOL 2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (protocol
+    (protocol_value)))
+
+==================
+detect invalid values
+==================
+
+ProTOcOL 3
+
+---
+
+(client_config
+  (ERROR))

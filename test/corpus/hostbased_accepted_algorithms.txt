@@ -1,0 +1,98 @@
+==================
+specify accepted algorithms
+==================
+
+HostbasedAcceptedAlgorithms ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
+add algorithm
+==================
+
+HostbasedAcceptedAlgorithms +ssh-ed25519
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
+remove algorithm
+==================
+
+HostbasedAcceptedAlgorithms -ssh-ed25519
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
+prepend algorithm
+==================
+
+HostbasedAcceptedAlgorithms ^ssh-ed25519
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
+use irregular casing
+==================
+
+HostbasedAcceptedALGOrithms ssh-ed25519
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
+can use equals sign
+==================
+
+HostbasedAcceptedAlgorithms=ssh-ed25519
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+HostbasedAcceptedAlgorithms = ssh-ed25519
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  HostbasedAcceptedAlgorithms ssh-ed25519
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))

@@ -1,0 +1,86 @@
+==================
+remove existing socket file before creating a new one
+==================
+
+StreamLocalBindUnlink yes
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+do not remove existing socket file before creating a new one
+==================
+
+StreamLocalBindUnlink no
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+use irregular casing
+==================
+
+StreamLOCAlBindUnlink yes
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+can use equals sign
+==================
+
+StreamLOCAlBindUnlink=yes
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+StreamLOCAlBindUnlink = yes
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  StreamLocalBindUnlink no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+detect invalid values
+==================
+
+StreamLOCAlBindUnlink ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

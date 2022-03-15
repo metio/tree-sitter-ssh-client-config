@@ -1,0 +1,9 @@
+# source: https://github.com/caarlos0/dotfiles.fish/blob/master/ssh/config.dotfiles
+# archive: https://web.archive.org/web/20220327105922/https://github.com/caarlos0/dotfiles.fish/blob/master/ssh/config.dotfiles
+
+Host *
+	ServerAliveInterval 60
+
+Host localhost
+	UserKnownHostsFile /dev/null
+	StrictHostKeyChecking no

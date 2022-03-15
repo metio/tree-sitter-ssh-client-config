@@ -1,0 +1,62 @@
+==================
+ignore option
+==================
+
+IgnoreUnknown SomeOption
+
+---
+
+(client_config
+  (ignore_unknown
+    (ignore_unknown_value)))
+
+==================
+use irregular casing
+==================
+
+IgnoreUnkNOwn SomeOption
+
+---
+
+(client_config
+  (ignore_unknown
+    (ignore_unknown_value)))
+
+==================
+can use equals sign
+==================
+
+IgnoreUnkNOwn=SomeOption
+
+---
+
+(client_config
+  (ignore_unknown
+    (ignore_unknown_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+IgnoreUnkNOwn = SomeOption
+
+---
+
+(client_config
+  (ignore_unknown
+    (ignore_unknown_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  IgnoreUnknown SomeOption
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (ignore_unknown
+    (ignore_unknown_value)))

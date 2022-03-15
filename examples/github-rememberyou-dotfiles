@@ -1,0 +1,22 @@
+# source: https://github.com/rememberYou/dotfiles/blob/master/ssh/.config/ssh/config
+# archive: https://web.archive.org/web/20220327111917/https://github.com/rememberYou/dotfiles/blob/master/ssh/.config/ssh/config
+
+Host *
+    AddKeysToAgent yes
+    IdentityAgent SSH_AUTH_SOCK
+    UserKnownHostsFile ~/.local/share/ssh/known_hosts
+
+Host bitbucket bitbucket.org
+    HostName bitbucket.org
+    IdentityFile ~/.local/share/ssh/keys/bitbucket
+    User git
+
+Host github github.com
+    HostName github.com
+    IdentityFile ~/.local/share/ssh/keys/github
+    User git
+
+Host gitlab gitlab.com
+    HostName gitlab.com
+    IdentityFile ~/.local/share/ssh/keys/gitlab
+    User git

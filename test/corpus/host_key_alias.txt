@@ -1,0 +1,62 @@
+==================
+specify key alias
+==================
+
+HostKeyAlias some-user
+
+---
+
+(client_config
+  (host_key_alias
+    (host_key_alias_value)))
+
+==================
+use irregular casing
+==================
+
+HostKeyAlIAs some-user
+
+---
+
+(client_config
+  (host_key_alias
+    (host_key_alias_value)))
+
+==================
+can use equals sign
+==================
+
+HostKeyAlias=some-user
+
+---
+
+(client_config
+  (host_key_alias
+    (host_key_alias_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+HostKeyAlias = some-user
+
+---
+
+(client_config
+  (host_key_alias
+    (host_key_alias_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  HostKeyAlias some-user
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (host_key_alias
+    (host_key_alias_value)))

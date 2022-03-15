@@ -1,0 +1,74 @@
+==================
+specify host name
+==================
+
+Hostname some-host
+
+---
+
+(client_config
+  (hostname
+    (hostname_value)))
+
+==================
+specify IP address
+==================
+
+Hostname 192.168.1.123
+
+---
+
+(client_config
+  (hostname
+    (hostname_value)))
+
+==================
+use irregular casing
+==================
+
+hostNAme some-host
+
+---
+
+(client_config
+  (hostname
+    (hostname_value)))
+
+==================
+can use equals sign
+==================
+
+Hostname=some-host
+
+---
+
+(client_config
+  (hostname
+    (hostname_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+Hostname = some-host
+
+---
+
+(client_config
+  (hostname
+    (hostname_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  Hostname some-host
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (hostname
+    (hostname_value)))

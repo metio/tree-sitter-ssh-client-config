@@ -1,0 +1,62 @@
+==================
+run command after connect
+==================
+
+RemoteCommand some-command arg1 arg2
+
+---
+
+(client_config
+  (remote_command
+    (remote_command_value)))
+
+==================
+use irregular casing
+==================
+
+ReMOteCommand some-command arg1 arg2
+
+---
+
+(client_config
+  (remote_command
+    (remote_command_value)))
+
+==================
+can use equals sign
+==================
+
+RemoteCommand=some-command arg1 arg2
+
+---
+
+(client_config
+  (remote_command
+    (remote_command_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+RemoteCommand = some-command arg1 arg2
+
+---
+
+(client_config
+  (remote_command
+    (remote_command_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  RemoteCommand some-command arg1 arg2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (remote_command
+    (remote_command_value)))

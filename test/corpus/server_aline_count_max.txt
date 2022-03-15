@@ -1,0 +1,86 @@
+==================
+allow single attempts
+==================
+
+ServerAliveCountMax 1
+
+---
+
+(client_config
+  (server_alive_count_max
+    (server_alive_count_max_value)))
+
+==================
+allow multiple attempts
+==================
+
+ServerAliveCountMax 3
+
+---
+
+(client_config
+  (server_alive_count_max
+    (server_alive_count_max_value)))
+
+==================
+use irregular casing
+==================
+
+ServerAliveCoUNtMax 5
+
+---
+
+(client_config
+  (server_alive_count_max
+    (server_alive_count_max_value)))
+
+==================
+can use equals sign
+==================
+
+ServerAliveCountMax=7
+
+---
+
+(client_config
+  (server_alive_count_max
+    (server_alive_count_max_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ServerAliveCountMax = 9
+
+---
+
+(client_config
+  (server_alive_count_max
+    (server_alive_count_max_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ServerAliveCountMax 2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (server_alive_count_max
+    (server_alive_count_max_value)))
+
+==================
+detect invalid values
+==================
+
+ServerAliveCountMax -1
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '-')))

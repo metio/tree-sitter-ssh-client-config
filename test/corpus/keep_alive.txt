@@ -1,0 +1,86 @@
+==================
+send keepalive messages
+==================
+
+KeepAlive yes
+
+---
+
+(client_config
+  (keep_alive
+    (keep_alive_value)))
+
+==================
+do not send keepalive messages
+==================
+
+KeepAlive no
+
+---
+
+(client_config
+  (keep_alive
+    (keep_alive_value)))
+
+==================
+use irregular casing
+==================
+
+kEEpAlive yes
+
+---
+
+(client_config
+  (keep_alive
+    (keep_alive_value)))
+
+==================
+can use equals sign
+==================
+
+kEEpAlive=yes
+
+---
+
+(client_config
+  (keep_alive
+    (keep_alive_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+kEEpAlive = yes
+
+---
+
+(client_config
+  (keep_alive
+    (keep_alive_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  KeepAlive no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (keep_alive
+    (keep_alive_value)))
+
+==================
+detect invalid values
+==================
+
+kEEpAlive ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

@@ -1,0 +1,31 @@
+# source: https://github.com/jlucktay/dotfiles/blob/main/private_dot_ssh/config.tmpl
+# archive: https://web.archive.org/web/20220327111022/https://github.com/jlucktay/dotfiles/blob/main/private_dot_ssh/config.tmpl
+
+Host tilde.club
+  IdentityFile ~/.ssh/id_rsa_jlucktay
+  User jlucktay
+
+Host 192.168.86.181 192.168.86.121 192.168.86.122 192.168.86.123 rpi?-? rpi?-?.lan rpi?-?.local pi.hole
+  IdentityFile ~/.ssh/id_rsa_rpi
+  User pi
+
+# This is how we configure throwaway VMs when we DGAF about what happens to them ¯\_(ツ)_/¯
+Host danjump
+  CheckHostIP no
+  HostName 10.19.58.64
+  IdentityFile ~/.ssh/id_rsa_jlucktayjump
+  StrictHostKeyChecking no
+  UpdateHostKeys yes
+  User jlucktay
+  UserKnownHostsFile /dev/null
+  VerifyHostKeyDNS no
+
+# This is the wildcard/apply-to-everything section
+Host *
+  AddKeysToAgent yes
+  ConnectTimeout 5
+  ControlMaster auto
+  ControlPath ~/.ssh/%C.sock
+  ControlPersist 10m
+  IdentityFile ~/.ssh/id_ed25519_20211013
+  UseKeychain yes

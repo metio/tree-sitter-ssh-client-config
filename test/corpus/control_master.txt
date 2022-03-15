@@ -1,0 +1,122 @@
+==================
+enable control master
+==================
+
+ControlMaster yes
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+disable control master
+==================
+
+ControlMaster no
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+ask user for control master
+==================
+
+ControlMaster ask
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+automatically use control master
+==================
+
+ControlMaster auto
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+automatically ask for control master
+==================
+
+ControlMaster autoask
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+use irregular casing
+==================
+
+ContrOLmASter yes
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+can use equals sign
+==================
+
+ContrOLmASter=yes
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ContrOLmASter = yes
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ControlMaster no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (control_master
+    (control_master_value)))
+
+==================
+detect invalid values
+==================
+
+ContrOLmASter ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

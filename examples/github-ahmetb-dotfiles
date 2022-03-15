@@ -1,0 +1,18 @@
+# source: https://github.com/ahmetb/dotfiles/blob/master/ssh_config
+# archive: https://web.archive.org/web/20220327105057/https://github.com/ahmetb/dotfiles/blob/master/ssh_config
+
+# UseKeychain is not recognized by openssh, but recognized by system ssh on Mac
+IgnoreUnknown UseKeychain
+
+# Host github.com *.github.com
+# 	HostName github.com
+# 	User git
+# 	IdentityFile ~/.ssh/github_rsa
+# 	UseKeychain yes
+#
+#
+# Host gitlab.com *.gitlab.com
+# 	HostName gitlab.com
+# 	User git
+# 	IdentityFile ~/.ssh/gitlab_rsa
+# 	UseKeychain yes

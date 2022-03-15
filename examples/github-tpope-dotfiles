@@ -1,0 +1,55 @@
+# source: https://github.com/tpope/dotfiles/blob/master/.ssh/config
+# archive: https://web.archive.org/web/20220327112348/https://github.com/tpope/dotfiles/blob/master/.ssh/config
+
+# ~/.ssh/config
+
+Host R renly renly.tpope router
+	HostName renly.tpope
+	#Color cyan
+
+Host N balon balon.tpope nas
+	HostName balon.tpope
+	#Color brown
+
+Host A aegon aegon.tpope macbook
+	HostName aegon.tpope
+	#Color purple
+	ForwardX11 yes
+
+Host D walder walder.tpope desktop
+	HostName walder.tpope
+	#Color red
+	ForwardX11 yes
+
+Host L loras loras.tpope laptop
+	HostName loras.tpope
+	#Color orange
+	ForwardX11 yes
+
+Host T tyrion tyrion.tpope htpc
+	HostName tyrion.tpope
+	#Color magenta
+	ForwardX11 yes
+
+Host tywin
+	HostName tywin.tpope
+	#Color magenta
+
+Host V varys varys.tpope.net roxy tpope.net tpo.pe
+	HostName varys.tpope.net
+	#Color green
+
+Host home.tpope.info
+	CheckHostIP no
+	HostKeyAlias renly.tpope
+
+Host *.tpope.us *.tpope
+	ProxyCommand ssh -qax home.tpope.info nc `echo %h|cut -d. -f1` %p
+
+Host *.* localhost
+	ProxyCommand none
+
+Host *
+	User tpope
+	ForwardAgent yes
+	ProxyCommand sh -c '$HOME/.local/bin/tpope host tunnel %h %p'

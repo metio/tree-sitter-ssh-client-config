@@ -1,0 +1,86 @@
+==================
+enable X11 forward
+==================
+
+ForwardX11 yes
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+disable X11 forward
+==================
+
+ForwardX11 no
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+use irregular casing
+==================
+
+forWARdX11 yes
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+can use equals sign
+==================
+
+forWARdX11=yes
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+forWARdX11 = yes
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  forWARdX11 no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+detect invalid values
+==================
+
+forWARdX11 ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

@@ -1,0 +1,8 @@
+# source: https://github.com/4lgn/dotfiles/blob/bspwm/.ssh/config
+# archive: https://web.archive.org/web/20220313113335/https://github.com/4lgn/dotfiles/blob/bspwm/.ssh/config
+
+IdentityFile    ~/.ssh/id_rsa
+AddKeysToAgent  yes
+Host bitbucket.org
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa

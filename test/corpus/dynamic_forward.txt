@@ -1,0 +1,98 @@
+==================
+forward port
+==================
+
+DynamicForward 8080
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
+forward address:port
+==================
+
+DynamicForward 0.0.0.0:1234
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
+forward using localhost
+==================
+
+DynamicForward localhost:9095
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
+forward on all interfaces
+==================
+
+DynamicForward *:3000
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
+use irregular casing
+==================
+
+DynamICfORward *:3000
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
+can use equals sign
+==================
+
+DynamicForward=*:3000
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+DynamicForward = *:3000
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  DynamicForward *:3000
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (dynamic_forward
+    (dynamic_forward_value)))

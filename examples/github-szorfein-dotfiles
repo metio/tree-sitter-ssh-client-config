@@ -1,0 +1,8 @@
+# source: https://github.com/szorfein/dots/blob/master/private_dot_ssh/config.tmpl
+# archive: https://web.archive.org/web/20220327112227/https://github.com/szorfein/dots/blob/master/private_dot_ssh/config.tmpl
+
+HashKnownHosts no
+
+Host github.com
+  IdentitiesOnly yes
+  IdentityFile ~/.ssh/ssh_git

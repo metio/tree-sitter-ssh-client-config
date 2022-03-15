@@ -1,0 +1,86 @@
+==================
+has host names
+==================
+
+HostbasedAuthentication yes
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+do not has host names
+==================
+
+HostbasedAuthentication no
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+use irregular casing
+==================
+
+HostbasedAUTHentication yes
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+can use equals sign
+==================
+
+HostbasedAUTHentication=yes
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+HostbasedAUTHentication = yes
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  HostbasedAuthentication no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+detect invalid values
+==================
+
+HostbasedAUTHentication ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

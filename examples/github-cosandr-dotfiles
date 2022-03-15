@@ -1,0 +1,125 @@
+# source: https://github.com/joke/dotfiles/blob/main/private_dot_ssh/private_config
+# archive: https://web.archive.org/web/20220327110033/https://github.com/joke/dotfiles/blob/main/private_dot_ssh/private_config
+
+Include conf.d/*
+XAuthLocation "C:/Program Files/VcXsrv/xauth.exe"
+
+Host *
+   UseKeychain yes
+   AddKeysToAgent yes
+
+Host gitlab.dresrv.com
+    HostName gitlab.dresrv.com
+    User git
+    PreferredAuthentications publickey
+    IdentitiesOnly yes
+
+Host srv-boot
+    HostName 127.0.0.1
+    User root
+    Port 2222
+
+Host DreSRV-A
+    HostName 127.0.0.1
+    User andrei
+    ForwardAgent yes
+
+Host DreSRV-X
+    HostName 127.0.0.1
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    RequestTTY yes
+    RemoteCommand env GDK_SCALE=2 GDK_DPI_SCALE=0.75 QT_SCREEN_SCALE_FACTORS=2 QT_AUTO_SCREEN_SCALE_FACTOR=0 zsh
+
+Host srvsim
+    HostName 192.168.122.6
+    User root
+    ProxyJump DreSRV
+
+Host srvsim-boot
+    HostName 192.168.122.6
+    Port 2222
+    User root
+    ProxyJump DreSRV
+
+Host romrt-socks
+    DynamicForward 4321
+    ExitOnForwardFailure yes
+    TCPKeepAlive yes
+
+Host romsto
+    ForwardAgent yes
+    ProxyJump romrt
+
+Host romvm
+    HostName 10.1.1.33
+    ProxyJump romsto
+    ForwardAgent yes
+
+Host rb5009
+    HostName 10.0.50.1
+    User admin
+    PubkeyAcceptedKeyTypes ssh-rsa
+    IdentityFile ~/.ssh/id_rsa
+
+Host crs226
+    HostName 10.0.100.3
+    User admin
+    PubkeyAcceptedKeyTypes ssh-rsa
+    IdentityFile ~/.ssh/id_rsa
+
+Host a5800
+    HostName 10.0.100.4
+    User admin
+    PreferredAuthentications password
+    PubkeyAuthentication no
+    KexAlgorithms +diffie-hellman-group1-sha1
+    Ciphers aes128-cbc,3des-cbc
+
+Host webgw01
+    HostName webgw01.hlab.no
+    Port 5622
+    User root
+
+Host localgw01
+    HostName 10.0.10.91
+    Port 5622
+    User root
+
+Host ws
+    HostName 192.168.1.43
+    User andrei
+    ForwardAgent yes
+    TCPKeepAlive yes
+
+Host ws-gpg
+    HostName 192.168.1.43
+    User andrei
+    ExitOnForwardFailure yes
+    TCPKeepAlive yes
+    RemoteForward /run/user/1000/gnupg/S.gpg-agent /run/user/1000/gnupg/S.gpg-agent.extra
+
+Host ws-socks
+    HostName 192.168.1.43
+    User andrei
+    DynamicForward 5555
+    ExitOnForwardFailure yes
+    TCPKeepAlive yes
+
+Host ws-boot
+    HostName 192.168.1.43
+    Port 2222
+    User root
+    IdentityFile ~/.ssh/id_rsa
+
+Host github.com
+    HostName github.com
+    User git
+    PreferredAuthentications publickey
+    IdentitiesOnly yes
+
+Host github.com-atgb
+    HostName github.com
+    User git
+    PreferredAuthentications publickey
+    IdentitiesOnly yes

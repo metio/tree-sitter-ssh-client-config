@@ -1,0 +1,16 @@
+# source: https://tecadmin.net/how-to-use-ssh-config-file/
+# archive: https://web.archive.org/web/20220313083745/https://tecadmin.net/how-to-use-ssh-config-file/
+
+Host TecAdmin
+         HostName 192.167.54.19
+         Port 2222
+         Forwardx11 no
+
+Host *
+         User tecadmin1
+         IdentityFile ~/.ssh/id_rsa
+         Protocol 2
+         Compression yes
+         ServerAliveInterval 60
+         ServerAliveCountMax 20
+         LogLevel Info

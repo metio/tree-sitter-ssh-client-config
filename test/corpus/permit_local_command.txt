@@ -1,0 +1,86 @@
+==================
+allow local command execution
+==================
+
+PermitLocalCommand yes
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+do not allow local command execution
+==================
+
+PermitLocalCommand no
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+use irregular casing
+==================
+
+PermitLocALcommand yes
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+can use equals sign
+==================
+
+PermitLocALcommand=yes
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+PermitLocALcommand = yes
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  PermitLocalCommand no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+detect invalid values
+==================
+
+PermitLocALcommand ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

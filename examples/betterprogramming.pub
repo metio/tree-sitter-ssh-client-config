@@ -1,0 +1,13 @@
+# source: https://betterprogramming.pub/a-step-by-step-walkthrough-to-create-your-first-ssh-config-file-f01267b4eacb
+# archive: https://web.archive.org/web/20220313083201/https://betterprogramming.pub/a-step-by-step-walkthrough-to-create-your-first-ssh-config-file-f01267b4eacb?gi=696778a81949
+
+Host github.com
+  HostName github.com
+  User codenamewei
+  PreferredAuthentications publickey
+  IdentityFile C:\Users\codenamewei\.ssh\new_folder\id_rsa
+
+Host codenamewei
+  HostName 40.81.206.144
+  User codenamewei
+  Port 22

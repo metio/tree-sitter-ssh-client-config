@@ -1,0 +1,98 @@
+==================
+use path from user home
+==================
+
+ControlPath ~/.ssh/control
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
+use path from system
+==================
+
+ControlPath /etc/ssh/control
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
+disable connection sharing
+==================
+
+ControlPath none
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
+use placeholders
+==================
+
+ControlPath ~/.ssh/control-%h-%p-%r-%C
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
+use irregular casing
+==================
+
+ContROLPath ~/.ssh/control
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
+can use equals sign
+==================
+
+ControlPath=~/.ssh/control
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ControlPath = ~/.ssh/control
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ControlPath ~/.ssh/control
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (control_path
+    (control_path_value)))

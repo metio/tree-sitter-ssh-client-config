@@ -1,0 +1,98 @@
+==================
+specify accepted algorithms
+==================
+
+KexAlgorithms ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+
+---
+
+(client_config
+  (kex_algorithms
+    (kex_algorithms_value)))
+
+==================
+add algorithm
+==================
+
+KexAlgorithms +ssh-ed25519
+
+---
+
+(client_config
+  (kex_algorithms
+    (kex_algorithms_value)))
+
+==================
+remove algorithm
+==================
+
+KexAlgorithms -ssh-ed25519
+
+---
+
+(client_config
+  (kex_algorithms
+    (kex_algorithms_value)))
+
+==================
+prepend algorithm
+==================
+
+KexAlgorithms ^ssh-ed25519
+
+---
+
+(client_config
+  (kex_algorithms
+    (kex_algorithms_value)))
+
+==================
+use irregular casing
+==================
+
+KexAlgoritHMS ssh-ed25519
+
+---
+
+(client_config
+  (kex_algorithms
+    (kex_algorithms_value)))
+
+==================
+can use equals sign
+==================
+
+KexAlgorithms=ssh-ed25519
+
+---
+
+(client_config
+  (kex_algorithms
+    (kex_algorithms_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+KexAlgorithms = ssh-ed25519
+
+---
+
+(client_config
+  (kex_algorithms
+    (kex_algorithms_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  KexAlgorithms ssh-ed25519
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (kex_algorithms
+    (kex_algorithms_value)))

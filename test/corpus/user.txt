@@ -1,0 +1,62 @@
+==================
+specify username
+==================
+
+User some-user
+
+---
+
+(client_config
+  (user
+    (user_value)))
+
+==================
+use irregular casing
+==================
+
+uSEr some-user
+
+---
+
+(client_config
+  (user
+    (user_value)))
+
+==================
+can use equals sign
+==================
+
+User=some-user
+
+---
+
+(client_config
+  (user
+    (user_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+User = some-user
+
+---
+
+(client_config
+  (user
+    (user_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  User some-user
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (user
+    (user_value)))

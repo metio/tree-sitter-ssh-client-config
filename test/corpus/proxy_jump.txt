@@ -1,0 +1,86 @@
+==================
+use jump host with user and port
+==================
+
+ProxyJump user@host:1234
+
+---
+
+(client_config
+  (proxy_jump
+    (proxy_jump_value)))
+
+==================
+use jump host with port
+==================
+
+ProxyJump host:1234
+
+---
+
+(client_config
+  (proxy_jump
+    (proxy_jump_value)))
+
+==================
+use jump host
+==================
+
+ProxyJump host
+
+---
+
+(client_config
+  (proxy_jump
+    (proxy_jump_value)))
+
+==================
+use irregular casing
+==================
+
+ProxyjUMp some-command arg1 arg2
+
+---
+
+(client_config
+  (proxy_jump
+    (proxy_jump_value)))
+
+==================
+can use equals sign
+==================
+
+ProxyJump=some-command arg1 arg2
+
+---
+
+(client_config
+  (proxy_jump
+    (proxy_jump_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ProxyJump = some-command arg1 arg2
+
+---
+
+(client_config
+  (proxy_jump
+    (proxy_jump_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ProxyJump some-command arg1 arg2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (proxy_jump
+    (proxy_jump_value)))

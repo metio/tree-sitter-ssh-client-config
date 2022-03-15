@@ -1,0 +1,98 @@
+==================
+specify accepted algorithms
+==================
+
+PubkeyAcceptedAlgorithms ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
+add algorithm
+==================
+
+PubkeyAcceptedAlgorithms +ssh-ed25519
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
+remove algorithm
+==================
+
+PubkeyAcceptedAlgorithms -ssh-ed25519
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
+prepend algorithm
+==================
+
+PubkeyAcceptedAlgorithms ^ssh-ed25519
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
+use irregular casing
+==================
+
+PubkeyAccepTEDAlgorithms ssh-ed25519
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
+can use equals sign
+==================
+
+PubkeyAcceptedAlgorithms=ssh-ed25519
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+PubkeyAcceptedAlgorithms = ssh-ed25519
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  PubkeyAcceptedAlgorithms ssh-ed25519
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))

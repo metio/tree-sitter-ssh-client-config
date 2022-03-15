@@ -1,0 +1,194 @@
+==================
+syslog facility = DAEMON
+==================
+
+SyslogFacility DAEMON
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = USER
+==================
+
+SyslogFacility USER
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = AUTH
+==================
+
+SyslogFacility AUTH
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL0
+==================
+
+SyslogFacility LOCAL0
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL1
+==================
+
+SyslogFacility LOCAL1
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL2
+==================
+
+SyslogFacility LOCAL2
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL3
+==================
+
+SyslogFacility LOCAL3
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL4
+==================
+
+SyslogFacility LOCAL4
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL5
+==================
+
+SyslogFacility LOCAL5
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL6
+==================
+
+SyslogFacility LOCAL6
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+syslog facility = LOCAL7
+==================
+
+SyslogFacility LOCAL7
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+use irregular casing
+==================
+
+SysLOGFacility DAEMON
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+can use equals sign
+==================
+
+SysLOGFacility=DAEMON
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+SysLOGFacility = DAEMON
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  SyslogFacility DAEMON
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
+detect invalid values
+==================
+
+SysLOGFacility ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

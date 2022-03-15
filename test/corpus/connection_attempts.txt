@@ -1,0 +1,86 @@
+==================
+allow single attempts
+==================
+
+ConnectionAttempts 1
+
+---
+
+(client_config
+  (connection_attempts
+    (connection_attempts_value)))
+
+==================
+allow multiple attempts
+==================
+
+ConnectionAttempts 3
+
+---
+
+(client_config
+  (connection_attempts
+    (connection_attempts_value)))
+
+==================
+use irregular casing
+==================
+
+ConneCTIonAttempts 5
+
+---
+
+(client_config
+  (connection_attempts
+    (connection_attempts_value)))
+
+==================
+can use equals sign
+==================
+
+ConnectionAttempts=7
+
+---
+
+(client_config
+  (connection_attempts
+    (connection_attempts_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ConnectionAttempts = 9
+
+---
+
+(client_config
+  (connection_attempts
+    (connection_attempts_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ConnectionAttempts 2
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (connection_attempts
+    (connection_attempts_value)))
+
+==================
+detect invalid values
+==================
+
+ConnectionAttempts -1
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '-')))

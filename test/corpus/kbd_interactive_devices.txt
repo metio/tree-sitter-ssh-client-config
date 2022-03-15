@@ -1,0 +1,74 @@
+==================
+use bsdauth
+==================
+
+KbdInteractiveDevices bsdauth
+
+---
+
+(client_config
+  (kbd_interactive_devices
+    (kbd_interactive_devices_value)))
+
+==================
+use pam
+==================
+
+KbdInteractiveDevices pam
+
+---
+
+(client_config
+  (kbd_interactive_devices
+    (kbd_interactive_devices_value)))
+
+==================
+use irregular casing
+==================
+
+KbdInteractIVEDevices pam
+
+---
+
+(client_config
+  (kbd_interactive_devices
+    (kbd_interactive_devices_value)))
+
+==================
+can use equals sign
+==================
+
+KbdInteractIVEDevices=pam
+
+---
+
+(client_config
+  (kbd_interactive_devices
+    (kbd_interactive_devices_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+KbdInteractIVEDevices = pam
+
+---
+
+(client_config
+  (kbd_interactive_devices
+    (kbd_interactive_devices_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  KbdInteractiveDevices pam
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (kbd_interactive_devices
+    (kbd_interactive_devices_value)))

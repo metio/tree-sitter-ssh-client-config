@@ -1,0 +1,11 @@
+# source: https://github.com/joke/dotfiles/blob/main/private_dot_ssh/private_config
+# archive: https://web.archive.org/web/20220327110033/https://github.com/joke/dotfiles/blob/main/private_dot_ssh/private_config
+
+Host github.com
+ForwardAgent no
+
+Host *
+ControlMaster auto
+ControlPath ${XDG_RUNTIME_DIR}/.ssh_%C
+ControlPersist 1800
+ForwardAgent yes

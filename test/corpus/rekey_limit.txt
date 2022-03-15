@@ -1,0 +1,98 @@
+==================
+use default rekeying options
+==================
+
+RekeyLimit default none
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
+use custom data limit
+==================
+
+RekeyLimit 4G none
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
+rekey after 30 seconds
+==================
+
+RekeyLimit 4G 30
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
+rekey after 5 days
+==================
+
+RekeyLimit 4G 5d
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
+use irregular casing
+==================
+
+RekeylIMIt 4G 5d
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
+can use equals sign
+==================
+
+RekeylIMIt=4G 5d
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+RekeylIMIt = 4G 5d
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  RekeyLimit 4G 5d
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (rekey_limit
+    (rekey_limit_value)))

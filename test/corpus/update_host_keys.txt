@@ -1,0 +1,98 @@
+==================
+update host keys = yes
+==================
+
+UpdateHostKeys yes
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+update host keys = no
+==================
+
+UpdateHostKeys no
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+update host keys = ask
+==================
+
+UpdateHostKeys ask
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+use irregular casing
+==================
+
+updaTEhostKeys yes
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+can use equals sign
+==================
+
+updaTEhostKeys=yes
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+updaTEhostKeys = yes
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  UpdateHostKeys no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+detect invalid values
+==================
+
+updaTEhostKeys ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

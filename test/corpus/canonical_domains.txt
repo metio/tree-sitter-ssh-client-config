@@ -1,0 +1,86 @@
+==================
+canonical domain
+==================
+
+CanonicalDomains example
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
+canonical domain with tld
+==================
+
+CanonicalDomains example.com
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
+canonical subdomain with tld
+==================
+
+CanonicalDomains sub.example.com
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
+use irregular casing
+==================
+
+CanonicaldOMAins hoß.de
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
+can use equals sign
+==================
+
+CanonicaldOMAins=hoß.de
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CanonicaldOMAins = hoß.de
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  CanonicaldOMAins hoß.de
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (canonical_domains
+    (canonical_domains_value)))

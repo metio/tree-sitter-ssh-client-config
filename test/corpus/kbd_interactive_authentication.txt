@@ -1,0 +1,86 @@
+==================
+use keyboard interactive authentication
+==================
+
+KbdInteractiveAuthentication yes
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+do not use keyboard interactive authentication
+==================
+
+KbdInteractiveAuthentication no
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+use irregular casing
+==================
+
+KbdInteractiveAuthentiCATion yes
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+can use equals sign
+==================
+
+KbdInteractiveAuthentiCATion=yes
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+KbdInteractiveAuthentiCATion = yes
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  KbdInteractiveAuthentication no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+detect invalid values
+==================
+
+KbdInteractiveAuthentiCATion ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

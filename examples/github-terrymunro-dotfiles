@@ -1,0 +1,26 @@
+# source: https://github.com/terrymunro/dotfiles/blob/main/private_dot_ssh/config.tmpl
+# archive: https://web.archive.org/web/20220327112253/https://github.com/terrymunro/dotfiles/blob/main/private_dot_ssh/config.tmpl
+
+## Defaults ##
+
+Host *
+  AddKeysToAgent yes
+  UseKeyChain yes
+  ForwardAgent no
+  ForwardX11 no
+  ForwardX11Trusted yes
+  Protocol 2
+  ServerAliveInterval 60
+  ServerAliveCountMax 60
+  IdentitiesOnly yes
+
+## Overrides ##
+Host pc
+  HostName tm-desktop.local
+  Port 2246
+  User terry
+  IdentityFile ~/.ssh/home-key-ecdsa
+
+Host github.com
+  User git
+  IdentityFile ~/.ssh/aginic_github

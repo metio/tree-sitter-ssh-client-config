@@ -1,0 +1,8 @@
+# source: https://github.com/Aloxaf/dotfiles/blob/master/ssh/.ssh/config
+# archive: https://web.archive.org/web/20220327105256/https://github.com/Aloxaf/dotfiles/blob/master/ssh/.ssh/config
+
+Host aur.archlinux.org
+    IdentityFile ~/.ssh/id_rsa
+    User aloxaf
+ServerAliveInterval 20
+ServerAliveCountMax 10

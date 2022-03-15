@@ -1,0 +1,86 @@
+==================
+enable host IP checking
+==================
+
+CheckHostIP yes
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+disable host IP checking
+==================
+
+CheckHostIP no
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+use irregular casing
+==================
+
+CheCKhostIP yes
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+can use equals sign
+==================
+
+CheckHostIP=yes
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CheckHostIP = yes
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  CheckHostIP no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+detect invalid values
+==================
+
+CheckHostIP ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))

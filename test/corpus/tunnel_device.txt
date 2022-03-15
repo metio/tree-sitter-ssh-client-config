@@ -1,0 +1,74 @@
+==================
+use default tunnel device
+==================
+
+TunnelDevice any:any
+
+---
+
+(client_config
+  (tunnel_device
+    (tunnel_device_value)))
+
+==================
+specify local only
+==================
+
+TunnelDevice any
+
+---
+
+(client_config
+  (tunnel_device
+    (tunnel_device_value)))
+
+==================
+use irregular casing
+==================
+
+tunnELdevice any:any
+
+---
+
+(client_config
+  (tunnel_device
+    (tunnel_device_value)))
+
+==================
+can use equals sign
+==================
+
+TunnelDevice=0177
+
+---
+
+(client_config
+  (tunnel_device
+    (tunnel_device_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+TunnelDevice = 0177
+
+---
+
+(client_config
+  (tunnel_device
+    (tunnel_device_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  TunnelDevice 0177
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (tunnel_device
+    (tunnel_device_value)))

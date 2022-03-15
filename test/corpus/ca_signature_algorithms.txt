@@ -1,0 +1,86 @@
+==================
+specify algorithms to use
+==================
+
+CASignatureAlgorithms some-algo
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
+remove algorithm from list
+==================
+
+CASignatureAlgorithms -some-other
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
+add algorithm to list
+==================
+
+CASignatureAlgorithms +some-other
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
+use irregular casing
+==================
+
+CASignatureAlgorithms some-algo
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
+can use equals sign
+==================
+
+CASignatureAlgorithms=some-algo
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+CASignatureAlgorithms = some-algo
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  CASignatureAlgorithms some-algo
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
