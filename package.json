@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-ssh-client-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tree-sitter grammar for SSH client configuration files",
   "keywords": [
     "parser",
@@ -25,7 +25,7 @@
     "url": "https://seb.people.metio.wtf/"
   },
   "contributors": [],
-  "license": "CC0",
+  "license": "CC0-1.0",
   "dependencies": {
     "nan": "^2.15.0"
   },

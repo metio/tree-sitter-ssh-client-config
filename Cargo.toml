@@ -1,12 +1,12 @@
 [package]
 name = "tree-sitter-ssh-client-config"
 description = "SSH client config grammar for the tree-sitter parsing library"
-version = "1.0.0"
+version = "1.0.1"
 keywords = ["incremental", "parsing", "ssh", "client", "config"]
 categories = ["parsing", "text-editors"]
 repository = "https://github.com/metio/tree-sitter-ssh-client-config"
 edition = "2018"
-license = "CC0"
+license = "CC0-1.0"
 
 build = "bindings/rust/build.rs"
 include = [
