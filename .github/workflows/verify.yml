@@ -16,5 +16,5 @@ jobs:
           node-version: 16
           cache: npm
       - run: npm install
-      - run: npm generate
-      - run: npm test
+      - run: npm run generate
+      - run: npm run test
