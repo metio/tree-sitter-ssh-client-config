@@ -1,13 +1,10 @@
-name: Verify Commits
+name: Perform Release
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    tags:
+      - '*'
 jobs:
-  tests:
+  deploy-crate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,5 +17,12 @@ jobs:
         run: npm install
       - name: Compile grammar
         run: npm run generate
-      - name: Run all tests
-        run: npm run test
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: Publish to crates.io
+        uses: actions-rs/cargo@v1
+        with:
+          command: publish
+          args: --token ${{ secrets.CRATES_IO_TOKEN }}
