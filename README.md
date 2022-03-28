@@ -10,14 +10,19 @@ Install the dependencies:
 $ npm install
 ```
 
-Build and run the tests:
+Generate the grammar:
 
 ```shell
 $ npm run generate
+```
+
+Run the tests:
+
+```shell
 $ npm run test
 ```
 
-Parse all examples
+Parse all examples:
 
 ```shell
 $ npm run examples
