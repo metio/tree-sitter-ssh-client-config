@@ -34,7 +34,7 @@ console.log(tree.rootNode.toString());
 
 ### Rust
 
-This grammar is available at [crates.io](https://crates.io/crates/tree-sitter-ssh-client-config).
+This grammar is available at [crates.io](https://crates.io/crates/tree-sitter-ssh-client-config), and you can use it together with the [Rust language binding](https://github.com/tree-sitter/tree-sitter/tree/master/lib/binding_rust).
 
 ```rust
 use tree_sitter::{Parser, Language};
