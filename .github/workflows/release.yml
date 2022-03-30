@@ -4,7 +4,7 @@ on:
     tags:
       - '*'
 jobs:
-  deploy-crate:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,14 +13,19 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      - name: Install dependencies
-        run: npm install
-      - name: Compile grammar
-        run: npm run generate
+          registry-url: https://registry.npmjs.org
       - name: Set up Rust
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
+      - name: Install dependencies
+        run: npm install
+      - name: Generate grammar
+        run: npm run generate
+      - name: Publish to npmjs.com
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish to crates.io
         uses: actions-rs/cargo@v1
         with:
