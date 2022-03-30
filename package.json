@@ -4,7 +4,10 @@
   "description": "tree-sitter grammar for SSH client configuration files",
   "keywords": [
     "parser",
-    "lexer"
+    "lexer",
+    "ssh",
+    "client",
+    "config"
   ],
   "main": "bindings/node",
   "scripts": {
@@ -12,7 +15,7 @@
     "generate": "tree-sitter generate",
     "test": "tree-sitter test",
     "parse": "tree-sitter parse",
-    "examples": "tree-sitter generate && tree-sitter parse 'examples/*' --quiet --stat"
+    "examples": "tree-sitter parse 'examples/*' --quiet --stat"
   },
   "homepage": "https://github.com/metio/tree-sitter-ssh-client-config",
   "repository": {
@@ -39,5 +42,16 @@
         "config"
       ]
     }
+  ],
+  "files": [
+    "/bindings/node/",
+    "/queries/",
+    "/src/",
+    "/binding.gyp",
+    "/grammar.js",
+    "/LICENSE",
+    "/README.md",
+    "/package.json",
+    "/package-lock.json"
   ]
 }

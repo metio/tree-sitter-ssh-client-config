@@ -1,0 +1,5 @@
+shell
+--no-interactive
+--containerfile dev/Containerfile
+tree-sitter-ssh-config/dev:latest
+make

@@ -1,0 +1,12 @@
+{
+  "name": "tree-sitter-ssh-client-config-fuzzer",
+  "version": "1.0.0",
+  "description": "fuzzer for the SSH client configuration grammar",
+  "scripts": {
+    "fuzz": "node fuzz.js"
+  },
+  "dependencies": {
+    "tree-sitter": "^0.20.0",
+    "tree-sitter-ssh-client-config": "file:../../"
+  }
+}

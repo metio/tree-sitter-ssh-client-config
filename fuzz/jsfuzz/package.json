@@ -1,0 +1,13 @@
+{
+  "name": "tree-sitter-ssh-client-config-fuzzer",
+  "version": "1.0.0",
+  "description": "fuzzer for the SSH client configuration grammar",
+  "scripts": {
+    "fuzz": "jsfuzz fuzz.js ../../examples --exact-artifact-path crash.config --rss-limit-mb 1024"
+  },
+  "dependencies": {
+    "jsfuzz": "^1.0.15",
+    "tree-sitter": "^0.20.0",
+    "tree-sitter-ssh-client-config": "file:../../"
+  }
+}

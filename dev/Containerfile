@@ -1,0 +1,3 @@
+FROM docker.io/aflplusplus/aflplusplus:latest
+
+RUN apt-get update && apt-get -y install nodejs npm

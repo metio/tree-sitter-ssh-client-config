@@ -1,0 +1,4 @@
+shell
+--containerfile dev/Containerfile
+tree-sitter-ssh-config/dev:latest
+bash
