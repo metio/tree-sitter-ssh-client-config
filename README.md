@@ -2,36 +2,51 @@
 
 SSH client config grammar for [tree-sitter](https://github.com/tree-sitter/tree-sitter).
 
-## Development
+## Usage
 
-Install the dependencies:
+### NodeJS
 
-```shell
-$ npm install
+This grammar is available at [npmjs.com](https://npmjs.com/package/tree-sitter-ssh-client-config), and you can use it together with the [NodeJS language binding](https://github.com/tree-sitter/node-tree-sitter).
+
+```javascript
+const Parser = require("tree-sitter");
+const SSH_CLIENT_CONFIG = require("tree-sitter-ssh-client-config");
+
+const parser = new Parser();
+parser.setLanguage(SSH_CLIENT_CONFIG);
+
+const config = `
+Host example.com
+  User your-name
+  Port 12345
+`;
+
+const tree = parser.parse(config);
+console.log(tree.rootNode.toString());
+// (client_config
+//   (host
+//     (host_value))
+//   (user
+//     (user_value))
+//   (port
+//     (port_value)))
 ```
 
-Generate the grammar:
+### Rust
 
-```shell
-$ npm run generate
-```
+This grammar is available at [crates.io](https://crates.io/crates/tree-sitter-ssh-client-config).
 
-Run the tests:
+```rust
+use tree_sitter::{Parser, Language};
 
-```shell
-$ npm run test
-```
-
-Parse all examples:
-
-```shell
-$ npm run examples
-```
-
-Parse a single example and show syntax tree:
-
-```shell
-$ npm run parse examples/github-maskray-config
+let mut parser = Parser::new();
+parser.set_language(tree_sitter_sshclientconfig::language()).expect("Error loading SSH client config grammar");
+let config = "\
+Host example.com
+  User your-name
+  Port 12345";
+let tree = parser.parse(config, None).unwrap();
+assert_eq!(tree.root_node().to_sexp(), "(client_config (host (host_value)) (user (user_value)) (port (port_value)))");
 ```
 
 ## References
