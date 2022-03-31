@@ -10,6 +10,7 @@ In order to build this project locally, you need the following software:
 - [GNU Make](https://www.gnu.org/software/make/) >= this decade (**optional** in case you want to use the `Makefile`)
 - [ilo](https://ilo.projects.metio.wtf/) >= 2020.10.12 (**optional** in case you want to run everything in a container)
 - [AFL++](https://aflplus.plus/) >= 4.00c (**optional** in case you want to do some fuzzing with AFL++)
+- [Rust](https://www.rust-lang.org/) >= 1.57 (**optional** in case you want to use AFL++)
 
 ### Using NPM
 
@@ -116,7 +117,7 @@ In order to ensure that this grammar is safe to use, we are using [fuzz testing]
 [Jsfuzz](https://gitlab.com/gitlab-org/security-products/analyzers/fuzzers/jsfuzz) is a coverage-guides fuzzer for JavaScript/NodeJS packages. All required software to run Jsfuzz will be installed automatically on your system once you execute these steps:
 
 ```shell
-# using NPM
+# manually
 $ npm --prefix fuzz/jsfuzz install
 $ npm --prefix fuzz/jsfuzz run fuzz
 
@@ -130,7 +131,7 @@ $ ilo @dev/run jsfuzz
 **Note**: This setup is experimental and seems to produce lots of false-positives, e.g. it produces SSH client configs that do **NOT** actually crash tree-sitter using this grammar. In order to verify that, run:
 
 ```shell
-# using NPM
+# manually
 $ npm run parse fuzz/jsfuzz/crash.config
 
 # using make
@@ -144,12 +145,12 @@ In case the above command actually crashes this grammar, please open a bug repor
 
 #### AFL++
 
-[AFL++](https://aflplus.plus/) is a security-oriented fuzzer without any particular focus on programming languages. In order to run this fuzzer, you must either [install it](https://aflplus.plus/building/) locally on your system or use the [container image](https://hub.docker.com/r/aflplusplus/aflplusplus) that the AFL++ project provides itself. Once you have done that, follow these steps to run AFL++:
+[AFL++](https://aflplus.plus/) is a security-oriented fuzzer without any particular focus on programming languages. In order to run this fuzzer, you must install it along with Rust on your local machine. Once you have done that, follow these steps to run AFL++:
 
 ```shell
-# using NPM
-$ npm --prefix fuzz/aflplusplus install
-$ afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -t 5000 -m none -f fuzz/aflplusplus/out/current.config -- npm --prefix fuzz/aflplusplus run fuzz
+# manually
+$ cargo build --manifest-path fuzz/aflplusplus/Cargo.toml --release
+$ afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -t 5000 -m none -f fuzz/aflplusplus/out/current.config -- fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer fuzz/aflplusplus/out/current.config
 
 # using make
 $ make aflfuzz

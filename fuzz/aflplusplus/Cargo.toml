@@ -1,0 +1,22 @@
+[package]
+name = "tree-sitter-afl-fuzzer"
+description = "AFL++ fuzzing for the SSH client config grammar"
+version = "1.0.0"
+keywords = ["incremental", "parsing", "ssh", "client", "config", "fuzzing"]
+categories = ["parsing", "text-editors"]
+repository = "https://github.com/metio/tree-sitter-ssh-client-config"
+edition = "2018"
+license = "CC0-1.0"
+
+build = "build.rs"
+include = [
+  "src/*",
+]
+
+[dependencies]
+tree-sitter = "~0.20"
+encoding_rs = "0.8.30"
+encoding_rs_io = "0.1.7"
+
+[build-dependencies]
+cc = "1.0"

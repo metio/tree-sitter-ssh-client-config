@@ -33,8 +33,8 @@ jsfuzz-crash:
 	npm run parse fuzz/jsfuzz/crash.config
 
 .PHONY: aflfuzz
-aflfuzz: fuzz/aflplusplus/node_modules
-	afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -t 5000 -m none -f fuzz/aflplusplus/out/current.config -- npm --prefix fuzz/aflplusplus run fuzz
+aflfuzz: fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer
+	afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -t 5000 -m none -f fuzz/aflplusplus/out/current.config -- fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer fuzz/aflplusplus/out/current.config
 
-fuzz/aflplusplus/node_modules:
-	npm --prefix fuzz/aflplusplus install
+fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer:
+	cargo build --manifest-path fuzz/aflplusplus/Cargo.toml --release

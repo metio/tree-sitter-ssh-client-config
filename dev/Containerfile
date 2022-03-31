@@ -1,3 +1,4 @@
 FROM docker.io/aflplusplus/aflplusplus:latest
 
-RUN apt-get update && apt-get -y install nodejs npm
+RUN apt-get update && apt-get -y install nodejs npm rust-all
+RUN echo "export PS1='"'[ilo] \w$(__git_ps1) \$ '"'" >> ~/.bashrc
