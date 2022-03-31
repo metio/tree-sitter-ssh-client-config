@@ -150,7 +150,7 @@ In case the above command actually crashes this grammar, please open a bug repor
 ```shell
 # manually
 $ cargo build --manifest-path fuzz/aflplusplus/Cargo.toml --release
-$ afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -t 5000 -m none -f fuzz/aflplusplus/out/current.config -- fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer fuzz/aflplusplus/out/current.config
+$ afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -m none -f fuzz/aflplusplus/out/current.config -- fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer fuzz/aflplusplus/out/current.config
 
 # using make
 $ make aflfuzz
