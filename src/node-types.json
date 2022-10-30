@@ -176,7 +176,7 @@
   },
   {
     "type": "canonicalize_hostname_value",
-    "named": false,
+    "named": true,
     "fields": {}
   },
   {
@@ -1039,7 +1039,7 @@
   },
   {
     "type": "forward_agent_value",
-    "named": false,
+    "named": true,
     "fields": {}
   },
   {
@@ -2079,7 +2079,7 @@
   },
   {
     "type": "pubkey_authentication_value",
-    "named": false,
+    "named": true,
     "fields": {}
   },
   {
@@ -2603,6 +2603,10 @@
     "fields": {}
   },
   {
+    "type": "\"",
+    "named": false
+  },
+  {
     "type": "1",
     "named": false
   },
@@ -3091,26 +3095,6 @@
     "named": false
   },
   {
-    "type": "accept-new",
-    "named": false
-  },
-  {
-    "type": "any",
-    "named": false
-  },
-  {
-    "type": "ask",
-    "named": false
-  },
-  {
-    "type": "auto",
-    "named": false
-  },
-  {
-    "type": "autoask",
-    "named": false
-  },
-  {
     "type": "canonicalize_max_dots_value",
     "named": false
   },
@@ -3131,27 +3115,11 @@
     "named": false
   },
   {
-    "type": "default",
-    "named": false
-  },
-  {
     "type": "ethernet",
     "named": false
   },
   {
-    "type": "force",
-    "named": false
-  },
-  {
     "type": "forward_x11_timeout_value",
-    "named": false
-  },
-  {
-    "type": "inet",
-    "named": false
-  },
-  {
-    "type": "inet6",
     "named": false
   },
   {
@@ -3175,10 +3143,6 @@
     "named": false
   },
   {
-    "type": "off",
-    "named": false
-  },
-  {
     "type": "point-to-point",
     "named": false
   },
@@ -3196,10 +3160,6 @@
   },
   {
     "type": "sha256",
-    "named": false
-  },
-  {
-    "type": "subsystem",
     "named": false
   },
   {

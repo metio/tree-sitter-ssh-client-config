@@ -11,6 +11,18 @@ SessionType none
     (session_type_value)))
 
 ==================
+Use Session Type None
+==================
+
+SessionType NoNe
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
 use session type subsystem
 ==================
 
@@ -23,10 +35,34 @@ SessionType subsystem
     (session_type_value)))
 
 ==================
+Use Session Type Subsystem
+==================
+
+SessionType SubSyStem
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
 use session type default
 ==================
 
 SessionType default
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
+Use Session Type Default
+==================
+
+SessionType defAuLt
 
 ---
 

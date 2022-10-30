@@ -1,5 +1,5 @@
 ==================
-disable host authentication for localhost
+no host authentication for localhost = yes
 ==================
 
 NoHostAuthenticationForLocalhost yes
@@ -11,10 +11,82 @@ NoHostAuthenticationForLocalhost yes
     (no_host_authentication_for_localhost_value)))
 
 ==================
-do not disable host authentication for localhost
+no host authentication for localhost = Yes
+==================
+
+NoHostAuthenticationForLocalhost Yes
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+no host authentication for localhost = true
+==================
+
+NoHostAuthenticationForLocalhost true
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+no host authentication for localhost = True
+==================
+
+NoHostAuthenticationForLocalhost True
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+no host authentication for localhost = no
 ==================
 
 NoHostAuthenticationForLocalhost no
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+no host authentication for localhost = No
+==================
+
+NoHostAuthenticationForLocalhost No
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+no host authentication for localhost = false
+==================
+
+NoHostAuthenticationForLocalhost false
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
+no host authentication for localhost = False
+==================
+
+NoHostAuthenticationForLocalhost False
 
 ---
 

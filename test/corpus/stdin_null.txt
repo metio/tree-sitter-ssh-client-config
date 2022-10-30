@@ -1,5 +1,5 @@
 ==================
-redirects stdin from /dev/null
+redirects stdin from /dev/null = yes
 ==================
 
 StdinNull yes
@@ -11,10 +11,82 @@ StdinNull yes
     (stdin_null_value)))
 
 ==================
-do not redirects stdin from /dev/null
+redirects stdin from /dev/null = Yes
+==================
+
+StdinNull Yes
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+redirects stdin from /dev/null = true
+==================
+
+StdinNull true
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+redirects stdin from /dev/null = True
+==================
+
+StdinNull True
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+redirects stdin from /dev/null = no
 ==================
 
 StdinNull no
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+redirects stdin from /dev/null = No
+==================
+
+StdinNull No
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+redirects stdin from /dev/null = false
+==================
+
+StdinNull false
+
+---
+
+(client_config
+  (stdin_null
+    (stdin_null_value)))
+
+==================
+redirects stdin from /dev/null = False
+==================
+
+StdinNull False
 
 ---
 

@@ -1,5 +1,5 @@
 ==================
-enable host IP checking
+check host IP = yes
 ==================
 
 CheckHostIP yes
@@ -11,10 +11,82 @@ CheckHostIP yes
     (check_host_ip_value)))
 
 ==================
-disable host IP checking
+check host IP = Yes
+==================
+
+CheckHostIP Yes
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+check host IP = true
+==================
+
+CheckHostIP true
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+check host IP = True
+==================
+
+CheckHostIP True
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+check host IP = no
 ==================
 
 CheckHostIP no
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+check host IP = No
+==================
+
+CheckHostIP No
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+check host IP = false
+==================
+
+CheckHostIP false
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
+check host IP = False
+==================
+
+CheckHostIP False
 
 ---
 

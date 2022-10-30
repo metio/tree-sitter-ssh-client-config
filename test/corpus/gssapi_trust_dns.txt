@@ -1,5 +1,5 @@
 ==================
-trust DNS
+trust DNS = yes
 ==================
 
 GSSAPITrustDns yes
@@ -11,10 +11,82 @@ GSSAPITrustDns yes
     (gssapi_trust_dns_value)))
 
 ==================
-do not trust DNS
+trust DNS = Yes
+==================
+
+GSSAPITrustDns Yes
+
+---
+
+(client_config
+  (gssapi_trust_dns
+    (gssapi_trust_dns_value)))
+
+==================
+trust DNS = true
+==================
+
+GSSAPITrustDns true
+
+---
+
+(client_config
+  (gssapi_trust_dns
+    (gssapi_trust_dns_value)))
+
+==================
+trust DNS = True
+==================
+
+GSSAPITrustDns True
+
+---
+
+(client_config
+  (gssapi_trust_dns
+    (gssapi_trust_dns_value)))
+
+==================
+trust DNS = no
 ==================
 
 GSSAPITrustDns no
+
+---
+
+(client_config
+  (gssapi_trust_dns
+    (gssapi_trust_dns_value)))
+
+==================
+trust DNS = No
+==================
+
+GSSAPITrustDns No
+
+---
+
+(client_config
+  (gssapi_trust_dns
+    (gssapi_trust_dns_value)))
+
+==================
+trust DNS = false
+==================
+
+GSSAPITrustDns false
+
+---
+
+(client_config
+  (gssapi_trust_dns
+    (gssapi_trust_dns_value)))
+
+==================
+trust DNS = False
+==================
+
+GSSAPITrustDns False
 
 ---
 

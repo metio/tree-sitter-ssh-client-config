@@ -1,5 +1,5 @@
 ==================
-use configured identities only
+identities only = yes
 ==================
 
 IdentitiesOnly yes
@@ -11,10 +11,82 @@ IdentitiesOnly yes
     (identities_only_value)))
 
 ==================
-do not use configured identities only
+identities only = Yes
+==================
+
+IdentitiesOnly Yes
+
+---
+
+(client_config
+  (identities_only
+    (identities_only_value)))
+
+==================
+identities only = true
+==================
+
+IdentitiesOnly true
+
+---
+
+(client_config
+  (identities_only
+    (identities_only_value)))
+
+==================
+identities only = True
+==================
+
+IdentitiesOnly True
+
+---
+
+(client_config
+  (identities_only
+    (identities_only_value)))
+
+==================
+identities only = no
 ==================
 
 IdentitiesOnly no
+
+---
+
+(client_config
+  (identities_only
+    (identities_only_value)))
+
+==================
+identities only = No
+==================
+
+IdentitiesOnly No
+
+---
+
+(client_config
+  (identities_only
+    (identities_only_value)))
+
+==================
+identities only = false
+==================
+
+IdentitiesOnly false
+
+---
+
+(client_config
+  (identities_only
+    (identities_only_value)))
+
+==================
+identities only = False
+==================
+
+IdentitiesOnly False
 
 ---
 

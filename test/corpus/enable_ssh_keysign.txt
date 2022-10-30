@@ -1,5 +1,5 @@
 ==================
-enable ssh-keysign usage
+enable ssh-keysign = yes
 ==================
 
 EnableSSHKeysign yes
@@ -11,10 +11,82 @@ EnableSSHKeysign yes
     (enable_ssh_keysign_value)))
 
 ==================
-disable ssh-keysign usage
+enable ssh-keysign = Yes
+==================
+
+EnableSSHKeysign Yes
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+enable ssh-keysign = true
+==================
+
+EnableSSHKeysign true
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+enable ssh-keysign = True
+==================
+
+EnableSSHKeysign True
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+enable ssh-keysign = no
 ==================
 
 EnableSSHKeysign no
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+enable ssh-keysign = No
+==================
+
+EnableSSHKeysign No
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+enable ssh-keysign = false
+==================
+
+EnableSSHKeysign false
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
+enable ssh-keysign = False
+==================
+
+EnableSSHKeysign False
 
 ---
 

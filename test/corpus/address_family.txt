@@ -11,6 +11,18 @@ AddressFamily any
     (address_family_value)))
 
 ==================
+Use Any Address Family
+==================
+
+AddressFamily Any
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
 use IPv4 address family
 ==================
 
@@ -23,10 +35,34 @@ AddressFamily inet
     (address_family_value)))
 
 ==================
+Use IPv4 Address Family
+==================
+
+AddressFamily Inet
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
 use IPv6 address family
 ==================
 
 AddressFamily inet6
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
+Use IPv6 Address Family
+==================
+
+AddressFamily Inet6
 
 ---
 

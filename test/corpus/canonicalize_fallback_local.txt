@@ -1,5 +1,5 @@
 ==================
-error when hostname canonicalization fails
+canonicalize fallback local = yes
 ==================
 
 CanonicalizeFallbackLocal yes
@@ -11,10 +11,82 @@ CanonicalizeFallbackLocal yes
     (canonicalize_fallback_local_value)))
 
 ==================
-do not error when hostname canonicalization fails
+canonicalize fallback local = Yes
+==================
+
+CanonicalizeFallbackLocal Yes
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+canonicalize fallback local = true
+==================
+
+CanonicalizeFallbackLocal true
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+canonicalize fallback local = True
+==================
+
+CanonicalizeFallbackLocal True
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+canonicalize fallback local = no
 ==================
 
 CanonicalizeFallbackLocal no
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+canonicalize fallback local = No
+==================
+
+CanonicalizeFallbackLocal No
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+canonicalize fallback local = false
+==================
+
+CanonicalizeFallbackLocal false
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
+canonicalize fallback local = False
+==================
+
+CanonicalizeFallbackLocal False
 
 ---
 

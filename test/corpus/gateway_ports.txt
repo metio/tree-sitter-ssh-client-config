@@ -1,5 +1,5 @@
 ==================
-enable gateway ports
+gateway ports = yes
 ==================
 
 GatewayPorts yes
@@ -11,10 +11,82 @@ GatewayPorts yes
     (gateway_ports_value)))
 
 ==================
-disable gateway ports
+gateway ports = Yes
+==================
+
+GatewayPorts Yes
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+gateway ports = true
+==================
+
+GatewayPorts true
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+gateway ports = True
+==================
+
+GatewayPorts True
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+gateway ports = no
 ==================
 
 GatewayPorts no
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+gateway ports = No
+==================
+
+GatewayPorts No
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+gateway ports = false
+==================
+
+GatewayPorts false
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
+gateway ports = False
+==================
+
+GatewayPorts False
 
 ---
 

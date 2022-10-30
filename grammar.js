@@ -124,7 +124,12 @@ module.exports = grammar({
 
     comment: $ => token(prec(-10, /#.*/)),
     number: $ => /[1234567890]+/,
-    boolean: $ => choice('yes', 'no'),
+    boolean: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+    ),
     pattern: $ => /.*/,
     time_format: $ => /[1234567890]+[sSmMhHdDwW]?/,
 
@@ -150,7 +155,11 @@ module.exports = grammar({
         'AddressFamily',
         $.address_family_value
     ),
-    address_family_value: $ => choice('any', 'inet', 'inet6'),
+    address_family_value: $ => choice(
+        ignoreCase('any'),
+        ignoreCase('inet'),
+        ignoreCase('inet6'),
+    ),
 
     batch_mode: $ => option(
         'BatchMode',
@@ -187,8 +196,14 @@ module.exports = grammar({
         'CanonicalizeHostname',
         $.canonicalize_hostname_value
     ),
-    canonicalize_hostname_value: $ => alias($.boolean,
-        "canonicalize_hostname_value"),
+    canonicalize_hostname_value: $ => choice(
+        ignoreCase('true'),
+        ignoreCase('yes'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('always'),
+        'none'
+    ),
 
     canonicalize_max_dots: $ => option(
         'CanonicalizeMaxDots',
@@ -270,7 +285,15 @@ module.exports = grammar({
         'ControlMaster',
         $.control_master_value
     ),
-    control_master_value: $ => choice('yes', 'no', 'ask', 'auto', 'autoask'),
+    control_master_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('ask'),
+        ignoreCase('auto'),
+        ignoreCase('autoask'),
+    ),
 
     control_path: $ => option(
         'ControlPath',
@@ -301,7 +324,7 @@ module.exports = grammar({
         'EscapeChar',
         $.escape_char_value
     ),
-    escape_char_value: $ => /.*/,
+    escape_char_value: $ => choice('none', /(\^\w|[^\^])/),
 
     exit_on_forward_failure: $ => option(
         'ExitOnForwardFailure',
@@ -327,7 +350,7 @@ module.exports = grammar({
         'ForwardAgent',
         $.forward_agent_value
     ),
-    forward_agent_value: $ => alias($.boolean, "forward_agent_value"),
+    forward_agent_value: $ => /.*/,
 
     forward_x11: $ => option(
         'ForwardX11',
@@ -647,8 +670,14 @@ module.exports = grammar({
         'PubkeyAuthentication',
         $.pubkey_authentication_value
     ),
-    pubkey_authentication_value: $ => alias($.boolean,
-        "pubkey_authentication_value"),
+    pubkey_authentication_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('unbound'),
+        ignoreCase('host-bound'),
+    ),
 
     rekey_limit: $ => option(
         'RekeyLimit',
@@ -672,7 +701,14 @@ module.exports = grammar({
         'RequestTTY',
         $.request_tty_value
     ),
-    request_tty_value: $ => choice('yes', 'no', 'auto', 'force'),
+    request_tty_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('auto'),
+        ignoreCase('force'),
+    ),
 
     revoked_host_keys: $ => option(
         'RevokedHostKeys',
@@ -710,7 +746,11 @@ module.exports = grammar({
         'SessionType',
         $.session_type_value
     ),
-    session_type_value: $ => choice('none', 'subsystem', 'default'),
+    session_type_value: $ => choice(
+        ignoreCase('none'),
+        ignoreCase('subsystem'),
+        ignoreCase('default')
+    ),
 
     set_env: $ => option(
         'SetEnv',
@@ -741,8 +781,15 @@ module.exports = grammar({
         'StrictHostKeyChecking',
         $.strict_host_key_checking_value
     ),
-    strict_host_key_checking_value: $ => choice('yes', 'no', 'off', 'ask',
-        'accept-new'),
+    strict_host_key_checking_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('off'),
+        ignoreCase('ask'),
+        ignoreCase('accept-new'),
+    ),
 
     syslog_facility: $ => option(
         'SyslogFacility',
@@ -779,7 +826,13 @@ module.exports = grammar({
         'UpdateHostKeys',
         $.update_host_keys_value
     ),
-    update_host_keys_value: $ => choice('yes', 'no', 'ask'),
+    update_host_keys_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('ask'),
+    ),
 
     use_keychain: $ => option(
         'UseKeychain',
@@ -803,7 +856,13 @@ module.exports = grammar({
         'VerifyHostKeyDNS',
         $.verify_host_key_dns_value
     ),
-    verify_host_key_dns_value: $ => choice('yes', 'no', 'ask'),
+    verify_host_key_dns_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('ask'),
+    ),
 
     visual_host_key: $ => option(
         'VisualHostKey',
@@ -824,7 +883,9 @@ function option(name, value) {
   return seq(
       keyword(name),
       optional('='),
-      value
+      optional('"'),
+      value,
+      optional('"'),
   )
 }
 

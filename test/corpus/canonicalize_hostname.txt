@@ -11,10 +11,118 @@ CanonicalizeHostname yes
     (canonicalize_hostname_value)))
 
 ==================
+perform hostname canonicalization w/ bool
+==================
+
+CanonicalizeHostname true
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+Perform Hostname Canonicalization
+==================
+
+CanonicalizeHostname Yes
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+Perform Hostname Canonicalization w/ Bool
+==================
+
+CanonicalizeHostname TrUe
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
 do not perform hostname canonicalization
 ==================
 
 CanonicalizeHostname no
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+Do Not Perform Hostname Canonicalization
+==================
+
+CanonicalizeHostname No
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+do not perform hostname canonicalization w/ bool
+==================
+
+CanonicalizeHostname false
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+Do Not Perform Hostname Canonicalization w/ Bool
+==================
+
+CanonicalizeHostname fAlSe
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+always perform hostname canonicalization
+==================
+
+CanonicalizeHostname always
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+Always Perform Hostname Canonicalization
+==================
+
+CanonicalizeHostname Always
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+disable ProxyJump host
+==================
+
+CanonicalizeHostname none
 
 ---
 

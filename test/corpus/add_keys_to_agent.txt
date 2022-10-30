@@ -1,5 +1,5 @@
 ==================
-add key to agent
+add key to agent = yes
 ==================
 
 AddKeysToAgent yes
@@ -11,10 +11,82 @@ AddKeysToAgent yes
     (add_keys_to_agent_value)))
 
 ==================
-do not add keys to agent
+add key to agent = Yes
+==================
+
+AddKeysToAgent Yes
+
+---
+
+(client_config
+  (add_keys_to_agent
+    (add_keys_to_agent_value)))
+
+==================
+add key to agent = true
+==================
+
+AddKeysToAgent true
+
+---
+
+(client_config
+  (add_keys_to_agent
+    (add_keys_to_agent_value)))
+
+==================
+add key to agent = True
+==================
+
+AddKeysToAgent True
+
+---
+
+(client_config
+  (add_keys_to_agent
+    (add_keys_to_agent_value)))
+
+==================
+add key to agent = no
 ==================
 
 AddKeysToAgent no
+
+---
+
+(client_config
+  (add_keys_to_agent
+    (add_keys_to_agent_value)))
+
+==================
+add key to agent = No
+==================
+
+AddKeysToAgent No
+
+---
+
+(client_config
+  (add_keys_to_agent
+    (add_keys_to_agent_value)))
+
+==================
+add key to agent = false
+==================
+
+AddKeysToAgent false
+
+---
+
+(client_config
+  (add_keys_to_agent
+    (add_keys_to_agent_value)))
+
+==================
+add key to agent = False
+==================
+
+AddKeysToAgent False
 
 ---
 

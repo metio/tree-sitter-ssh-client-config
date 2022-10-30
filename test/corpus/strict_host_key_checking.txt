@@ -11,10 +11,82 @@ StrictHostKeyChecking yes
     (strict_host_key_checking_value)))
 
 ==================
+strict host key checking = Yes
+==================
+
+StrictHostKeyChecking Yes
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = true
+==================
+
+StrictHostKeyChecking true
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = True
+==================
+
+StrictHostKeyChecking True
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
 strict host key checking = no
 ==================
 
 StrictHostKeyChecking no
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = No
+==================
+
+StrictHostKeyChecking No
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = false
+==================
+
+StrictHostKeyChecking false
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = False
+==================
+
+StrictHostKeyChecking False
 
 ---
 
@@ -35,10 +107,34 @@ StrictHostKeyChecking off
     (strict_host_key_checking_value)))
 
 ==================
+strict host key checking = Off
+==================
+
+StrictHostKeyChecking Off
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
 strict host key checking = accept-new
 ==================
 
 StrictHostKeyChecking accept-new
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
+strict host key checking = Accept-New
+==================
+
+StrictHostKeyChecking Accept-New
 
 ---
 

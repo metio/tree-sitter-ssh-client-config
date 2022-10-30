@@ -1,5 +1,5 @@
 ==================
-has host names
+hash known hosts = yes
 ==================
 
 HashKnownHosts yes
@@ -11,10 +11,82 @@ HashKnownHosts yes
     (hash_known_hosts_value)))
 
 ==================
-do not has host names
+hash known hosts = Yes
+==================
+
+HashKnownHosts Yes
+
+---
+
+(client_config
+  (hash_known_hosts
+    (hash_known_hosts_value)))
+
+==================
+hash known hosts = true
+==================
+
+HashKnownHosts true
+
+---
+
+(client_config
+  (hash_known_hosts
+    (hash_known_hosts_value)))
+
+==================
+hash known hosts = True
+==================
+
+HashKnownHosts True
+
+---
+
+(client_config
+  (hash_known_hosts
+    (hash_known_hosts_value)))
+
+==================
+hash known hosts = no
 ==================
 
 HashKnownHosts no
+
+---
+
+(client_config
+  (hash_known_hosts
+    (hash_known_hosts_value)))
+
+==================
+hash known hosts = No
+==================
+
+HashKnownHosts No
+
+---
+
+(client_config
+  (hash_known_hosts
+    (hash_known_hosts_value)))
+
+==================
+hash known hosts = false
+==================
+
+HashKnownHosts false
+
+---
+
+(client_config
+  (hash_known_hosts
+    (hash_known_hosts_value)))
+
+==================
+hash known hosts = False
+==================
+
+HashKnownHosts False
 
 ---
 

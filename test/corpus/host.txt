@@ -117,3 +117,39 @@ hOSt 192.168.0.?
 (client_config
   (host
     (host_value)))
+
+==================
+host using equals sign
+==================
+
+host=*
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host using quotes
+==================
+
+host "*"
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
+host using equals sign and quotes
+==================
+
+host="*"
+
+---
+
+(client_config
+  (host
+    (host_value)))

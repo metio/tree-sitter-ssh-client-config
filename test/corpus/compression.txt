@@ -1,5 +1,5 @@
 ==================
-enable compression
+compression = yes
 ==================
 
 Compression yes
@@ -11,10 +11,82 @@ Compression yes
     (compression_value)))
 
 ==================
-disable compression
+compression = Yes
+==================
+
+Compression Yes
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+compression = true
+==================
+
+Compression true
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+compression = True
+==================
+
+Compression True
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+compression = no
 ==================
 
 Compression no
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+compression = No
+==================
+
+Compression No
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+compression = false
+==================
+
+Compression false
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
+compression = False
+==================
+
+Compression False
 
 ---
 

@@ -1,5 +1,5 @@
 ==================
-remove existing socket file before creating a new one
+stream local bind unlink = yes
 ==================
 
 StreamLocalBindUnlink yes
@@ -11,10 +11,82 @@ StreamLocalBindUnlink yes
     (stream_local_bind_unlink_value)))
 
 ==================
-do not remove existing socket file before creating a new one
+stream local bind unlink = Yes
+==================
+
+StreamLocalBindUnlink Yes
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+stream local bind unlink = true
+==================
+
+StreamLocalBindUnlink true
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+stream local bind unlink = True
+==================
+
+StreamLocalBindUnlink True
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+stream local bind unlink = no
 ==================
 
 StreamLocalBindUnlink no
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+stream local bind unlink = No
+==================
+
+StreamLocalBindUnlink No
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+stream local bind unlink = false
+==================
+
+StreamLocalBindUnlink false
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
+stream local bind unlink = False
+==================
+
+StreamLocalBindUnlink False
 
 ---
 

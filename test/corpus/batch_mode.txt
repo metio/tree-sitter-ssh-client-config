@@ -1,5 +1,5 @@
 ==================
-enable batch mode
+batch mode = yes
 ==================
 
 BatchMode yes
@@ -11,10 +11,82 @@ BatchMode yes
     (batch_mode_value)))
 
 ==================
-disable batch mode
+batch mode = Yes
+==================
+
+BatchMode Yes
+
+---
+
+(client_config
+  (batch_mode
+    (batch_mode_value)))
+
+==================
+batch mode = true
+==================
+
+BatchMode true
+
+---
+
+(client_config
+  (batch_mode
+    (batch_mode_value)))
+
+==================
+batch mode = True
+==================
+
+BatchMode True
+
+---
+
+(client_config
+  (batch_mode
+    (batch_mode_value)))
+
+==================
+batch mode = no
 ==================
 
 BatchMode no
+
+---
+
+(client_config
+  (batch_mode
+    (batch_mode_value)))
+
+==================
+batch mode = No
+==================
+
+BatchMode No
+
+---
+
+(client_config
+  (batch_mode
+    (batch_mode_value)))
+
+==================
+batch mode = false
+==================
+
+BatchMode false
+
+---
+
+(client_config
+  (batch_mode
+    (batch_mode_value)))
+
+==================
+batch mode = False
+==================
+
+BatchMode False
 
 ---
 

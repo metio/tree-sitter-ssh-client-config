@@ -1,5 +1,5 @@
 ==================
-terminate connection when forward fails
+exit on forward failure = yes
 ==================
 
 ExitOnForwardFailure yes
@@ -11,10 +11,82 @@ ExitOnForwardFailure yes
     (exit_on_forward_failure_value)))
 
 ==================
-do not terminate connection when forward fails
+exit on forward failure = Yes
+==================
+
+ExitOnForwardFailure Yes
+
+---
+
+(client_config
+  (exit_on_forward_failure
+    (exit_on_forward_failure_value)))
+
+==================
+exit on forward failure = true
+==================
+
+ExitOnForwardFailure true
+
+---
+
+(client_config
+  (exit_on_forward_failure
+    (exit_on_forward_failure_value)))
+
+==================
+exit on forward failure = True
+==================
+
+ExitOnForwardFailure True
+
+---
+
+(client_config
+  (exit_on_forward_failure
+    (exit_on_forward_failure_value)))
+
+==================
+exit on forward failure = no
 ==================
 
 ExitOnForwardFailure no
+
+---
+
+(client_config
+  (exit_on_forward_failure
+    (exit_on_forward_failure_value)))
+
+==================
+exit on forward failure = No
+==================
+
+ExitOnForwardFailure No
+
+---
+
+(client_config
+  (exit_on_forward_failure
+    (exit_on_forward_failure_value)))
+
+==================
+exit on forward failure = false
+==================
+
+ExitOnForwardFailure false
+
+---
+
+(client_config
+  (exit_on_forward_failure
+    (exit_on_forward_failure_value)))
+
+==================
+exit on forward failure = False
+==================
+
+ExitOnForwardFailure False
 
 ---
 

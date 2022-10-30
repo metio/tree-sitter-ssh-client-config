@@ -1,5 +1,5 @@
 ==================
-pass a connected file descriptor back to ssh
+proxy use fdpass = yes
 ==================
 
 ProxyUseFdpass yes
@@ -11,10 +11,82 @@ ProxyUseFdpass yes
     (proxy_use_fdpass_value)))
 
 ==================
-do not pass a connected file descriptor back to ssh
+proxy use fdpass = Yes
+==================
+
+ProxyUseFdpass Yes
+
+---
+
+(client_config
+  (proxy_use_fdpass
+    (proxy_use_fdpass_value)))
+
+==================
+proxy use fdpass = true
+==================
+
+ProxyUseFdpass true
+
+---
+
+(client_config
+  (proxy_use_fdpass
+    (proxy_use_fdpass_value)))
+
+==================
+proxy use fdpass = True
+==================
+
+ProxyUseFdpass True
+
+---
+
+(client_config
+  (proxy_use_fdpass
+    (proxy_use_fdpass_value)))
+
+==================
+proxy use fdpass = no
 ==================
 
 ProxyUseFdpass no
+
+---
+
+(client_config
+  (proxy_use_fdpass
+    (proxy_use_fdpass_value)))
+
+==================
+proxy use fdpass = No
+==================
+
+ProxyUseFdpass No
+
+---
+
+(client_config
+  (proxy_use_fdpass
+    (proxy_use_fdpass_value)))
+
+==================
+proxy use fdpass = false
+==================
+
+ProxyUseFdpass false
+
+---
+
+(client_config
+  (proxy_use_fdpass
+    (proxy_use_fdpass_value)))
+
+==================
+proxy use fdpass = False
+==================
+
+ProxyUseFdpass False
 
 ---
 

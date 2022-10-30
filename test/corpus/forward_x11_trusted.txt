@@ -1,5 +1,5 @@
 ==================
-enable X11 trust
+forward X11 trust = yes
 ==================
 
 ForwardX11Trusted yes
@@ -11,10 +11,82 @@ ForwardX11Trusted yes
     (forward_x11_trusted_value)))
 
 ==================
-disable X11 trust
+forward X11 trust = Yes
+==================
+
+ForwardX11Trusted Yes
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+forward X11 trust = true
+==================
+
+ForwardX11Trusted true
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+forward X11 trust = True
+==================
+
+ForwardX11Trusted True
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+forward X11 trust = no
 ==================
 
 ForwardX11Trusted no
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+forward X11 trust = No
+==================
+
+ForwardX11Trusted No
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+forward X11 trust = false
+==================
+
+ForwardX11Trusted false
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
+forward X11 trust = False
+==================
+
+ForwardX11Trusted False
 
 ---
 

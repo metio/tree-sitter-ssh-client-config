@@ -23,6 +23,30 @@ ForwardAgent no
     (forward_agent_value)))
 
 ==================
+use path to agent socket
+==================
+
+ForwardAgent /path/to/socket
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
+use env variable
+==================
+
+ForwardAgent $some_env_variable
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
 use irregular casing
 ==================
 
@@ -72,15 +96,3 @@ Host example.com
     (host_value))
   (forward_agent
     (forward_agent_value)))
-
-==================
-detect invalid values
-==================
-
-fORwARDagent ja
-
----
-
-(client_config
-  (ERROR
-    (UNEXPECTED 'j')))

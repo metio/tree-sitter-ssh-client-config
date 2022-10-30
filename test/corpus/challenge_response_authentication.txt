@@ -1,5 +1,5 @@
 ==================
-enable challenge response authentication
+challenge response authentication = yes
 ==================
 
 ChallengeResponseAuthentication yes
@@ -11,10 +11,82 @@ ChallengeResponseAuthentication yes
     (challenge_response_authentication_value)))
 
 ==================
-disable challenge response authentication
+challenge response authentication = Yes
+==================
+
+ChallengeResponseAuthentication Yes
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+challenge response authentication = true
+==================
+
+ChallengeResponseAuthentication true
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+challenge response authentication = True
+==================
+
+ChallengeResponseAuthentication True
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+challenge response authentication = no
 ==================
 
 ChallengeResponseAuthentication no
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+challenge response authentication = No
+==================
+
+ChallengeResponseAuthentication No
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+challenge response authentication = false
+==================
+
+ChallengeResponseAuthentication false
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
+challenge response authentication = False
+==================
+
+ChallengeResponseAuthentication False
 
 ---
 

@@ -1,5 +1,5 @@
 ==================
-clear all port forwards
+clear all forwardings = yes
 ==================
 
 ClearAllForwardings yes
@@ -11,10 +11,82 @@ ClearAllForwardings yes
     (clear_all_forwardings_value)))
 
 ==================
-do not clear all port forwards
+clear all forwardings = Yes
+==================
+
+ClearAllForwardings Yes
+
+---
+
+(client_config
+  (clear_all_forwardings
+    (clear_all_forwardings_value)))
+
+==================
+clear all forwardings = true
+==================
+
+ClearAllForwardings true
+
+---
+
+(client_config
+  (clear_all_forwardings
+    (clear_all_forwardings_value)))
+
+==================
+clear all forwardings = True
+==================
+
+ClearAllForwardings True
+
+---
+
+(client_config
+  (clear_all_forwardings
+    (clear_all_forwardings_value)))
+
+==================
+clear all forwardings = no
 ==================
 
 ClearAllForwardings no
+
+---
+
+(client_config
+  (clear_all_forwardings
+    (clear_all_forwardings_value)))
+
+==================
+clear all forwardings = No
+==================
+
+ClearAllForwardings No
+
+---
+
+(client_config
+  (clear_all_forwardings
+    (clear_all_forwardings_value)))
+
+==================
+clear all forwardings = false
+==================
+
+ClearAllForwardings false
+
+---
+
+(client_config
+  (clear_all_forwardings
+    (clear_all_forwardings_value)))
+
+==================
+clear all forwardings = False
+==================
+
+ClearAllForwardings False
 
 ---
 
