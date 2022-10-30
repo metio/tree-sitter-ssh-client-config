@@ -2603,6 +2603,10 @@
     "fields": {}
   },
   {
+    "type": "\"",
+    "named": false
+  },
+  {
     "type": "1",
     "named": false
   },
@@ -3088,6 +3092,10 @@
   },
   {
     "type": "XAuthLocation",
+    "named": false
+  },
+  {
+    "type": "^",
     "named": false
   },
   {

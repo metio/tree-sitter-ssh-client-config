@@ -300,7 +300,7 @@ module.exports = grammar({
         'EscapeChar',
         $.escape_char_value
     ),
-    escape_char_value: $ => /.*/,
+    escape_char_value: $ => choice('none', seq('^', /./)),
 
     exit_on_forward_failure: $ => option(
         'ExitOnForwardFailure',
@@ -823,7 +823,9 @@ function option(name, value) {
   return seq(
       keyword(name),
       optional('='),
-      value
+      optional('"'),
+      value,
+      optional('"'),
   )
 }
 
