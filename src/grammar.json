@@ -2074,24 +2074,32 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "STRING",
-          "value": "yes"
+          "type": "PATTERN",
+          "value": "[yY][eE][sS]"
         },
         {
-          "type": "STRING",
-          "value": "no"
+          "type": "PATTERN",
+          "value": "[tT][rR][uU][eE]"
         },
         {
-          "type": "STRING",
-          "value": "ask"
+          "type": "PATTERN",
+          "value": "[nN][oO]"
         },
         {
-          "type": "STRING",
-          "value": "auto"
+          "type": "PATTERN",
+          "value": "[fF][aA][lL][sS][eE]"
         },
         {
-          "type": "STRING",
-          "value": "autoask"
+          "type": "PATTERN",
+          "value": "[aA][sS][kK]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[aA][uU][tT][oO]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[aA][uU][tT][oO][aA][sS][kK]"
         }
       ]
     },

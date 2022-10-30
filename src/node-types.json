@@ -3107,14 +3107,6 @@
     "named": false
   },
   {
-    "type": "auto",
-    "named": false
-  },
-  {
-    "type": "autoask",
-    "named": false
-  },
-  {
     "type": "canonicalize_max_dots_value",
     "named": false
   },

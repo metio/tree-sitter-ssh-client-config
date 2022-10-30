@@ -276,7 +276,15 @@ module.exports = grammar({
         'ControlMaster',
         $.control_master_value
     ),
-    control_master_value: $ => choice('yes', 'no', 'ask', 'auto', 'autoask'),
+    control_master_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('ask'),
+        ignoreCase('auto'),
+        ignoreCase('autoask'),
+    ),
 
     control_path: $ => option(
         'ControlPath',

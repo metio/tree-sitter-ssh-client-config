@@ -11,10 +11,82 @@ ControlMaster yes
     (control_master_value)))
 
 ==================
+Enable Control Master
+==================
+
+ControlMaster Yes
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+enable control master w/ bool
+==================
+
+ControlMaster true
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+Enable Control Master w/ Bool
+==================
+
+ControlMaster True
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
 disable control master
 ==================
 
 ControlMaster no
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+Disable Control Master
+==================
+
+ControlMaster No
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+disable control master w/ bool
+==================
+
+ControlMaster false
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+Disable Control Master w/ Bool
+==================
+
+ControlMaster False
 
 ---
 
@@ -35,6 +107,18 @@ ControlMaster ask
     (control_master_value)))
 
 ==================
+Ask User For Control Master
+==================
+
+ControlMaster Ask
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
 automatically use control master
 ==================
 
@@ -47,10 +131,34 @@ ControlMaster auto
     (control_master_value)))
 
 ==================
+Automatically Use Control Master
+==================
+
+ControlMaster Auto
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
 automatically ask for control master
 ==================
 
 ControlMaster autoask
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
+Automatically Ask For Control Master
+==================
+
+ControlMaster Autoask
 
 ---
 
