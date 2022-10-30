@@ -756,16 +756,16 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "STRING",
-          "value": "any"
+          "type": "PATTERN",
+          "value": "[aA][nN][yY]"
         },
         {
-          "type": "STRING",
-          "value": "inet"
+          "type": "PATTERN",
+          "value": "[iI][nN][eE][tT]"
         },
         {
-          "type": "STRING",
-          "value": "inet6"
+          "type": "PATTERN",
+          "value": "[iI][nN][eE][tT][66]"
         }
       ]
     },

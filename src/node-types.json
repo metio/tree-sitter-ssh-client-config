@@ -3099,10 +3099,6 @@
     "named": false
   },
   {
-    "type": "any",
-    "named": false
-  },
-  {
     "type": "ask",
     "named": false
   },
@@ -3132,14 +3128,6 @@
   },
   {
     "type": "forward_x11_timeout_value",
-    "named": false
-  },
-  {
-    "type": "inet",
-    "named": false
-  },
-  {
-    "type": "inet6",
     "named": false
   },
   {

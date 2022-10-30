@@ -150,7 +150,11 @@ module.exports = grammar({
         'AddressFamily',
         $.address_family_value
     ),
-    address_family_value: $ => choice('any', 'inet', 'inet6'),
+    address_family_value: $ => choice(
+        ignoreCase('any'),
+        ignoreCase('inet'),
+        ignoreCase('inet6'),
+    ),
 
     batch_mode: $ => option(
         'BatchMode',
