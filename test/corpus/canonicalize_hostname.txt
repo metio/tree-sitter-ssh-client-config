@@ -23,6 +23,30 @@ CanonicalizeHostname no
     (canonicalize_hostname_value)))
 
 ==================
+always perform hostname canonicalization
+==================
+
+CanonicalizeHostname always
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+disable ProxyJump host
+==================
+
+CanonicalizeHostname none
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
 use irregular casing
 ==================
 

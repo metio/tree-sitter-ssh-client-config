@@ -926,13 +926,25 @@
       ]
     },
     "canonicalize_hostname_value": {
-      "type": "ALIAS",
-      "content": {
-        "type": "SYMBOL",
-        "name": "boolean"
-      },
-      "named": false,
-      "value": "canonicalize_hostname_value"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "yes"
+        },
+        {
+          "type": "STRING",
+          "value": "no"
+        },
+        {
+          "type": "STRING",
+          "value": "always"
+        },
+        {
+          "type": "STRING",
+          "value": "none"
+        }
+      ]
     },
     "canonicalize_max_dots": {
       "type": "SEQ",

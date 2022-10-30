@@ -176,7 +176,7 @@
   },
   {
     "type": "canonicalize_hostname_value",
-    "named": false,
+    "named": true,
     "fields": {}
   },
   {
@@ -3092,6 +3092,10 @@
   },
   {
     "type": "accept-new",
+    "named": false
+  },
+  {
+    "type": "always",
     "named": false
   },
   {

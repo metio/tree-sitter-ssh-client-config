@@ -26,7 +26,7 @@
 (canonicalize_fallback_local_value) @constant.builtin.boolean
 
 (canonicalize_hostname) @keyword
-(canonicalize_hostname_value) @constant.builtin.boolean
+(canonicalize_hostname_value) @constant.builtin.string
 
 (canonicalize_max_dots) @keyword
 (canonicalize_max_dots_value) @constant.numeric.integer
