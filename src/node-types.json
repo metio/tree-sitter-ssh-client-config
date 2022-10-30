@@ -3095,10 +3095,6 @@
     "named": false
   },
   {
-    "type": "accept-new",
-    "named": false
-  },
-  {
     "type": "ask",
     "named": false
   },
@@ -3148,10 +3144,6 @@
   },
   {
     "type": "number_of_password_prompts_value",
-    "named": false
-  },
-  {
-    "type": "off",
     "named": false
   },
   {

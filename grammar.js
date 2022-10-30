@@ -776,8 +776,15 @@ module.exports = grammar({
         'StrictHostKeyChecking',
         $.strict_host_key_checking_value
     ),
-    strict_host_key_checking_value: $ => choice('yes', 'no', 'off', 'ask',
-        'accept-new'),
+    strict_host_key_checking_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('off'),
+        ignoreCase('ask'),
+        ignoreCase('accept-new'),
+    ),
 
     syslog_facility: $ => option(
         'SyslogFacility',

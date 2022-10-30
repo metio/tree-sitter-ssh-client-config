@@ -7233,24 +7233,32 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "STRING",
-          "value": "yes"
+          "type": "PATTERN",
+          "value": "[yY][eE][sS]"
         },
         {
-          "type": "STRING",
-          "value": "no"
+          "type": "PATTERN",
+          "value": "[tT][rR][uU][eE]"
         },
         {
-          "type": "STRING",
-          "value": "off"
+          "type": "PATTERN",
+          "value": "[nN][oO]"
         },
         {
-          "type": "STRING",
-          "value": "ask"
+          "type": "PATTERN",
+          "value": "[fF][aA][lL][sS][eE]"
         },
         {
-          "type": "STRING",
-          "value": "accept-new"
+          "type": "PATTERN",
+          "value": "[oO][fF][fF]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[aA][sS][kK]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[aA][cC][cC][eE][pP][tT][--][nN][eE][wW]"
         }
       ]
     },
