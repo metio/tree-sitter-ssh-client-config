@@ -326,7 +326,7 @@ module.exports = grammar({
         'ForwardAgent',
         $.forward_agent_value
     ),
-    forward_agent_value: $ => alias($.boolean, "forward_agent_value"),
+    forward_agent_value: $ => /.*/,
 
     forward_x11: $ => option(
         'ForwardX11',

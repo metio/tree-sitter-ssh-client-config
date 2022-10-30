@@ -94,7 +94,7 @@
 (fork_after_authentication_value) @constant.builtin.boolean
 
 (forward_agent) @keyword
-(forward_agent_value) @constant.builtin.boolean
+(forward_agent_value) @string
 
 (forward_x11) @keyword
 (forward_x11_value) @constant.builtin.boolean

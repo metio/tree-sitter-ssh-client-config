@@ -2725,13 +2725,8 @@
       ]
     },
     "forward_agent_value": {
-      "type": "ALIAS",
-      "content": {
-        "type": "SYMBOL",
-        "name": "boolean"
-      },
-      "named": false,
-      "value": "forward_agent_value"
+      "type": "PATTERN",
+      "value": ".*"
     },
     "forward_x11": {
       "type": "SEQ",
