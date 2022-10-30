@@ -653,8 +653,14 @@ module.exports = grammar({
         'PubkeyAuthentication',
         $.pubkey_authentication_value
     ),
-    pubkey_authentication_value: $ => alias($.boolean,
-        "pubkey_authentication_value"),
+    pubkey_authentication_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('unbound'),
+        ignoreCase('host-bound'),
+    ),
 
     rekey_limit: $ => option(
         'RekeyLimit',

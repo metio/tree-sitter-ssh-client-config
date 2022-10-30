@@ -6164,13 +6164,33 @@
       ]
     },
     "pubkey_authentication_value": {
-      "type": "ALIAS",
-      "content": {
-        "type": "SYMBOL",
-        "name": "boolean"
-      },
-      "named": false,
-      "value": "pubkey_authentication_value"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "[yY][eE][sS]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[tT][rR][uU][eE]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[nN][oO]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[fF][aA][lL][sS][eE]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[uU][nN][bB][oO][uU][nN][dD]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[hH][oO][sS][tT][--][bB][oO][uU][nN][dD]"
+        }
+      ]
     },
     "rekey_limit": {
       "type": "SEQ",

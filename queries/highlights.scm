@@ -241,7 +241,7 @@
 (pubkey_accepted_key_types_value) @constant.builtin.string
 
 (pubkey_authentication) @keyword
-(pubkey_authentication_value) @constant.builtin.boolean
+(pubkey_authentication_value) @constant.builtin.string
 
 (rekey_limit) @keyword
 (rekey_limit_value) @string
