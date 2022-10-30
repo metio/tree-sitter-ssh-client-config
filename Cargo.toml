@@ -7,6 +7,7 @@ categories = ["parsing", "text-editors"]
 repository = "https://github.com/metio/tree-sitter-ssh-client-config"
 edition = "2018"
 license = "CC0-1.0"
+readme = "README.cargo.md"
 
 build = "bindings/rust/build.rs"
 include = [
