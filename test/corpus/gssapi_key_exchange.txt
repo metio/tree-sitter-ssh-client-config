@@ -1,5 +1,5 @@
 ==================
-use key exchange based on GSSAPI
+use key exchange based on GSSAPI = yes
 ==================
 
 GSSAPIKeyExchange yes
@@ -11,10 +11,82 @@ GSSAPIKeyExchange yes
     (gssapi_key_exchange_value)))
 
 ==================
-do not use key exchange based on GSSAPI
+use key exchange based on GSSAPI = Yes
+==================
+
+GSSAPIKeyExchange Yes
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+use key exchange based on GSSAPI = true
+==================
+
+GSSAPIKeyExchange true
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+use key exchange based on GSSAPI = True
+==================
+
+GSSAPIKeyExchange True
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+use key exchange based on GSSAPI = no
 ==================
 
 GSSAPIKeyExchange no
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+use key exchange based on GSSAPI = No
+==================
+
+GSSAPIKeyExchange No
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+use key exchange based on GSSAPI = false
+==================
+
+GSSAPIKeyExchange false
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
+use key exchange based on GSSAPI = False
+==================
+
+GSSAPIKeyExchange False
 
 ---
 

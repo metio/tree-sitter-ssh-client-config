@@ -1,5 +1,5 @@
 ==================
-has host names
+host based authentication = yes
 ==================
 
 HostbasedAuthentication yes
@@ -11,10 +11,82 @@ HostbasedAuthentication yes
     (hostbased_authentication_value)))
 
 ==================
-do not has host names
+host based authentication = Yes
+==================
+
+HostbasedAuthentication Yes
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+host based authentication = true
+==================
+
+HostbasedAuthentication true
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+host based authentication = True
+==================
+
+HostbasedAuthentication True
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+host based authentication = no
 ==================
 
 HostbasedAuthentication no
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+host based authentication = No
+==================
+
+HostbasedAuthentication No
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+host based authentication = false
+==================
+
+HostbasedAuthentication false
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
+host based authentication = False
+==================
+
+HostbasedAuthentication False
 
 ---
 

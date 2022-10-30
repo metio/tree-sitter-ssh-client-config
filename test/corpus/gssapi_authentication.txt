@@ -1,5 +1,5 @@
 ==================
-allow GSSAPI authentication
+GSSAPI authentication = yes
 ==================
 
 GSSAPIAuthentication yes
@@ -11,10 +11,82 @@ GSSAPIAuthentication yes
     (gssapi_authentication_value)))
 
 ==================
-disallow GSSAPI authentication
+GSSAPI authentication = Yes
+==================
+
+GSSAPIAuthentication Yes
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+GSSAPI authentication = true
+==================
+
+GSSAPIAuthentication true
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+GSSAPI authentication = True
+==================
+
+GSSAPIAuthentication True
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+GSSAPI authentication = no
 ==================
 
 GSSAPIAuthentication no
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+GSSAPI authentication = No
+==================
+
+GSSAPIAuthentication No
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+GSSAPI authentication = false
+==================
+
+GSSAPIAuthentication false
+
+---
+
+(client_config
+  (gssapi_authentication
+    (gssapi_authentication_value)))
+
+==================
+GSSAPI authentication = False
+==================
+
+GSSAPIAuthentication False
 
 ---
 

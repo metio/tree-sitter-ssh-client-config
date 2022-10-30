@@ -124,7 +124,12 @@ module.exports = grammar({
 
     comment: $ => token(prec(-10, /#.*/)),
     number: $ => /[1234567890]+/,
-    boolean: $ => choice('yes', 'no'),
+    boolean: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+    ),
     pattern: $ => /.*/,
     time_format: $ => /[1234567890]+[sSmMhHdDwW]?/,
 
@@ -821,7 +826,13 @@ module.exports = grammar({
         'UpdateHostKeys',
         $.update_host_keys_value
     ),
-    update_host_keys_value: $ => choice('yes', 'no', 'ask'),
+    update_host_keys_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('ask'),
+    ),
 
     use_keychain: $ => option(
         'UseKeychain',
@@ -845,7 +856,13 @@ module.exports = grammar({
         'VerifyHostKeyDNS',
         $.verify_host_key_dns_value
     ),
-    verify_host_key_dns_value: $ => choice('yes', 'no', 'ask'),
+    verify_host_key_dns_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('ask'),
+    ),
 
     visual_host_key: $ => option(
         'VisualHostKey',

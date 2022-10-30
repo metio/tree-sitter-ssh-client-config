@@ -1,5 +1,5 @@
 ==================
-print ASCII art
+visual host key = yes
 ==================
 
 VisualHostKey yes
@@ -11,10 +11,82 @@ VisualHostKey yes
     (visual_host_key_value)))
 
 ==================
-do not print ASCII art
+visual host key = Yes
+==================
+
+VisualHostKey Yes
+
+---
+
+(client_config
+  (visual_host_key
+    (visual_host_key_value)))
+
+==================
+visual host key = true
+==================
+
+VisualHostKey true
+
+---
+
+(client_config
+  (visual_host_key
+    (visual_host_key_value)))
+
+==================
+visual host key = True
+==================
+
+VisualHostKey True
+
+---
+
+(client_config
+  (visual_host_key
+    (visual_host_key_value)))
+
+==================
+visual host key = no
 ==================
 
 VisualHostKey no
+
+---
+
+(client_config
+  (visual_host_key
+    (visual_host_key_value)))
+
+==================
+visual host key = No
+==================
+
+VisualHostKey No
+
+---
+
+(client_config
+  (visual_host_key
+    (visual_host_key_value)))
+
+==================
+visual host key = false
+==================
+
+VisualHostKey false
+
+---
+
+(client_config
+  (visual_host_key
+    (visual_host_key_value)))
+
+==================
+visual host key = False
+==================
+
+VisualHostKey False
 
 ---
 

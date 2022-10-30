@@ -1,5 +1,5 @@
 ==================
-enable forking
+fork after authentication = yes
 ==================
 
 ForkAfterAuthentication yes
@@ -11,10 +11,82 @@ ForkAfterAuthentication yes
     (fork_after_authentication_value)))
 
 ==================
-disable forking
+fork after authentication = Yes
+==================
+
+ForkAfterAuthentication Yes
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+fork after authentication = true
+==================
+
+ForkAfterAuthentication true
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+fork after authentication = True
+==================
+
+ForkAfterAuthentication True
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+fork after authentication = no
 ==================
 
 ForkAfterAuthentication no
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+fork after authentication = No
+==================
+
+ForkAfterAuthentication No
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+fork after authentication = false
+==================
+
+ForkAfterAuthentication false
+
+---
+
+(client_config
+  (fork_after_authentication
+    (fork_after_authentication_value)))
+
+==================
+fork after authentication = False
+==================
+
+ForkAfterAuthentication False
 
 ---
 

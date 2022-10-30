@@ -1,5 +1,5 @@
 ==================
-force rekeying of the SSH connection
+force rekeying of the SSH connection = yes
 ==================
 
 GSSAPIRenewalForcesRekey yes
@@ -11,10 +11,82 @@ GSSAPIRenewalForcesRekey yes
     (gssapi_renewal_forces_rekey_value)))
 
 ==================
-do not force rekeying of the SSH connection
+force rekeying of the SSH connection = Yes
+==================
+
+GSSAPIRenewalForcesRekey Yes
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+force rekeying of the SSH connection = true
+==================
+
+GSSAPIRenewalForcesRekey true
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+force rekeying of the SSH connection = True
+==================
+
+GSSAPIRenewalForcesRekey True
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+force rekeying of the SSH connection = no
 ==================
 
 GSSAPIRenewalForcesRekey no
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+force rekeying of the SSH connection = No
+==================
+
+GSSAPIRenewalForcesRekey No
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+force rekeying of the SSH connection = false
+==================
+
+GSSAPIRenewalForcesRekey false
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
+force rekeying of the SSH connection = False
+==================
+
+GSSAPIRenewalForcesRekey False
 
 ---
 

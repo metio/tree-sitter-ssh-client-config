@@ -11,6 +11,42 @@ VerifyHostKeyDNS yes
     (verify_host_key_dns_value)))
 
 ==================
+verify host key DNS = Yes
+==================
+
+VerifyHostKeyDNS Yes
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+verify host key DNS = true
+==================
+
+VerifyHostKeyDNS true
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+verify host key DNS = True
+==================
+
+VerifyHostKeyDNS True
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
 verify host key DNS = no
 ==================
 
@@ -23,10 +59,58 @@ VerifyHostKeyDNS no
     (verify_host_key_dns_value)))
 
 ==================
+verify host key DNS = No
+==================
+
+VerifyHostKeyDNS No
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+verify host key DNS = false
+==================
+
+VerifyHostKeyDNS false
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+verify host key DNS = False
+==================
+
+VerifyHostKeyDNS False
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
 verify host key DNS = ask
 ==================
 
 VerifyHostKeyDNS ask
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
+verify host key DNS = Ask
+==================
+
+VerifyHostKeyDNS Ask
 
 ---
 

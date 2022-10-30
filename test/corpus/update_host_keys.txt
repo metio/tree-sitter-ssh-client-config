@@ -11,6 +11,42 @@ UpdateHostKeys yes
     (update_host_keys_value)))
 
 ==================
+update host keys = Yes
+==================
+
+UpdateHostKeys Yes
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+update host keys = true
+==================
+
+UpdateHostKeys true
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+update host keys = True
+==================
+
+UpdateHostKeys True
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
 update host keys = no
 ==================
 
@@ -23,10 +59,58 @@ UpdateHostKeys no
     (update_host_keys_value)))
 
 ==================
+update host keys = No
+==================
+
+UpdateHostKeys No
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+update host keys = false
+==================
+
+UpdateHostKeys false
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+update host keys = False
+==================
+
+UpdateHostKeys False
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
 update host keys = ask
 ==================
 
 UpdateHostKeys ask
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
+update host keys = Ask
+==================
+
+UpdateHostKeys Ask
 
 ---
 

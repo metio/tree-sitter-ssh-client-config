@@ -1,5 +1,5 @@
 ==================
-use keyboard interactive authentication
+keyboard interactive authentication = yes
 ==================
 
 KbdInteractiveAuthentication yes
@@ -11,10 +11,82 @@ KbdInteractiveAuthentication yes
     (kbd_interactive_authentication_value)))
 
 ==================
-do not use keyboard interactive authentication
+keyboard interactive authentication = Yes
+==================
+
+KbdInteractiveAuthentication Yes
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+keyboard interactive authentication = true
+==================
+
+KbdInteractiveAuthentication true
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+keyboard interactive authentication = True
+==================
+
+KbdInteractiveAuthentication True
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+keyboard interactive authentication = no
 ==================
 
 KbdInteractiveAuthentication no
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+keyboard interactive authentication = No
+==================
+
+KbdInteractiveAuthentication No
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+keyboard interactive authentication = false
+==================
+
+KbdInteractiveAuthentication false
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
+keyboard interactive authentication = False
+==================
+
+KbdInteractiveAuthentication False
 
 ---
 

@@ -1,5 +1,5 @@
 ==================
-enable X11 forward
+forward X11 = yes
 ==================
 
 ForwardX11 yes
@@ -11,10 +11,82 @@ ForwardX11 yes
     (forward_x11_value)))
 
 ==================
-disable X11 forward
+forward X11 = Yes
+==================
+
+ForwardX11 Yes
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+forward X11 = true
+==================
+
+ForwardX11 true
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+forward X11 = True
+==================
+
+ForwardX11 True
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+forward X11 = no
 ==================
 
 ForwardX11 no
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+forward X11 = No
+==================
+
+ForwardX11 No
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+forward X11 = false
+==================
+
+ForwardX11 false
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
+forward X11 = False
+==================
+
+ForwardX11 False
 
 ---
 

@@ -1,5 +1,5 @@
 ==================
-use keychain
+use keychain = yes
 ==================
 
 UseKeychain yes
@@ -11,10 +11,82 @@ UseKeychain yes
     (use_keychain_value)))
 
 ==================
-do not use keychain
+use keychain = Yes
+==================
+
+UseKeychain Yes
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+use keychain = true
+==================
+
+UseKeychain true
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+use keychain = True
+==================
+
+UseKeychain True
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+use keychain = no
 ==================
 
 UseKeychain no
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+use keychain = No
+==================
+
+UseKeychain No
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+use keychain = false
+==================
+
+UseKeychain false
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
+use keychain = False
+==================
+
+UseKeychain False
 
 ---
 

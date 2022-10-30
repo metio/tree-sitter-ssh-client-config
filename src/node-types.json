@@ -3095,10 +3095,6 @@
     "named": false
   },
   {
-    "type": "ask",
-    "named": false
-  },
-  {
     "type": "canonicalize_max_dots_value",
     "named": false
   },

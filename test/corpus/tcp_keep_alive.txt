@@ -1,5 +1,5 @@
 ==================
-send keepalive messages
+keep alive = yes
 ==================
 
 TCPKeepAlive yes
@@ -11,10 +11,82 @@ TCPKeepAlive yes
     (tcp_keep_alive_value)))
 
 ==================
-do not send keepalive messages
+keep alive = Yes
+==================
+
+TCPKeepAlive Yes
+
+---
+
+(client_config
+  (tcp_keep_alive
+    (tcp_keep_alive_value)))
+
+==================
+keep alive = true
+==================
+
+TCPKeepAlive true
+
+---
+
+(client_config
+  (tcp_keep_alive
+    (tcp_keep_alive_value)))
+
+==================
+keep alive = True
+==================
+
+TCPKeepAlive True
+
+---
+
+(client_config
+  (tcp_keep_alive
+    (tcp_keep_alive_value)))
+
+==================
+keep alive = no
 ==================
 
 TCPKeepAlive no
+
+---
+
+(client_config
+  (tcp_keep_alive
+    (tcp_keep_alive_value)))
+
+==================
+keep alive = No
+==================
+
+TCPKeepAlive No
+
+---
+
+(client_config
+  (tcp_keep_alive
+    (tcp_keep_alive_value)))
+
+==================
+keep alive = false
+==================
+
+TCPKeepAlive false
+
+---
+
+(client_config
+  (tcp_keep_alive
+    (tcp_keep_alive_value)))
+
+==================
+keep alive = False
+==================
+
+TCPKeepAlive False
 
 ---
 

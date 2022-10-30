@@ -1,5 +1,5 @@
 ==================
-allow local command execution
+permit local command = yes
 ==================
 
 PermitLocalCommand yes
@@ -11,10 +11,82 @@ PermitLocalCommand yes
     (permit_local_command_value)))
 
 ==================
-do not allow local command execution
+permit local command = Yes
+==================
+
+PermitLocalCommand Yes
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+permit local command = true
+==================
+
+PermitLocalCommand true
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+permit local command = True
+==================
+
+PermitLocalCommand True
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+permit local command = no
 ==================
 
 PermitLocalCommand no
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+permit local command = No
+==================
+
+PermitLocalCommand No
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+permit local command = false
+==================
+
+PermitLocalCommand false
+
+---
+
+(client_config
+  (permit_local_command
+    (permit_local_command_value)))
+
+==================
+permit local command = False
+==================
+
+PermitLocalCommand False
 
 ---
 
