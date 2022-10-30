@@ -684,7 +684,14 @@ module.exports = grammar({
         'RequestTTY',
         $.request_tty_value
     ),
-    request_tty_value: $ => choice('yes', 'no', 'auto', 'force'),
+    request_tty_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('true'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('auto'),
+        ignoreCase('force'),
+    ),
 
     revoked_host_keys: $ => option(
         'RevokedHostKeys',

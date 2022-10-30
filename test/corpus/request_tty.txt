@@ -11,10 +11,58 @@ RequestTTY yes
     (request_tty_value)))
 
 ==================
+request a pseudo-tty for the session w/ bool
+==================
+
+RequestTTY true
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+Request A Pseudo-TTY For The Session w/ Bool
+==================
+
+RequestTTY TrUe
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
 do not request a pseudo-tty for the session
 ==================
 
 RequestTTY no
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+do not request a pseudo-tty for the session w/ bool
+==================
+
+RequestTTY false
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+Do Not Request A Pseudo-TTY For The Session w/ Bool
+==================
+
+RequestTTY fAlSe
 
 ---
 
@@ -35,10 +83,34 @@ RequestTTY auto
     (request_tty_value)))
 
 ==================
+Auto Request A Pseudo-TTY For The Session
+==================
+
+RequestTTY aUtO
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
 force request a pseudo-tty for the session
 ==================
 
 RequestTTY force
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
+Force Request A Pseudo-TTY For The Session
+==================
+
+RequestTTY fOrCe
 
 ---
 

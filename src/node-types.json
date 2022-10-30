@@ -3139,10 +3139,6 @@
     "named": false
   },
   {
-    "type": "force",
-    "named": false
-  },
-  {
     "type": "forward_x11_timeout_value",
     "named": false
   },
