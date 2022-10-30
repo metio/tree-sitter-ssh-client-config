@@ -300,7 +300,7 @@ module.exports = grammar({
         'EscapeChar',
         $.escape_char_value
     ),
-    escape_char_value: $ => choice('none', seq('^', /./)),
+    escape_char_value: $ => choice('none', /(\^\w|[^\^])/),
 
     exit_on_forward_failure: $ => option(
         'ExitOnForwardFailure',

@@ -2,7 +2,7 @@
 use default escape char
 ==================
 
-EscapeChar ^~
+EscapeChar ~
 
 ---
 
@@ -14,7 +14,19 @@ EscapeChar ^~
 use custom escape char
 ==================
 
-EscapeChar ^|
+EscapeChar `
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
+use custom escape char with ^
+==================
+
+EscapeChar ^A
 
 ---
 
@@ -84,3 +96,17 @@ Host example.com
     (host_value))
   (escape_char
     (escape_char_value)))
+
+==================
+detect invalid values
+==================
+
+EscapeChar ^||
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value))
+  (ERROR
+    (UNEXPECTED '^')))

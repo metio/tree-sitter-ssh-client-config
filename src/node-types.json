@@ -3095,10 +3095,6 @@
     "named": false
   },
   {
-    "type": "^",
-    "named": false
-  },
-  {
     "type": "accept-new",
     "named": false
   },
