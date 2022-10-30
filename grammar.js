@@ -187,7 +187,14 @@ module.exports = grammar({
         'CanonicalizeHostname',
         $.canonicalize_hostname_value
     ),
-    canonicalize_hostname_value: $ => choice('yes', 'no', 'always', 'none'),
+    canonicalize_hostname_value: $ => choice(
+        ignoreCase('true'),
+        ignoreCase('yes'),
+        ignoreCase('no'),
+        ignoreCase('false'),
+        ignoreCase('always'),
+        'none'
+    ),
 
     canonicalize_max_dots: $ => option(
         'CanonicalizeMaxDots',

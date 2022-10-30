@@ -3099,10 +3099,6 @@
     "named": false
   },
   {
-    "type": "always",
-    "named": false
-  },
-  {
     "type": "any",
     "named": false
   },

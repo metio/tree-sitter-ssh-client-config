@@ -1169,16 +1169,24 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "STRING",
-          "value": "yes"
+          "type": "PATTERN",
+          "value": "[tT][rR][uU][eE]"
         },
         {
-          "type": "STRING",
-          "value": "no"
+          "type": "PATTERN",
+          "value": "[yY][eE][sS]"
         },
         {
-          "type": "STRING",
-          "value": "always"
+          "type": "PATTERN",
+          "value": "[nN][oO]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[fF][aA][lL][sS][eE]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[aA][lL][wW][aA][yY][sS]"
         },
         {
           "type": "STRING",
