@@ -722,7 +722,11 @@ module.exports = grammar({
         'SessionType',
         $.session_type_value
     ),
-    session_type_value: $ => choice('none', 'subsystem', 'default'),
+    session_type_value: $ => choice(
+        ignoreCase('none'),
+        ignoreCase('subsystem'),
+        ignoreCase('default')
+    ),
 
     set_env: $ => option(
         'SetEnv',

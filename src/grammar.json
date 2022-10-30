@@ -6869,16 +6869,16 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "STRING",
-          "value": "none"
+          "type": "PATTERN",
+          "value": "[nN][oO][nN][eE]"
         },
         {
-          "type": "STRING",
-          "value": "subsystem"
+          "type": "PATTERN",
+          "value": "[sS][uU][bB][sS][yY][sS][tT][eE][mM]"
         },
         {
-          "type": "STRING",
-          "value": "default"
+          "type": "PATTERN",
+          "value": "[dD][eE][fF][aA][uU][lL][tT]"
         }
       ]
     },
