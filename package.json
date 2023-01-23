@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-ssh-client-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "tree-sitter grammar for SSH client configuration files",
   "keywords": [
     "parser",
