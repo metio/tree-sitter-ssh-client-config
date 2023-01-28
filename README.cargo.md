@@ -10,7 +10,7 @@ This grammar is available at [crates.io](https://crates.io/crates/tree-sitter-ss
 use tree_sitter::{Parser, Language};
 
 let mut parser = Parser::new();
-parser.set_language(tree_sitter_sshclientconfig::language()).expect("Error loading SSH client config grammar");
+parser.set_language(tree_sitter_ssh_client_config::language()).expect("Error loading SSH client config grammar");
 let config = "\
 Host example.com
   User your-name
