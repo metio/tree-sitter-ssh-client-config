@@ -83,6 +83,18 @@ MACs = hmac-sha2-512-etm@openssh.com
     (macs_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+MACs = "hmac-sha2-512-etm@openssh.com"
+
+---
+
+(client_config
+  (macs
+    (macs_value)))
+
+==================
 can be specified after host
 ==================
 

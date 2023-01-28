@@ -47,6 +47,18 @@ IdentityFILe = ~/.ssh/id_rsa
     (identity_file_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+IdentityFILe = "~/.ssh/id_rsa"
+
+---
+
+(client_config
+  (identity_file
+    (identity_file_value)))
+
+==================
 can be specified after host
 ==================
 

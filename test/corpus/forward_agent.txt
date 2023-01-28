@@ -83,6 +83,18 @@ fORwARDagent = yes
     (forward_agent_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+fORwARDagent = "yes"
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
 can be specified after host
 ==================
 

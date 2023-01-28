@@ -47,6 +47,18 @@ userknOWNhostsFile = ~/.ssh/known_hosts
     (user_known_hosts_file_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+userknOWNhostsFile = "~/.ssh/known_hosts"
+
+---
+
+(client_config
+  (user_known_hosts_file
+    (user_known_hosts_file_value)))
+
+==================
 can be specified after host
 ==================
 

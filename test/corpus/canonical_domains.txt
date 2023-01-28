@@ -71,6 +71,18 @@ CanonicaldOMAins = hoß.de
     (canonical_domains_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+CanonicaldOMAins = "hoß.de"
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
 can be specified after host
 ==================
 

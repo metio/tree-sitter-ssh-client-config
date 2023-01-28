@@ -47,6 +47,18 @@ Cipher = some-algo
     (cipher_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+Cipher = "some-algo"
+
+---
+
+(client_config
+  (cipher
+    (cipher_value)))
+
+==================
 can be specified after host
 ==================
 

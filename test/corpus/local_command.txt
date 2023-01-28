@@ -47,6 +47,18 @@ LocalCommand = some-command arg1 arg2
     (local_command_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+LocalCommand = "some-command arg1 arg2"
+
+---
+
+(client_config
+  (local_command
+    (local_command_value)))
+
+==================
 can be specified after host
 ==================
 

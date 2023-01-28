@@ -47,6 +47,18 @@ iNClude = some-other.config
     (include_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+iNClude = "some-other.config"
+
+---
+
+(client_config
+  (include
+    (include_value)))
+
+==================
 can be specified after host
 ==================
 

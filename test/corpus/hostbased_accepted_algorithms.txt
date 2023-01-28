@@ -83,6 +83,18 @@ HostbasedAcceptedAlgorithms = ssh-ed25519
     (hostbased_accepted_algorithms_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+HostbasedAcceptedAlgorithms = "ssh-ed25519"
+
+---
+
+(client_config
+  (hostbased_accepted_algorithms
+    (hostbased_accepted_algorithms_value)))
+
+==================
 can be specified after host
 ==================
 

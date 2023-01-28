@@ -47,6 +47,18 @@ User = some-user
     (user_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+User = "some-user"
+
+---
+
+(client_config
+  (user
+    (user_value)))
+
+==================
 can be specified after host
 ==================
 

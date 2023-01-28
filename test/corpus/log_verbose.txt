@@ -47,6 +47,18 @@ LogVerbose = kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*
     (log_verbose_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+LogVerbose = "kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*"
+
+---
+
+(client_config
+  (log_verbose
+    (log_verbose_value)))
+
+==================
 can be specified after host
 ==================
 

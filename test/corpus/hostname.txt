@@ -59,6 +59,18 @@ Hostname = some-host
     (hostname_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+Hostname = "some-host"
+
+---
+
+(client_config
+  (hostname
+    (hostname_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -59,6 +59,18 @@ PKCS11Provider = some-provider
     (pkcs11_provider_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+PKCS11Provider = "some-provider"
+
+---
+
+(client_config
+  (pkcs11_provider
+    (pkcs11_provider_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -83,6 +83,18 @@ HostKeyAlgorithms = ssh-ed25519
     (host_key_algorithms_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+HostKeyAlgorithms = "ssh-ed25519"
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
 can be specified after host
 ==================
 

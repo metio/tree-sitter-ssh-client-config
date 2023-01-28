@@ -83,6 +83,18 @@ ControlPath = ~/.ssh/control
     (control_path_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+ControlPath = "~/.ssh/control"
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
 can be specified after host
 ==================
 

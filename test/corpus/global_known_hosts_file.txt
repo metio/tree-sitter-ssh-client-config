@@ -71,6 +71,18 @@ GlobalKnownHostsFile = ~/.ssh/hosts
     (global_known_hosts_file_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+GlobalKnownHostsFile = ~/.ssh/hosts
+
+---
+
+(client_config
+  (global_known_hosts_file
+    (global_known_hosts_file_value)))
+
+==================
 can be specified after host
 ==================
 

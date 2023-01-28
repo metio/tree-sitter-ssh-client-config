@@ -83,6 +83,18 @@ RekeylIMIt = 4G 5d
     (rekey_limit_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+RekeylIMIt = "4G 5d"
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
 can be specified after host
 ==================
 

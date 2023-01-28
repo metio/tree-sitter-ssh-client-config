@@ -59,6 +59,18 @@ PreferredAuthentications = gssapi-with-mic,hostbased,publickey
     (preferred_authentications_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+PreferredAuthentications = "gssapi-with-mic,hostbased,publickey"
+
+---
+
+(client_config
+  (preferred_authentications
+    (preferred_authentications_value)))
+
+==================
 can be specified after host
 ==================
 

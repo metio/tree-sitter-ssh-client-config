@@ -47,6 +47,18 @@ xauthloCATion = /usr/bin/xauth
     (xauth_location_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+xauthloCATion = "/usr/bin/xauth"
+
+---
+
+(client_config
+  (xauth_location
+    (xauth_location_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -4,8 +4,6 @@ module.exports = grammar({
   extras: $ => [
     $.comment,
     /\s/,
-    /\\\r?\n/,
-    /\\( |\t|\v|\f)/
   ],
 
   rules: {
@@ -130,7 +128,7 @@ module.exports = grammar({
         ignoreCase('no'),
         ignoreCase('false'),
     ),
-    pattern: $ => /.*/,
+    pattern: $ => /\S.*/,
     time_format: $ => /[1234567890]+[sSmMhHdDwW]?/,
 
     host: $ => option(
@@ -171,19 +169,19 @@ module.exports = grammar({
         'BindAddress',
         $.bind_address_value
     ),
-    bind_address_value: $ => /.*/,
+    bind_address_value: $ => /\S.*/,
 
     bind_interface: $ => option(
         'BindInterface',
         $.bind_interface_value
     ),
-    bind_interface_value: $ => /.*/,
+    bind_interface_value: $ => /\S.*/,
 
     canonical_domains: $ => option(
         'CanonicalDomains',
         $.canonical_domains_value
     ),
-    canonical_domains_value: $ => /.*/,
+    canonical_domains_value: $ => /\S.*/,
 
     canonicalize_fallback_local: $ => option(
         'CanonicalizeFallbackLocal',
@@ -216,19 +214,19 @@ module.exports = grammar({
         'CanonicalizePermittedCNAMEs',
         $.canonicalize_permitted_cnames_value
     ),
-    canonicalize_permitted_cnames_value: $ => /.*/,
+    canonicalize_permitted_cnames_value: $ => /\S.*/,
 
     ca_signature_algorithms: $ => option(
         'CASignatureAlgorithms',
         $.ca_signature_algorithms_value
     ),
-    ca_signature_algorithms_value: $ => /.*/,
+    ca_signature_algorithms_value: $ => /\S.*/,
 
     certificate_file: $ => option(
         'CertificateFile',
         $.certificate_file_value
     ),
-    certificate_file_value: $ => /.*/,
+    certificate_file_value: $ => /\S.*/,
 
     challenge_response_authentication: $ => option(
         'ChallengeResponseAuthentication',
@@ -247,13 +245,13 @@ module.exports = grammar({
         'Ciphers',
         $.ciphers_value
     ),
-    ciphers_value: $ => /.*/,
+    ciphers_value: $ => /\S.*/,
 
     cipher: $ => option(
         'Cipher',
         $.cipher_value
     ),
-    cipher_value: $ => /.*/,
+    cipher_value: $ => /\S.*/,
 
     clear_all_forwardings: $ => option(
         'ClearAllForwardings',
@@ -299,7 +297,7 @@ module.exports = grammar({
         'ControlPath',
         $.control_path_value
     ),
-    control_path_value: $ => /.*/,
+    control_path_value: $ => /\S.*/,
 
     control_persist: $ => option(
         'ControlPersist',
@@ -312,7 +310,7 @@ module.exports = grammar({
         'DynamicForward',
         $.dynamic_forward_value
     ),
-    dynamic_forward_value: $ => /.*/,
+    dynamic_forward_value: $ => /\S.*/,
 
     enable_ssh_keysign: $ => option(
         'EnableSSHKeysign',
@@ -350,7 +348,7 @@ module.exports = grammar({
         'ForwardAgent',
         $.forward_agent_value
     ),
-    forward_agent_value: $ => /.*/,
+    forward_agent_value: $ => /\S.*/,
 
     forward_x11: $ => option(
         'ForwardX11',
@@ -382,7 +380,7 @@ module.exports = grammar({
         'GlobalKnownHostsFile',
         $.global_known_hosts_file_value
     ),
-    global_known_hosts_file_value: $ => /.*/,
+    global_known_hosts_file_value: $ => /\S.*/,
 
     gssapi_authentication: $ => option(
         'GSSAPIAuthentication',
@@ -395,7 +393,7 @@ module.exports = grammar({
         'GSSAPIClientIdentity',
         $.gssapi_client_identity_value
     ),
-    gssapi_client_identity_value: $ => /.*/,
+    gssapi_client_identity_value: $ => /\S.*/,
 
     gssapi_delegate_credentials: $ => option(
         'GSSAPIDelegateCredentials',
@@ -422,7 +420,7 @@ module.exports = grammar({
         'GSSAPIServerIdentity',
         $.gssapi_server_identity_value
     ),
-    gssapi_server_identity_value: $ => /.*/,
+    gssapi_server_identity_value: $ => /\S.*/,
 
     gssapi_trust_dns: $ => option(
         'GSSAPITrustDns',
@@ -434,7 +432,7 @@ module.exports = grammar({
         'GSSAPIKexAlgorithms',
         $.gssapi_kex_algorithms_value
     ),
-    gssapi_kex_algorithms_value: $ => /.*/,
+    gssapi_kex_algorithms_value: $ => /\S.*/,
 
     hash_known_hosts: $ => option(
         'HashKnownHosts',
@@ -446,7 +444,7 @@ module.exports = grammar({
         'HostbasedAcceptedAlgorithms',
         $.hostbased_accepted_algorithms_value
     ),
-    hostbased_accepted_algorithms_value: $ => /.*/,
+    hostbased_accepted_algorithms_value: $ => /\S.*/,
 
     hostbased_authentication: $ => option(
         'HostbasedAuthentication',
@@ -459,19 +457,19 @@ module.exports = grammar({
         'HostKeyAlgorithms',
         $.host_key_algorithms_value
     ),
-    host_key_algorithms_value: $ => /.*/,
+    host_key_algorithms_value: $ => /\S.*/,
 
     host_key_alias: $ => option(
         'HostKeyAlias',
         $.host_key_alias_value
     ),
-    host_key_alias_value: $ => /.*/,
+    host_key_alias_value: $ => /\S.*/,
 
     hostname: $ => option(
         'Hostname',
         $.hostname_value
     ),
-    hostname_value: $ => /.*/,
+    hostname_value: $ => /\S.*/,
 
     identities_only: $ => option(
         'IdentitiesOnly',
@@ -483,25 +481,25 @@ module.exports = grammar({
         'IdentityAgent',
         $.identity_agent_value
     ),
-    identity_agent_value: $ => /.*/,
+    identity_agent_value: $ => /\S.*/,
 
     identity_file: $ => option(
         'IdentityFile',
         $.identity_file_value
     ),
-    identity_file_value: $ => /.*/,
+    identity_file_value: $ => /\S.*/,
 
     ignore_unknown: $ => option(
         'IgnoreUnknown',
         $.ignore_unknown_value
     ),
-    ignore_unknown_value: $ => /.*/,
+    ignore_unknown_value: $ => /\S.*/,
 
     include: $ => option(
         'Include',
         $.include_value
     ),
-    include_value: $ => /.*/,
+    include_value: $ => /\S.*/,
 
     ip_qos: $ => option(
         'IPQoS',
@@ -524,31 +522,31 @@ module.exports = grammar({
         'KbdInteractiveDevices',
         $.kbd_interactive_devices_value
     ),
-    kbd_interactive_devices_value: $ => /.*/,
+    kbd_interactive_devices_value: $ => /\S.*/,
 
     kex_algorithms: $ => option(
         'KexAlgorithms',
         $.kex_algorithms_value
     ),
-    kex_algorithms_value: $ => /.*/,
+    kex_algorithms_value: $ => /\S.*/,
 
     known_hosts_command: $ => option(
         'KnownHostsCommand',
         $.known_hosts_command_value
     ),
-    known_hosts_command_value: $ => /.*/,
+    known_hosts_command_value: $ => /\S.*/,
 
     local_command: $ => option(
         'LocalCommand',
         $.local_command_value
     ),
-    local_command_value: $ => /.*/,
+    local_command_value: $ => /\S.*/,
 
     local_forward: $ => option(
         'LocalForward',
         $.local_forward_value
     ),
-    local_forward_value: $ => /.*/,
+    local_forward_value: $ => /\S.*/,
 
     log_level: $ => option(
         'LogLevel',
@@ -570,13 +568,13 @@ module.exports = grammar({
         'LogVerbose',
         $.log_verbose_value
     ),
-    log_verbose_value: $ => /.*/,
+    log_verbose_value: $ => /\S.*/,
 
     macs: $ => option(
         'MACs',
         $.macs_value
     ),
-    macs_value: $ => /.*/,
+    macs_value: $ => /\S.*/,
 
     no_host_authentication_for_localhost: $ => option(
         'NoHostAuthenticationForLocalhost',
@@ -610,13 +608,13 @@ module.exports = grammar({
         'PermitRemoteOpen',
         $.permit_remote_open_value
     ),
-    permit_remote_open_value: $ => /.*/,
+    permit_remote_open_value: $ => /\S.*/,
 
     pkcs11_provider: $ => option(
         'PKCS11Provider',
         $.pkcs11_provider_value
     ),
-    pkcs11_provider_value: $ => /.*/,
+    pkcs11_provider_value: $ => /\S.*/,
 
     port: $ => option(
         'Port',
@@ -628,7 +626,7 @@ module.exports = grammar({
         'PreferredAuthentications',
         $.preferred_authentications_value
     ),
-    preferred_authentications_value: $ => /.*/,
+    preferred_authentications_value: $ => /\S.*/,
 
     protocol: $ => option(
         'Protocol',
@@ -640,13 +638,13 @@ module.exports = grammar({
         'ProxyCommand',
         $.proxy_command_value
     ),
-    proxy_command_value: $ => /.*/,
+    proxy_command_value: $ => /\S.*/,
 
     proxy_jump: $ => option(
         'ProxyJump',
         $.proxy_jump_value
     ),
-    proxy_jump_value: $ => /.*/,
+    proxy_jump_value: $ => /\S.*/,
 
     proxy_use_fdpass: $ => option(
         'ProxyUseFdpass',
@@ -658,13 +656,13 @@ module.exports = grammar({
         'PubkeyAcceptedAlgorithms',
         $.pubkey_accepted_algorithms_value
     ),
-    pubkey_accepted_algorithms_value: $ => /.*/,
+    pubkey_accepted_algorithms_value: $ => /\S.*/,
 
     pubkey_accepted_key_types: $ => option(
         'PubkeyAcceptedKeyTypes',
         $.pubkey_accepted_key_types_value
     ),
-    pubkey_accepted_key_types_value: $ => /.*/,
+    pubkey_accepted_key_types_value: $ => /\S.*/,
 
     pubkey_authentication: $ => option(
         'PubkeyAuthentication',
@@ -683,19 +681,19 @@ module.exports = grammar({
         'RekeyLimit',
         $.rekey_limit_value
     ),
-    rekey_limit_value: $ => /.*/,
+    rekey_limit_value: $ => /\S.*/,
 
     remote_command: $ => option(
         'RemoteCommand',
         $.remote_command_value
     ),
-    remote_command_value: $ => /.*/,
+    remote_command_value: $ => /\S.*/,
 
     remote_forward: $ => option(
         'RemoteForward',
         $.remote_forward_value
     ),
-    remote_forward_value: $ => /.*/,
+    remote_forward_value: $ => /\S.*/,
 
     request_tty: $ => option(
         'RequestTTY',
@@ -714,19 +712,19 @@ module.exports = grammar({
         'RevokedHostKeys',
         $.revoked_host_keys_value
     ),
-    revoked_host_keys_value: $ => /.*/,
+    revoked_host_keys_value: $ => /\S.*/,
 
     security_key_provider: $ => option(
         'SecurityKeyProvider',
         $.security_key_provider_value
     ),
-    security_key_provider_value: $ => /.*/,
+    security_key_provider_value: $ => /\S.*/,
 
     send_env: $ => option(
         'SendEnv',
         $.send_env_value
     ),
-    send_env_value: $ => /.*/,
+    send_env_value: $ => /\S.*/,
 
     server_alive_count_max: $ => option(
         'ServerAliveCountMax',
@@ -756,7 +754,7 @@ module.exports = grammar({
         'SetEnv',
         $.set_env_value
     ),
-    set_env_value: $ => /.*/,
+    set_env_value: $ => /\S.*/,
 
     stdin_null: $ => option(
         'StdinNull',
@@ -768,7 +766,7 @@ module.exports = grammar({
         'StreamLocalBindMask',
         $.stream_local_bind_mask_value
     ),
-    stream_local_bind_mask_value: $ => /.*/,
+    stream_local_bind_mask_value: $ => /\S.*/,
 
     stream_local_bind_unlink: $ => option(
         'StreamLocalBindUnlink',
@@ -820,7 +818,7 @@ module.exports = grammar({
         'TunnelDevice',
         $.tunnel_device_value
     ),
-    tunnel_device_value: $ => /.*/,
+    tunnel_device_value: $ => /\S.*/,
 
     update_host_keys: $ => option(
         'UpdateHostKeys',
@@ -844,13 +842,13 @@ module.exports = grammar({
         'User',
         $.user_value
     ),
-    user_value: $ => /.*/,
+    user_value: $ => /\S.*/,
 
     user_known_hosts_file: $ => option(
         'UserKnownHostsFile',
         $.user_known_hosts_file_value
     ),
-    user_known_hosts_file_value: $ => /.*/,
+    user_known_hosts_file_value: $ => /\S.*/,
 
     verify_host_key_dns: $ => option(
         'VerifyHostKeyDNS',
@@ -874,7 +872,7 @@ module.exports = grammar({
         'XAuthLocation',
         $.xauth_location_value
     ),
-    xauth_location_value: $ => /.*/,
+    xauth_location_value: $ => /\S.*/,
 
   }
 });

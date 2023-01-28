@@ -131,6 +131,18 @@ KbdInteractiveAuthentiCATion = yes
     (kbd_interactive_authentication_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+KbdInteractiveAuthentiCATion = "yes"
+
+---
+
+(client_config
+  (kbd_interactive_authentication
+    (kbd_interactive_authentication_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -483,7 +483,7 @@
     },
     "pattern": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "time_format": {
       "type": "PATTERN",
@@ -910,7 +910,7 @@
     },
     "bind_address_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "bind_interface": {
       "type": "SEQ",
@@ -975,7 +975,7 @@
     },
     "bind_interface_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "canonical_domains": {
       "type": "SEQ",
@@ -1040,7 +1040,7 @@
     },
     "canonical_domains_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "canonicalize_fallback_local": {
       "type": "SEQ",
@@ -1335,7 +1335,7 @@
     },
     "canonicalize_permitted_cnames_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "ca_signature_algorithms": {
       "type": "SEQ",
@@ -1400,7 +1400,7 @@
     },
     "ca_signature_algorithms_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "certificate_file": {
       "type": "SEQ",
@@ -1465,7 +1465,7 @@
     },
     "certificate_file_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "challenge_response_authentication": {
       "type": "SEQ",
@@ -1670,7 +1670,7 @@
     },
     "ciphers_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "cipher": {
       "type": "SEQ",
@@ -1735,7 +1735,7 @@
     },
     "cipher_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "clear_all_forwardings": {
       "type": "SEQ",
@@ -2174,7 +2174,7 @@
     },
     "control_path_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "control_persist": {
       "type": "SEQ",
@@ -2318,7 +2318,7 @@
     },
     "dynamic_forward_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "enable_ssh_keysign": {
       "type": "SEQ",
@@ -2741,7 +2741,7 @@
     },
     "forward_agent_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "forward_x11": {
       "type": "SEQ",
@@ -3086,7 +3086,7 @@
     },
     "global_known_hosts_file_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "gssapi_authentication": {
       "type": "SEQ",
@@ -3221,7 +3221,7 @@
     },
     "gssapi_client_identity_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "gssapi_delegate_credentials": {
       "type": "SEQ",
@@ -3496,7 +3496,7 @@
     },
     "gssapi_server_identity_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "gssapi_trust_dns": {
       "type": "SEQ",
@@ -3631,7 +3631,7 @@
     },
     "gssapi_kex_algorithms_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "hash_known_hosts": {
       "type": "SEQ",
@@ -3766,7 +3766,7 @@
     },
     "hostbased_accepted_algorithms_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "hostbased_authentication": {
       "type": "SEQ",
@@ -3901,7 +3901,7 @@
     },
     "host_key_algorithms_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "host_key_alias": {
       "type": "SEQ",
@@ -3966,7 +3966,7 @@
     },
     "host_key_alias_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "hostname": {
       "type": "SEQ",
@@ -4031,7 +4031,7 @@
     },
     "hostname_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "identities_only": {
       "type": "SEQ",
@@ -4166,7 +4166,7 @@
     },
     "identity_agent_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "identity_file": {
       "type": "SEQ",
@@ -4231,7 +4231,7 @@
     },
     "identity_file_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "ignore_unknown": {
       "type": "SEQ",
@@ -4296,7 +4296,7 @@
     },
     "ignore_unknown_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "include": {
       "type": "SEQ",
@@ -4361,7 +4361,7 @@
     },
     "include_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "ip_qos": {
       "type": "SEQ",
@@ -4675,7 +4675,7 @@
     },
     "kbd_interactive_devices_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "kex_algorithms": {
       "type": "SEQ",
@@ -4740,7 +4740,7 @@
     },
     "kex_algorithms_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "known_hosts_command": {
       "type": "SEQ",
@@ -4805,7 +4805,7 @@
     },
     "known_hosts_command_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "local_command": {
       "type": "SEQ",
@@ -4870,7 +4870,7 @@
     },
     "local_command_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "local_forward": {
       "type": "SEQ",
@@ -4935,7 +4935,7 @@
     },
     "local_forward_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "log_level": {
       "type": "SEQ",
@@ -5102,7 +5102,7 @@
     },
     "log_verbose_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "macs": {
       "type": "SEQ",
@@ -5167,7 +5167,7 @@
     },
     "macs_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "no_host_authentication_for_localhost": {
       "type": "SEQ",
@@ -5512,7 +5512,7 @@
     },
     "permit_remote_open_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "pkcs11_provider": {
       "type": "SEQ",
@@ -5577,7 +5577,7 @@
     },
     "pkcs11_provider_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "port": {
       "type": "SEQ",
@@ -5712,7 +5712,7 @@
     },
     "preferred_authentications_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "protocol": {
       "type": "SEQ",
@@ -5851,7 +5851,7 @@
     },
     "proxy_command_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "proxy_jump": {
       "type": "SEQ",
@@ -5916,7 +5916,7 @@
     },
     "proxy_jump_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "proxy_use_fdpass": {
       "type": "SEQ",
@@ -6051,7 +6051,7 @@
     },
     "pubkey_accepted_algorithms_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "pubkey_accepted_key_types": {
       "type": "SEQ",
@@ -6116,7 +6116,7 @@
     },
     "pubkey_accepted_key_types_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "pubkey_authentication": {
       "type": "SEQ",
@@ -6271,7 +6271,7 @@
     },
     "rekey_limit_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "remote_command": {
       "type": "SEQ",
@@ -6336,7 +6336,7 @@
     },
     "remote_command_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "remote_forward": {
       "type": "SEQ",
@@ -6401,7 +6401,7 @@
     },
     "remote_forward_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "request_tty": {
       "type": "SEQ",
@@ -6556,7 +6556,7 @@
     },
     "revoked_host_keys_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "security_key_provider": {
       "type": "SEQ",
@@ -6621,7 +6621,7 @@
     },
     "security_key_provider_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "send_env": {
       "type": "SEQ",
@@ -6686,7 +6686,7 @@
     },
     "send_env_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "server_alive_count_max": {
       "type": "SEQ",
@@ -6969,7 +6969,7 @@
     },
     "set_env_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "stdin_null": {
       "type": "SEQ",
@@ -7104,7 +7104,7 @@
     },
     "stream_local_bind_mask_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "stream_local_bind_unlink": {
       "type": "SEQ",
@@ -7665,7 +7665,7 @@
     },
     "tunnel_device_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "update_host_keys": {
       "type": "SEQ",
@@ -7886,7 +7886,7 @@
     },
     "user_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "user_known_hosts_file": {
       "type": "SEQ",
@@ -7951,7 +7951,7 @@
     },
     "user_known_hosts_file_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     },
     "verify_host_key_dns": {
       "type": "SEQ",
@@ -8172,7 +8172,7 @@
     },
     "xauth_location_value": {
       "type": "PATTERN",
-      "value": ".*"
+      "value": "\\S.*"
     }
   },
   "extras": [
@@ -8183,14 +8183,6 @@
     {
       "type": "PATTERN",
       "value": "\\s"
-    },
-    {
-      "type": "PATTERN",
-      "value": "\\\\\\r?\\n"
-    },
-    {
-      "type": "PATTERN",
-      "value": "\\\\( |\\t|\\v|\\f)"
     }
   ],
   "conflicts": [],

@@ -47,6 +47,18 @@ StreamLocalBindMask = 0177
     (stream_local_bind_mask_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+StreamLocalBindMask = "0177"
+
+---
+
+(client_config
+  (stream_local_bind_mask
+    (stream_local_bind_mask_value)))
+
+==================
 can be specified after host
 ==================
 

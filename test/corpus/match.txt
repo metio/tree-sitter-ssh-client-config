@@ -117,3 +117,51 @@ mATch 192.168.0.?
 (client_config
   (match
     (match_value)))
+
+==================
+match using equals sign
+==================
+
+Match=*
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using quotes
+==================
+
+Match "*"
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using equals sign and quotes
+==================
+
+Match="*"
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
+match using equals sign and quotes with whitespace
+==================
+
+Match = "*"
+
+---
+
+(client_config
+  (match
+    (match_value)))

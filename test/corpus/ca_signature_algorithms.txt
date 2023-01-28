@@ -71,6 +71,18 @@ CASignatureAlgorithms = some-algo
     (ca_signature_algorithms_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+CASignatureAlgorithms = "some-algo"
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
 can be specified after host
 ==================
 

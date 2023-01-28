@@ -83,6 +83,18 @@ RemoteForward = *:3000
     (remote_forward_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+RemoteForward = "*:3000"
+
+---
+
+(client_config
+  (remote_forward
+    (remote_forward_value)))
+
+==================
 can be specified after host
 ==================
 

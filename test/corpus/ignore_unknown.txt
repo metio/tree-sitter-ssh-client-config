@@ -47,6 +47,18 @@ IgnoreUnkNOwn = SomeOption
     (ignore_unknown_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+IgnoreUnkNOwn = "SomeOption"
+
+---
+
+(client_config
+  (ignore_unknown
+    (ignore_unknown_value)))
+
+==================
 can be specified after host
 ==================
 

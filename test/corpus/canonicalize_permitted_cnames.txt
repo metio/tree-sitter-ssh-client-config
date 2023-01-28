@@ -47,6 +47,18 @@ CanonicalizePermittedCNAMEs = *.a.example.com:*.b.example.com,*.c.example.com
     (canonicalize_permitted_cnames_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+CanonicalizePermittedCNAMEs = "*.a.example.com:*.b.example.com,*.c.example.com"
+
+---
+
+(client_config
+  (canonicalize_permitted_cnames
+    (canonicalize_permitted_cnames_value)))
+
+==================
 can be specified after host
 ==================
 

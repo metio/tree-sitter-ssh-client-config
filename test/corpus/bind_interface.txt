@@ -59,6 +59,18 @@ BindInteRFAce = 0.0.0.0
     (bind_interface_value)))
 
 ==================
+can use equals sign with whitespace and quotes
+==================
+
+BindInteRFAce = "0.0.0.0"
+
+---
+
+(client_config
+  (bind_interface
+    (bind_interface_value)))
+
+==================
 can be specified after host
 ==================
 
