@@ -113,6 +113,7 @@ module.exports = grammar({
         $.tunnel_device,
         $.update_host_keys,
         $.use_keychain,
+        $.use_roaming,
         $.user,
         $.user_known_hosts_file,
         $.verify_host_key_dns,
@@ -837,6 +838,12 @@ module.exports = grammar({
         $.use_keychain_value
     ),
     use_keychain_value: $ => alias($.boolean, "use_keychain_value"),
+
+    use_roaming: $ => option(
+        'UseRoaming',
+        $.use_roaming_value
+    ),
+    use_roaming_value: $ => alias($.boolean, "use_roaming_value"),
 
     user: $ => option(
         'User',

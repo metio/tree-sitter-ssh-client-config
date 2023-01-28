@@ -308,6 +308,9 @@
 (use_keychain) @keyword
 (use_keychain_value) @constant.builtin.boolean
 
+(use_roaming) @keyword
+(use_roaming_value) @constant.builtin.boolean
+
 (user) @keyword
 (user_value) @string
 

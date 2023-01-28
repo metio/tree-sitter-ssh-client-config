@@ -1,0 +1,157 @@
+==================
+use roaming = yes
+==================
+
+UseRoaming yes
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use roaming = Yes
+==================
+
+UseRoaming Yes
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use roaming = true
+==================
+
+UseRoaming true
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use roaming = True
+==================
+
+UseRoaming True
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use roaming = no
+==================
+
+UseRoaming no
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use roaming = No
+==================
+
+UseRoaming No
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use roaming = false
+==================
+
+UseRoaming false
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use roaming = False
+==================
+
+UseRoaming False
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+use irregular casing
+==================
+
+UseRoAMing yes
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+can use equals sign
+==================
+
+UseRoaming=yes
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+UseRoaming = yes
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  UseRoaming no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (use_roaming
+    (use_roaming_value)))
+
+==================
+detect invalid values
+==================
+
+UseRoaming ja
+
+---
+
+(client_config
+  (ERROR))
