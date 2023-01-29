@@ -131,6 +131,18 @@ GSSAPIKeyEXCHange = yes
     (gssapi_key_exchange_value)))
 
 ==================
+can use tab character
+==================
+
+GSSAPIKeyEXCHange	"yes"
+
+---
+
+(client_config
+  (gssapi_key_exchange
+    (gssapi_key_exchange_value)))
+
+==================
 can be specified after host
 ==================
 

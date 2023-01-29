@@ -59,6 +59,18 @@ HostKeyAlias = "some-user"
     (host_key_alias_value)))
 
 ==================
+can use tab character
+==================
+
+HostKeyAlias	"some-user"
+
+---
+
+(client_config
+  (host_key_alias
+    (host_key_alias_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -95,6 +95,18 @@ ControlPath = "~/.ssh/control"
     (control_path_value)))
 
 ==================
+can use tab character
+==================
+
+ControlPath	"~/.ssh/control"
+
+---
+
+(client_config
+  (control_path
+    (control_path_value)))
+
+==================
 can be specified after host
 ==================
 

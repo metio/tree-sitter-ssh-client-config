@@ -107,6 +107,18 @@ SessionTYPe = default
     (session_type_value)))
 
 ==================
+can use tab character
+==================
+
+SessionTYPe	"default"
+
+---
+
+(client_config
+  (session_type
+    (session_type_value)))
+
+==================
 can be specified after host
 ==================
 

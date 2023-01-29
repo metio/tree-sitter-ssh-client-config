@@ -59,6 +59,18 @@ kEEpAlive = yes
     (keep_alive_value)))
 
 ==================
+can use tab character
+==================
+
+kEEpAlive	"yes"
+
+---
+
+(client_config
+  (keep_alive
+    (keep_alive_value)))
+
+==================
 can be specified after host
 ==================
 

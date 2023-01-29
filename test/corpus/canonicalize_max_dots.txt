@@ -59,6 +59,18 @@ CanonicalizeMaxDots = 9
     (canonicalize_max_dots_value)))
 
 ==================
+can use tab character
+==================
+
+CanonicalizeMaxDots	"9"
+
+---
+
+(client_config
+  (canonicalize_max_dots
+    (canonicalize_max_dots_value)))
+
+==================
 can be specified after host
 ==================
 

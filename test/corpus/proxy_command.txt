@@ -59,6 +59,18 @@ ProxyCommand = "some-command arg1 arg2"
     (proxy_command_value)))
 
 ==================
+can use tab character
+==================
+
+ProxyCommand	"some-command arg1 arg2"
+
+---
+
+(client_config
+  (proxy_command
+    (proxy_command_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -131,6 +131,18 @@ BaTCHmode = yes
     (batch_mode_value)))
 
 ==================
+can use tab character
+==================
+
+BaTCHmode	yes
+
+---
+
+(client_config
+  (batch_mode
+    (batch_mode_value)))
+
+==================
 can be specified after host
 ==================
 

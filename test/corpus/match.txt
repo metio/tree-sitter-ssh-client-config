@@ -167,6 +167,18 @@ Match = "*"
     (match_value)))
 
 ==================
+can use tab character
+==================
+
+Match	"*"
+
+---
+
+(client_config
+  (match
+    (match_value)))
+
+==================
 Match requires whitespace after key
 ==================
 

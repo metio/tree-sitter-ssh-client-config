@@ -146,6 +146,18 @@ Host example.com
     (add_keys_to_agent_value)))
 
 ==================
+can use tab character
+==================
+
+addkeystoAGENT	yes
+
+---
+
+(client_config
+  (add_keys_to_agent
+    (add_keys_to_agent_value)))
+
+==================
 detect invalid values
 ==================
 

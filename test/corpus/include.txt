@@ -59,6 +59,18 @@ iNClude = "some-other.config"
     (include_value)))
 
 ==================
+can use tab character
+==================
+
+iNClude	"some-other.config"
+
+---
+
+(client_config
+  (include
+    (include_value)))
+
+==================
 can be specified after host
 ==================
 

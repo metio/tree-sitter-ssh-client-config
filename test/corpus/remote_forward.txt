@@ -95,6 +95,18 @@ RemoteForward = "*:3000"
     (remote_forward_value)))
 
 ==================
+can use tab character
+==================
+
+RemoteForward	"*:3000"
+
+---
+
+(client_config
+  (remote_forward
+    (remote_forward_value)))
+
+==================
 can be specified after host
 ==================
 

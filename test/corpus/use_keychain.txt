@@ -131,6 +131,18 @@ usekEYChain = yes
     (use_keychain_value)))
 
 ==================
+can use tab character
+==================
+
+usekEYChain	"yes"
+
+---
+
+(client_config
+  (use_keychain
+    (use_keychain_value)))
+
+==================
 can be specified after host
 ==================
 

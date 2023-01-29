@@ -167,6 +167,18 @@ SysLOGFacility = DAEMON
     (syslog_facility_value)))
 
 ==================
+can use tab character
+==================
+
+SysLOGFacility	"DAEMON"
+
+---
+
+(client_config
+  (syslog_facility
+    (syslog_facility_value)))
+
+==================
 can be specified after host
 ==================
 

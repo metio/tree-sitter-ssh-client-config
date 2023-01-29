@@ -59,6 +59,18 @@ RemoteCommand = "some-command arg1 arg2"
     (remote_command_value)))
 
 ==================
+can use tab character
+==================
+
+RemoteCommand	"some-command arg1 arg2"
+
+---
+
+(client_config
+  (remote_command
+    (remote_command_value)))
+
+==================
 can be specified after host
 ==================
 

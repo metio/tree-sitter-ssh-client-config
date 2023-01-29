@@ -131,6 +131,18 @@ UseRoaming = yes
     (use_roaming_value)))
 
 ==================
+can use tab character
+==================
+
+UseRoaming	"yes"
+
+---
+
+(client_config
+  (use_roaming
+    (use_roaming_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -131,6 +131,18 @@ forWARdX11 = yes
     (forward_x11_value)))
 
 ==================
+can use tab character
+==================
+
+forWARdX11	"yes"
+
+---
+
+(client_config
+  (forward_x11
+    (forward_x11_value)))
+
+==================
 can be specified after host
 ==================
 

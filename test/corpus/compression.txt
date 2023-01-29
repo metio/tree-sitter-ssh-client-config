@@ -131,6 +131,18 @@ CompressiON = yes
     (compression_value)))
 
 ==================
+can use tab character
+==================
+
+CompressiON	"yes"
+
+---
+
+(client_config
+  (compression
+    (compression_value)))
+
+==================
 can be specified after host
 ==================
 

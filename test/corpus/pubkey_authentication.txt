@@ -155,6 +155,18 @@ PubkeyAuTHEntication = yes
     (pubkey_authentication_value)))
 
 ==================
+can use tab character
+==================
+
+PubkeyAuTHEntication	"yes"
+
+---
+
+(client_config
+  (pubkey_authentication
+    (pubkey_authentication_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -131,6 +131,18 @@ GateWAYpORts = yes
     (gateway_ports_value)))
 
 ==================
+can use tab character
+==================
+
+GateWAYpORts	"yes"
+
+---
+
+(client_config
+  (gateway_ports
+    (gateway_ports_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -131,6 +131,18 @@ enabLEsshKEysign = yes
     (enable_ssh_keysign_value)))
 
 ==================
+can use tab character
+==================
+
+enabLEsshKEysign	"yes"
+
+---
+
+(client_config
+  (enable_ssh_keysign
+    (enable_ssh_keysign_value)))
+
+==================
 can be specified after host
 ==================
 

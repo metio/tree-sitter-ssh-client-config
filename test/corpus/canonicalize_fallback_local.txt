@@ -131,6 +131,18 @@ CanonicalizeFALLbackLocal = yes
     (canonicalize_fallback_local_value)))
 
 ==================
+can use tab character
+==================
+
+CanonicalizeFALLbackLocal	"yes"
+
+---
+
+(client_config
+  (canonicalize_fallback_local
+    (canonicalize_fallback_local_value)))
+
+==================
 can be specified after host
 ==================
 

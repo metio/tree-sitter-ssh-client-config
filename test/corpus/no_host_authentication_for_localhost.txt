@@ -131,6 +131,18 @@ NoHostAuthenticationForLocalHOSt = yes
     (no_host_authentication_for_localhost_value)))
 
 ==================
+can use tab character
+==================
+
+NoHostAuthenticationForLocalHOSt	"yes"
+
+---
+
+(client_config
+  (no_host_authentication_for_localhost
+    (no_host_authentication_for_localhost_value)))
+
+==================
 can be specified after host
 ==================
 

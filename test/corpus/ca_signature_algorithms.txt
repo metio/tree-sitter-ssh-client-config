@@ -83,6 +83,18 @@ CASignatureAlgorithms = "some-algo"
     (ca_signature_algorithms_value)))
 
 ==================
+can use tab character
+==================
+
+CASignatureAlgorithms	"some-algo"
+
+---
+
+(client_config
+  (ca_signature_algorithms
+    (ca_signature_algorithms_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -71,6 +71,18 @@ SecurityKeyProvider = "some-provider"
     (security_key_provider_value)))
 
 ==================
+can use tab character
+==================
+
+SecurityKeyProvider	"some-provider"
+
+---
+
+(client_config
+  (security_key_provider
+    (security_key_provider_value)))
+
+==================
 can be specified after host
 ==================
 

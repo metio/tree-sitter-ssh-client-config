@@ -131,6 +131,18 @@ CheckHostIP = yes
     (check_host_ip_value)))
 
 ==================
+can use tab character
+==================
+
+CheckHostIP	"yes"
+
+---
+
+(client_config
+  (check_host_ip
+    (check_host_ip_value)))
+
+==================
 can be specified after host
 ==================
 

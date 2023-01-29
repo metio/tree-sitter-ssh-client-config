@@ -155,6 +155,18 @@ updaTEhostKeys = yes
     (update_host_keys_value)))
 
 ==================
+can use tab character
+==================
+
+updaTEhostKeys	"yes"
+
+---
+
+(client_config
+  (update_host_keys
+    (update_host_keys_value)))
+
+==================
 can be specified after host
 ==================
 

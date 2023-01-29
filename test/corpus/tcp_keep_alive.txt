@@ -131,6 +131,18 @@ TCPKeEPAlive = yes
     (tcp_keep_alive_value)))
 
 ==================
+can use tab character
+==================
+
+TCPKeEPAlive	"yes"
+
+---
+
+(client_config
+  (tcp_keep_alive
+    (tcp_keep_alive_value)))
+
+==================
 can be specified after host
 ==================
 

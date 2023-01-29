@@ -59,6 +59,18 @@ ConnectTimeout = 9
     (connect_timeout_value)))
 
 ==================
+can use tab character
+==================
+
+ConnectTimeout	"9"
+
+---
+
+(client_config
+  (connect_timeout
+    (connect_timeout_value)))
+
+==================
 can be specified after host
 ==================
 

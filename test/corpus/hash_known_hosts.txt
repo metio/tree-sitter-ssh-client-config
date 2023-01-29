@@ -131,6 +131,18 @@ HashKnownHOSts = yes
     (hash_known_hosts_value)))
 
 ==================
+can use tab character
+==================
+
+HashKnownHOSts	"yes"
+
+---
+
+(client_config
+  (hash_known_hosts
+    (hash_known_hosts_value)))
+
+==================
 can be specified after host
 ==================
 

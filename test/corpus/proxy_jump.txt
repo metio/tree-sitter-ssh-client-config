@@ -83,6 +83,18 @@ ProxyJump = "some-command arg1 arg2"
     (proxy_jump_value)))
 
 ==================
+can use tab character
+==================
+
+ProxyJump	"some-command arg1 arg2"
+
+---
+
+(client_config
+  (proxy_jump
+    (proxy_jump_value)))
+
+==================
 can be specified after host
 ==================
 

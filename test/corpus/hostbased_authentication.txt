@@ -131,6 +131,18 @@ HostbasedAUTHentication = yes
     (hostbased_authentication_value)))
 
 ==================
+can use tab character
+==================
+
+HostbasedAUTHentication	"yes"
+
+---
+
+(client_config
+  (hostbased_authentication
+    (hostbased_authentication_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -119,6 +119,18 @@ ForwardX11TimeOUT = 0
     (forward_x11_timeout_value)))
 
 ==================
+can use tab character
+==================
+
+ForwardX11TimeOUT	"0"
+
+---
+
+(client_config
+  (forward_x11_timeout
+    (forward_x11_timeout_value)))
+
+==================
 can be specified after host
 ==================
 

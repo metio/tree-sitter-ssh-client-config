@@ -131,6 +131,18 @@ ProxyUSEfdpass = yes
     (proxy_use_fdpass_value)))
 
 ==================
+can use tab character
+==================
+
+ProxyUSEfdpass	"yes"
+
+---
+
+(client_config
+  (proxy_use_fdpass
+    (proxy_use_fdpass_value)))
+
+==================
 can be specified after host
 ==================
 

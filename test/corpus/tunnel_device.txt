@@ -71,6 +71,18 @@ TunnelDevice = "0177"
     (tunnel_device_value)))
 
 ==================
+can use tab character
+==================
+
+TunnelDevice	"0177"
+
+---
+
+(client_config
+  (tunnel_device
+    (tunnel_device_value)))
+
+==================
 can be specified after host
 ==================
 

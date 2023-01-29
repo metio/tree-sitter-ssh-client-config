@@ -122,6 +122,18 @@ ADDRESSfamily inet6
     (address_family_value)))
 
 ==================
+can use tab character
+==================
+
+ADDRESSfamily	inet6
+
+---
+
+(client_config
+  (address_family
+    (address_family_value)))
+
+==================
 detect invalid values
 ==================
 

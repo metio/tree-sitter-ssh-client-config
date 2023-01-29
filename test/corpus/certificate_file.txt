@@ -71,6 +71,18 @@ CertificateFile = "~/.ssh/cert"
     (certificate_file_value)))
 
 ==================
+can use tab character
+==================
+
+CertificateFile	"~/.ssh/cert"
+
+---
+
+(client_config
+  (certificate_file
+    (certificate_file_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -119,6 +119,18 @@ PermitRemoteOpen = "*:3000"
     (permit_remote_open_value)))
 
 ==================
+can use tab character
+==================
+
+PermitRemoteOpen	"*:3000"
+
+---
+
+(client_config
+  (permit_remote_open
+    (permit_remote_open_value)))
+
+==================
 can be specified after host
 ==================
 

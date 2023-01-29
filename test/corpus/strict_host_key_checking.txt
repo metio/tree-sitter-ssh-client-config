@@ -179,6 +179,18 @@ StricthOStKeyChecking = yes
     (strict_host_key_checking_value)))
 
 ==================
+can use tab character
+==================
+
+StricthOStKeyChecking	"yes"
+
+---
+
+(client_config
+  (strict_host_key_checking
+    (strict_host_key_checking_value)))
+
+==================
 can be specified after host
 ==================
 

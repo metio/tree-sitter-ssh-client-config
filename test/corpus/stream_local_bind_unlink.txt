@@ -131,6 +131,18 @@ StreamLOCAlBindUnlink = yes
     (stream_local_bind_unlink_value)))
 
 ==================
+can use tab character
+==================
+
+StreamLOCAlBindUnlink	"yes"
+
+---
+
+(client_config
+  (stream_local_bind_unlink
+    (stream_local_bind_unlink_value)))
+
+==================
 can be specified after host
 ==================
 

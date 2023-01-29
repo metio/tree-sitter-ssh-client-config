@@ -59,6 +59,18 @@ LogVerbose = "kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*"
     (log_verbose_value)))
 
 ==================
+can use tab character
+==================
+
+LogVerbose	"kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*"
+
+---
+
+(client_config
+  (log_verbose
+    (log_verbose_value)))
+
+==================
 can be specified after host
 ==================
 

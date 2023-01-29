@@ -47,6 +47,18 @@ Port = 12345
     (port_value)))
 
 ==================
+can use tab character
+==================
+
+Port	"12345"
+
+---
+
+(client_config
+  (port
+    (port_value)))
+
+==================
 can be specified after host
 ==================
 

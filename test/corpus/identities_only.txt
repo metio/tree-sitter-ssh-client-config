@@ -131,6 +131,18 @@ IdentitIESOnly = yes
     (identities_only_value)))
 
 ==================
+can use tab character
+==================
+
+IdentitIESOnly	"yes"
+
+---
+
+(client_config
+  (identities_only
+    (identities_only_value)))
+
+==================
 can be specified after host
 ==================
 

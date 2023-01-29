@@ -83,6 +83,18 @@ EscapeChar = none
     (escape_char_value)))
 
 ==================
+can use tab character
+==================
+
+EscapeChar	"none"
+
+---
+
+(client_config
+  (escape_char
+    (escape_char_value)))
+
+==================
 can be specified after host
 ==================
 

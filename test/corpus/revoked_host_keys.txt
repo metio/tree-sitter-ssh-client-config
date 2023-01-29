@@ -59,6 +59,18 @@ RevoKEdHostKeys = "~/.ssh/revoked"
     (revoked_host_keys_value)))
 
 ==================
+can use tab character
+==================
+
+RevoKEdHostKeys	"~/.ssh/revoked"
+
+---
+
+(client_config
+  (revoked_host_keys
+    (revoked_host_keys_value)))
+
+==================
 can be specified after host
 ==================
 

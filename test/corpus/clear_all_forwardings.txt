@@ -131,6 +131,18 @@ ClearAllForwARDings = yes
     (clear_all_forwardings_value)))
 
 ==================
+can use tab character
+==================
+
+ClearAllForwARDings	"yes"
+
+---
+
+(client_config
+  (clear_all_forwardings
+    (clear_all_forwardings_value)))
+
+==================
 can be specified after host
 ==================
 

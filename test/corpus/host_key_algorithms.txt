@@ -95,6 +95,18 @@ HostKeyAlgorithms = "ssh-ed25519"
     (host_key_algorithms_value)))
 
 ==================
+can use tab character
+==================
+
+HostKeyAlgorithms	"ssh-ed25519"
+
+---
+
+(client_config
+  (host_key_algorithms
+    (host_key_algorithms_value)))
+
+==================
 can be specified after host
 ==================
 

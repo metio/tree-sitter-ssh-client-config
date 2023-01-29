@@ -59,6 +59,18 @@ ServerAliveCountMax = 9
     (server_alive_count_max_value)))
 
 ==================
+can use tab character
+==================
+
+ServerAliveCountMax	"9"
+
+---
+
+(client_config
+  (server_alive_count_max
+    (server_alive_count_max_value)))
+
+==================
 can be specified after host
 ==================
 

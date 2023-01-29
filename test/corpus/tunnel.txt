@@ -83,6 +83,18 @@ tUNnel = yes
     (tunnel_value)))
 
 ==================
+can use tab character
+==================
+
+tUNnel	"yes"
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -155,6 +155,18 @@ RequEStTTY = yes
     (request_tty_value)))
 
 ==================
+can use tab character
+==================
+
+RequEStTTY	"yes"
+
+---
+
+(client_config
+  (request_tty
+    (request_tty_value)))
+
+==================
 can be specified after host
 ==================
 

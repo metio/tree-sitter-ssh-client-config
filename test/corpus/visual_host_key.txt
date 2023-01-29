@@ -131,6 +131,18 @@ viSUalHostKey = yes
     (visual_host_key_value)))
 
 ==================
+can use tab character
+==================
+
+viSUalHostKey	"yes"
+
+---
+
+(client_config
+  (visual_host_key
+    (visual_host_key_value)))
+
+==================
 can be specified after host
 ==================
 

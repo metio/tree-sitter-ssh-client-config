@@ -131,6 +131,18 @@ GSSAPIRenEWAlForcesRekey = yes
     (gssapi_renewal_forces_rekey_value)))
 
 ==================
+can use tab character
+==================
+
+GSSAPIRenEWAlForcesRekey	"yes"
+
+---
+
+(client_config
+  (gssapi_renewal_forces_rekey
+    (gssapi_renewal_forces_rekey_value)))
+
+==================
 can be specified after host
 ==================
 

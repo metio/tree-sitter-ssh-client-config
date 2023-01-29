@@ -83,6 +83,18 @@ CanonicaldOMAins = "hoß.de"
     (canonical_domains_value)))
 
 ==================
+can use tab character
+==================
+
+CanonicaldOMAins	"hoß.de"
+
+---
+
+(client_config
+  (canonical_domains
+    (canonical_domains_value)))
+
+==================
 can be specified after host
 ==================
 

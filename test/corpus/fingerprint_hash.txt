@@ -59,6 +59,18 @@ FingerprintHash = md5
     (fingerprint_hash_value)))
 
 ==================
+can use tab character
+==================
+
+FingerprintHash	"md5"
+
+---
+
+(client_config
+  (fingerprint_hash
+    (fingerprint_hash_value)))
+
+==================
 can be specified after host
 ==================
 

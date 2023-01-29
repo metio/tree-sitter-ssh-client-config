@@ -131,6 +131,18 @@ chALLengeResponseAuthentication = yes
     (challenge_response_authentication_value)))
 
 ==================
+can use tab character
+==================
+
+chALLengeResponseAuthentication	"yes"
+
+---
+
+(client_config
+  (challenge_response_authentication
+    (challenge_response_authentication_value)))
+
+==================
 can be specified after host
 ==================
 

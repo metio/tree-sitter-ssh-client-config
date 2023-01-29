@@ -95,6 +95,18 @@ DynamicForward = "*:3000"
     (dynamic_forward_value)))
 
 ==================
+can use tab character
+==================
+
+DynamicForward	"*:3000"
+
+---
+
+(client_config
+  (dynamic_forward
+    (dynamic_forward_value)))
+
+==================
 can be specified after host
 ==================
 

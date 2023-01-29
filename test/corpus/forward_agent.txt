@@ -95,6 +95,18 @@ fORwARDagent = "yes"
     (forward_agent_value)))
 
 ==================
+can use tab character
+==================
+
+fORwARDagent	"yes"
+
+---
+
+(client_config
+  (forward_agent
+    (forward_agent_value)))
+
+==================
 can be specified after host
 ==================
 

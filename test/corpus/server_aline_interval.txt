@@ -59,6 +59,18 @@ ServerAliveInterval = 9
     (server_alive_interval_value)))
 
 ==================
+can use tab character
+==================
+
+ServerAliveInterval	"9"
+
+---
+
+(client_config
+  (server_alive_interval
+    (server_alive_interval_value)))
+
+==================
 can be specified after host
 ==================
 

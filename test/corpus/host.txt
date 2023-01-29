@@ -167,6 +167,18 @@ host = "*"
     (host_value)))
 
 ==================
+can use tab character
+==================
+
+host	"*"
+
+---
+
+(client_config
+  (host
+    (host_value)))
+
+==================
 requires whitespace after key
 ==================
 

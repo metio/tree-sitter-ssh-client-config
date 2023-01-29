@@ -251,6 +251,18 @@ LogLevel = info
     (log_level_value)))
 
 ==================
+can use tab character
+==================
+
+LogLevel	"info"
+
+---
+
+(client_config
+  (log_level
+    (log_level_value)))
+
+==================
 can be specified after host
 ==================
 

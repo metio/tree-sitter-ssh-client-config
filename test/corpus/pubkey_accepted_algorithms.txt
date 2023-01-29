@@ -95,6 +95,18 @@ PubkeyAcceptedAlgorithms = "ssh-ed25519"
     (pubkey_accepted_algorithms_value)))
 
 ==================
+can use tab character
+==================
+
+PubkeyAcceptedAlgorithms	"ssh-ed25519"
+
+---
+
+(client_config
+  (pubkey_accepted_algorithms
+    (pubkey_accepted_algorithms_value)))
+
+==================
 can be specified after host
 ==================
 

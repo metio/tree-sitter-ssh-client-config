@@ -131,6 +131,18 @@ exITonFORwardfAIlure = yes
     (exit_on_forward_failure_value)))
 
 ==================
+can use tab character
+==================
+
+exITonFORwardfAIlure	"yes"
+
+---
+
+(client_config
+  (exit_on_forward_failure
+    (exit_on_forward_failure_value)))
+
+==================
 can be specified after host
 ==================
 

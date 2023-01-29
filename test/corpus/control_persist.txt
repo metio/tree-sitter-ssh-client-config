@@ -107,6 +107,18 @@ ControlPersist = 5w
     (control_persist_value)))
 
 ==================
+can use tab character
+==================
+
+ControlPersist	"5w"
+
+---
+
+(client_config
+  (control_persist
+    (control_persist_value)))
+
+==================
 can be specified after host
 ==================
 

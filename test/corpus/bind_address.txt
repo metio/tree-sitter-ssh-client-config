@@ -71,6 +71,18 @@ bINdaDDress = "1.2.3.4"
     (bind_address_value)))
 
 ==================
+can use tab character
+==================
+
+bINdaDDress	"1.2.3.4"
+
+---
+
+(client_config
+  (bind_address
+    (bind_address_value)))
+
+==================
 can be specified after host
 ==================
 

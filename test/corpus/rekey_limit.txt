@@ -95,6 +95,18 @@ RekeylIMIt = "4G 5d"
     (rekey_limit_value)))
 
 ==================
+can use tab character
+==================
+
+RekeylIMIt	"4G 5d"
+
+---
+
+(client_config
+  (rekey_limit
+    (rekey_limit_value)))
+
+==================
 can be specified after host
 ==================
 

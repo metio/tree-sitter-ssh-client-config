@@ -59,6 +59,18 @@ ConnectionAttempts = 9
     (connection_attempts_value)))
 
 ==================
+can use tab character
+==================
+
+ConnectionAttempts	"9"
+
+---
+
+(client_config
+  (connection_attempts
+    (connection_attempts_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -71,6 +71,18 @@ SetEnv = "RANDOM_VA?"
     (set_env_value)))
 
 ==================
+can use tab character
+==================
+
+SetEnv	"RANDOM_VA?"
+
+---
+
+(client_config
+  (set_env
+    (set_env_value)))
+
+==================
 can be specified after host
 ==================
 

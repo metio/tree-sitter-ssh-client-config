@@ -95,6 +95,18 @@ IdentityAgENt = "~/.ssh/agent"
     (identity_agent_value)))
 
 ==================
+can use tab character
+==================
+
+IdentityAgENt	"~/.ssh/agent"
+
+---
+
+(client_config
+  (identity_agent
+    (identity_agent_value)))
+
+==================
 can be specified after host
 ==================
 

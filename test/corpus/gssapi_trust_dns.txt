@@ -131,6 +131,18 @@ GSSAPITrUStDns = yes
     (gssapi_trust_dns_value)))
 
 ==================
+can use tab character
+==================
+
+GSSAPITrUStDns	"yes"
+
+---
+
+(client_config
+  (gssapi_trust_dns
+    (gssapi_trust_dns_value)))
+
+==================
 can be specified after host
 ==================
 

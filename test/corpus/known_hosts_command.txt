@@ -59,6 +59,18 @@ KnownHostsCommand = "my-hosts"
     (known_hosts_command_value)))
 
 ==================
+can use tab character
+==================
+
+KnownHostsCommand	"my-hosts"
+
+---
+
+(client_config
+  (known_hosts_command
+    (known_hosts_command_value)))
+
+==================
 can be specified after host
 ==================
 

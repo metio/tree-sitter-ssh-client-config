@@ -59,6 +59,18 @@ ProTOcOL = 1
     (protocol_value)))
 
 ==================
+can use tab character
+==================
+
+ProTOcOL	"1"
+
+---
+
+(client_config
+  (protocol
+    (protocol_value)))
+
+==================
 can be specified after host
 ==================
 

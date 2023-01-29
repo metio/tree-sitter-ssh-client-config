@@ -131,6 +131,18 @@ FORwardX11TrUSted = yes
     (forward_x11_trusted_value)))
 
 ==================
+can use tab character
+==================
+
+FORwardX11TrUSted	"yes"
+
+---
+
+(client_config
+  (forward_x11_trusted
+    (forward_x11_trusted_value)))
+
+==================
 can be specified after host
 ==================
 

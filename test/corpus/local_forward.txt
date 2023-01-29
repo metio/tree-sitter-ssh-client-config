@@ -95,6 +95,18 @@ LocalForward = "*:3000"
     (local_forward_value)))
 
 ==================
+can use tab character
+==================
+
+LocalForward	"*:3000"
+
+---
+
+(client_config
+  (local_forward
+    (local_forward_value)))
+
+==================
 can be specified after host
 ==================
 

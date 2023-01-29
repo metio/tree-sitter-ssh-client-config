@@ -59,6 +59,18 @@ Cipher = "some-algo"
     (cipher_value)))
 
 ==================
+can use tab character
+==================
+
+Cipher	"some-algo"
+
+---
+
+(client_config
+  (cipher
+    (cipher_value)))
+
+==================
 can be specified after host
 ==================
 

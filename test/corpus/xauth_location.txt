@@ -59,6 +59,18 @@ xauthloCATion = "/usr/bin/xauth"
     (xauth_location_value)))
 
 ==================
+can use tab character
+==================
+
+xauthloCATion	"/usr/bin/xauth"
+
+---
+
+(client_config
+  (xauth_location
+    (xauth_location_value)))
+
+==================
 can be specified after host
 ==================
 

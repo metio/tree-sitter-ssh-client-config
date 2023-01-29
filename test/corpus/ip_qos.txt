@@ -359,6 +359,18 @@ IPqOs = af11
     (ip_qos_value)))
 
 ==================
+can use tab character
+==================
+
+IPqOs	"af11"
+
+---
+
+(client_config
+  (ip_qos
+    (ip_qos_value)))
+
+==================
 can be specified after host
 ==================
 

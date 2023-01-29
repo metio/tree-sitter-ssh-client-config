@@ -71,6 +71,18 @@ PreferredAuthentications = "gssapi-with-mic,hostbased,publickey"
     (preferred_authentications_value)))
 
 ==================
+can use tab character
+==================
+
+PreferredAuthentications	"gssapi-with-mic,hostbased,publickey"
+
+---
+
+(client_config
+  (preferred_authentications
+    (preferred_authentications_value)))
+
+==================
 can be specified after host
 ==================
 

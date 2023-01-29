@@ -59,6 +59,18 @@ IdentityFILe = "~/.ssh/id_rsa"
     (identity_file_value)))
 
 ==================
+can use tab character
+==================
+
+IdentityFILe	"~/.ssh/id_rsa"
+
+---
+
+(client_config
+  (identity_file
+    (identity_file_value)))
+
+==================
 can be specified after host
 ==================
 

@@ -155,6 +155,18 @@ veRIFyHostKeyDNS = yes
     (verify_host_key_dns_value)))
 
 ==================
+can use tab character
+==================
+
+veRIFyHostKeyDNS	"yes"
+
+---
+
+(client_config
+  (verify_host_key_dns
+    (verify_host_key_dns_value)))
+
+==================
 can be specified after host
 ==================
 

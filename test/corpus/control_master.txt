@@ -203,6 +203,18 @@ ContrOLmASter = yes
     (control_master_value)))
 
 ==================
+can use tab character
+==================
+
+ContrOLmASter	"yes"
+
+---
+
+(client_config
+  (control_master
+    (control_master_value)))
+
+==================
 can be specified after host
 ==================
 

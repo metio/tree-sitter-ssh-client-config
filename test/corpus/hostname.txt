@@ -71,6 +71,18 @@ Hostname = "some-host"
     (hostname_value)))
 
 ==================
+can use tab character
+==================
+
+Hostname	"some-host"
+
+---
+
+(client_config
+  (hostname
+    (hostname_value)))
+
+==================
 can be specified after host
 ==================
 

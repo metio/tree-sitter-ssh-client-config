@@ -59,6 +59,18 @@ GSSAPIKexAlgorithms = "gss-gex-sha1-"
     (gssapi_kex_algorithms_value)))
 
 ==================
+can use tab character
+==================
+
+GSSAPIKexAlgorithms	"gss-gex-sha1-"
+
+---
+
+(client_config
+  (gssapi_kex_algorithms
+    (gssapi_kex_algorithms_value)))
+
+==================
 can be specified after host
 ==================
 
