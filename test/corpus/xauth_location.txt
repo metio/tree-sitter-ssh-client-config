@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (xauth_location
     (xauth_location_value)))
+
+==================
+requires whitespace after key
+==================
+
+XAuthLocation"/usr/bin/xauth"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '/')))

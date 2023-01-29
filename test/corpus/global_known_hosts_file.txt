@@ -96,3 +96,16 @@ Host example.com
     (host_value))
   (global_known_hosts_file
     (global_known_hosts_file_value)))
+
+==================
+requires whitespace after key
+==================
+
+GlobalKnownHostsFile"~/.ssh/hosts"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '~')
+    (UNEXPECTED '"')))

@@ -120,3 +120,15 @@ Host example.com
     (host_value))
   (control_persist
     (control_persist_value)))
+
+==================
+requires whitespace after key
+==================
+
+ControlPersist"5w"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'w')))

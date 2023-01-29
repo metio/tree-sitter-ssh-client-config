@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (rekey_limit
     (rekey_limit_value)))
+
+==================
+requires whitespace after key
+==================
+
+RekeyLimit"4G"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '"')))

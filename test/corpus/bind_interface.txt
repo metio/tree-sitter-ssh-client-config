@@ -84,3 +84,17 @@ Host example.com
     (host_value))
   (bind_interface
     (bind_interface_value)))
+
+==================
+requires whitespace after key
+==================
+
+BindInteRFAce"0.0.0.0"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '.')
+    (UNEXPECTED '.')
+    (UNEXPECTED '.')))

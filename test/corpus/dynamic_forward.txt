@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (dynamic_forward
     (dynamic_forward_value)))
+
+==================
+requires whitespace after key
+==================
+
+DynamicForward"*:3000"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '*')))

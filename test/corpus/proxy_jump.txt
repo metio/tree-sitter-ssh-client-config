@@ -96,3 +96,16 @@ Host example.com
     (host_value))
   (proxy_jump
     (proxy_jump_value)))
+
+==================
+requires whitespace after key
+==================
+
+ProxyJump"some-command arg1 arg2"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')))

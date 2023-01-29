@@ -96,3 +96,15 @@ Host example.com
     (host_value))
   (canonical_domains
     (canonical_domains_value)))
+
+==================
+requires whitespace after key
+==================
+
+CanonicaldOMAiNS"hoß.de"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 223)))

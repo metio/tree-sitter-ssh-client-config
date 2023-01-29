@@ -84,3 +84,15 @@ Host example.com
     (host_value))
   (send_env
     (send_env_value)))
+
+==================
+requires whitespace after key
+==================
+
+SendEnv"RANDOM_VA?"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'A')))

@@ -84,3 +84,14 @@ Host example.com
     (host_value))
   (tunnel_device
     (tunnel_device_value)))
+
+==================
+requires whitespace after key
+==================
+
+TunnelDevice"0177"
+
+---
+
+(client_config
+  (ERROR))

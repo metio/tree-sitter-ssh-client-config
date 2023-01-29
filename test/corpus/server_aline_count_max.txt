@@ -84,3 +84,14 @@ ServerAliveCountMax -1
 (client_config
   (ERROR
     (UNEXPECTED '-')))
+
+==================
+requires whitespace after key
+==================
+
+ServerAliveCountMax"3"
+
+---
+
+(client_config
+  (ERROR))

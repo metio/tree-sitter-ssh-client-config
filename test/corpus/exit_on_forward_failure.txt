@@ -156,3 +156,14 @@ exITonFORwardfAIlure ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+exITonFORwardfAIlure"yes"
+
+---
+
+(client_config
+  (ERROR))

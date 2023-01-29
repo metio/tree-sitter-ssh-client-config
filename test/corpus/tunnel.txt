@@ -108,3 +108,14 @@ tUNnel ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+tUNnel"no"
+
+---
+
+(client_config
+  (ERROR))

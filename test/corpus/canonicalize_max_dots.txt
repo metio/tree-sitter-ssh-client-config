@@ -84,3 +84,14 @@ CanonicalizeMaxDots -1
 (client_config
   (ERROR
     (UNEXPECTED '-')))
+
+==================
+requires whitespace after key
+==================
+
+CanonicalizeMaxDots2
+
+---
+
+(client_config
+  (ERROR))

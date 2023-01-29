@@ -84,3 +84,16 @@ Host example.com
     (host_value))
   (preferred_authentications
     (preferred_authentications_value)))
+
+==================
+requires whitespace after key
+==================
+
+PreferredAuthentications"gssapi-with-mic,hostbased,publickey"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '-')
+    (UNEXPECTED 's')))

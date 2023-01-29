@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (identity_file
     (identity_file_value)))
+
+==================
+requires whitespace after key
+==================
+
+IdentityFile"~/.ssh/id_rsa"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '~')))

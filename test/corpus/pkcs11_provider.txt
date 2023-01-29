@@ -84,3 +84,15 @@ Host example.com
     (host_value))
   (pkcs11_provider
     (pkcs11_provider_value)))
+
+==================
+requires whitespace after key
+==================
+
+PKCS11Provider"some-provider"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

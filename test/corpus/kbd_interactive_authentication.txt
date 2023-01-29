@@ -168,3 +168,14 @@ KbdInteractiveAuthentiCATion ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+KbdInteractiveAuthentiCATion"yes"
+
+---
+
+(client_config
+  (ERROR))

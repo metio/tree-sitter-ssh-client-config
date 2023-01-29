@@ -156,3 +156,14 @@ GateWAYpORts ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+GateWAYpORts"no"
+
+---
+
+(client_config
+  (ERROR))

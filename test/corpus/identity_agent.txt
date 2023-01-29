@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (identity_agent
     (identity_agent_value)))
+
+==================
+requires whitespace after key
+==================
+
+IdentityAgent"~/.ssh/agent"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '~')))

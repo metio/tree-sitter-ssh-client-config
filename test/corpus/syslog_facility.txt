@@ -192,3 +192,14 @@ SysLOGFacility ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+SysLOGFacility"yes"
+
+---
+
+(client_config
+  (ERROR))

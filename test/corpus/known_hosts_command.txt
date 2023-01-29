@@ -72,3 +72,16 @@ Host example.com
     (host_value))
   (known_hosts_command
     (known_hosts_command_value)))
+
+==================
+requires whitespace after key
+==================
+
+KnownHostsCommand"my-hosts"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'y')
+    (UNEXPECTED '"')))

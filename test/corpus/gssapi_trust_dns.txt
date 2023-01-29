@@ -156,3 +156,14 @@ GSSAPITrUStDns ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+GSSAPITrUStDns"no"
+
+---
+
+(client_config
+  (ERROR))

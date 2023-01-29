@@ -72,3 +72,16 @@ Host example.com
     (host_value))
   (remote_command
     (remote_command_value)))
+
+==================
+requires whitespace after key
+==================
+
+RemoteCommand"some-command arg1 arg2"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')
+    (UNEXPECTED 'r')))

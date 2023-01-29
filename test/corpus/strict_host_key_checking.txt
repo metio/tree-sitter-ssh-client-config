@@ -204,3 +204,14 @@ StricthOStKeyChecking ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+StricthOStKeyChecking"yes"
+
+---
+
+(client_config
+  (ERROR))

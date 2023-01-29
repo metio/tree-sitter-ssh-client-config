@@ -96,3 +96,15 @@ Host example.com
     (host_value))
   (ciphers
     (ciphers_value)))
+
+==================
+requires whitespace after key
+==================
+
+Ciphers"some-algo"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

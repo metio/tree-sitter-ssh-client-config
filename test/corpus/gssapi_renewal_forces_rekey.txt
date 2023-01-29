@@ -156,3 +156,14 @@ GSSAPIRenEWAlForcesRekey ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+GSSAPIRenEWAlForcesRekey"no"
+
+---
+
+(client_config
+  (ERROR))

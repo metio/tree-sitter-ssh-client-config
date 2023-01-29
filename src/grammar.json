@@ -425,6 +425,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "use_roaming"
+        },
+        {
+          "type": "SYMBOL",
           "name": "user"
         },
         {
@@ -512,6 +516,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -577,6 +594,19 @@
           },
           "named": false,
           "value": "Match"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -652,6 +682,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -717,6 +760,19 @@
           },
           "named": false,
           "value": "AddressFamily"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -800,6 +856,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -870,6 +939,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -930,6 +1012,19 @@
           },
           "named": false,
           "value": "BindInterface"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -1000,6 +1095,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1060,6 +1168,19 @@
           },
           "named": false,
           "value": "CanonicalizeFallbackLocal"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -1130,6 +1251,19 @@
           },
           "named": false,
           "value": "CanonicalizeHostname"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -1225,6 +1359,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1295,6 +1442,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1355,6 +1515,19 @@
           },
           "named": false,
           "value": "CASignatureAlgorithms"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -1425,6 +1598,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1485,6 +1671,19 @@
           },
           "named": false,
           "value": "ChallengeResponseAuthentication"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -1560,6 +1759,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1630,6 +1842,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1695,6 +1920,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1755,6 +1993,19 @@
           },
           "named": false,
           "value": "ClearAllForwardings"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -1830,6 +2081,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -1895,6 +2159,19 @@
           },
           "named": false,
           "value": "ConnectionAttempts"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -1970,6 +2247,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -2035,6 +2325,19 @@
           },
           "named": false,
           "value": "ControlMaster"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -2134,6 +2437,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -2194,6 +2510,19 @@
           },
           "named": false,
           "value": "ControlPersist"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -2278,6 +2607,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -2338,6 +2680,19 @@
           },
           "named": false,
           "value": "EnableSSHKeysign"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -2408,6 +2763,19 @@
           },
           "named": false,
           "value": "EscapeChar"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -2487,6 +2855,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -2552,6 +2933,19 @@
           },
           "named": false,
           "value": "FingerprintHash"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -2631,6 +3025,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -2701,6 +3108,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -2761,6 +3181,19 @@
           },
           "named": false,
           "value": "ForwardX11"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -2836,6 +3269,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -2901,6 +3347,19 @@
           },
           "named": false,
           "value": "ForwardX11Trusted"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -2976,6 +3435,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3046,6 +3518,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3106,6 +3591,19 @@
           },
           "named": false,
           "value": "GSSAPIAuthentication"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -3181,6 +3679,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3241,6 +3752,19 @@
           },
           "named": false,
           "value": "GSSAPIDelegateCredentials"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -3316,6 +3840,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3381,6 +3918,19 @@
           },
           "named": false,
           "value": "GSSAPIRenewalForcesRekey"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -3456,6 +4006,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3516,6 +4079,19 @@
           },
           "named": false,
           "value": "GSSAPITrustDns"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -3591,6 +4167,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3651,6 +4240,19 @@
           },
           "named": false,
           "value": "HashKnownHosts"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -3726,6 +4328,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3786,6 +4401,19 @@
           },
           "named": false,
           "value": "HostbasedAuthentication"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -3861,6 +4489,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -3921,6 +4562,19 @@
           },
           "named": false,
           "value": "HostKeyAlias"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -3991,6 +4645,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4051,6 +4718,19 @@
           },
           "named": false,
           "value": "IdentitiesOnly"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -4126,6 +4806,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4186,6 +4879,19 @@
           },
           "named": false,
           "value": "IdentityFile"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -4256,6 +4962,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4321,6 +5040,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4381,6 +5113,19 @@
           },
           "named": false,
           "value": "IPQoS"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -4565,6 +5310,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4635,6 +5393,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4695,6 +5466,19 @@
           },
           "named": false,
           "value": "KexAlgorithms"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -4765,6 +5549,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4825,6 +5622,19 @@
           },
           "named": false,
           "value": "LocalCommand"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -4895,6 +5705,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -4955,6 +5778,19 @@
           },
           "named": false,
           "value": "LogLevel"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -5062,6 +5898,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5127,6 +5976,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5187,6 +6049,19 @@
           },
           "named": false,
           "value": "NoHostAuthenticationForLocalhost"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -5262,6 +6137,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5327,6 +6215,19 @@
           },
           "named": false,
           "value": "PasswordAuthentication"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -5402,6 +6303,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5472,6 +6386,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5537,6 +6464,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5597,6 +6537,19 @@
           },
           "named": false,
           "value": "Port"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -5672,6 +6625,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5732,6 +6698,19 @@
           },
           "named": false,
           "value": "Protocol"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -5811,6 +6790,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5876,6 +6868,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -5936,6 +6941,19 @@
           },
           "named": false,
           "value": "ProxyUseFdpass"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -6011,6 +7029,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6076,6 +7107,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6136,6 +7180,19 @@
           },
           "named": false,
           "value": "PubkeyAuthentication"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -6231,6 +7288,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6291,6 +7361,19 @@
           },
           "named": false,
           "value": "RemoteCommand"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -6361,6 +7444,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6421,6 +7517,19 @@
           },
           "named": false,
           "value": "RequestTTY"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -6516,6 +7625,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6576,6 +7698,19 @@
           },
           "named": false,
           "value": "SecurityKeyProvider"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -6646,6 +7781,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6706,6 +7854,19 @@
           },
           "named": false,
           "value": "ServerAliveCountMax"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -6781,6 +7942,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6846,6 +8020,19 @@
           },
           "named": false,
           "value": "SessionType"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -6929,6 +8116,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -6989,6 +8189,19 @@
           },
           "named": false,
           "value": "StdinNull"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -7064,6 +8277,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -7124,6 +8350,19 @@
           },
           "named": false,
           "value": "StreamLocalBindUnlink"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -7194,6 +8433,19 @@
           },
           "named": false,
           "value": "StrictHostKeyChecking"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -7288,6 +8540,19 @@
           },
           "named": false,
           "value": "SyslogFacility"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -7403,6 +8668,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -7473,6 +8751,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -7538,6 +8829,19 @@
           },
           "named": false,
           "value": "Tunnel"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -7625,6 +8929,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -7685,6 +9002,19 @@
           },
           "named": false,
           "value": "UpdateHostKeys"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -7776,6 +9106,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -7823,6 +9166,89 @@
       "named": false,
       "value": "use_keychain_value"
     },
+    "use_roaming": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PREC",
+              "value": 1,
+              "content": {
+                "type": "PATTERN",
+                "value": "[uU][sS][eE][rR][oO][aA][mM][iI][nN][gG]"
+              }
+            }
+          },
+          "named": false,
+          "value": "UseRoaming"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "="
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "use_roaming_value"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "use_roaming_value": {
+      "type": "ALIAS",
+      "content": {
+        "type": "SYMBOL",
+        "name": "boolean"
+      },
+      "named": false,
+      "value": "use_roaming_value"
+    },
     "user": {
       "type": "SEQ",
       "members": [
@@ -7841,6 +9267,19 @@
           },
           "named": false,
           "value": "User"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -7911,6 +9350,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -7971,6 +9423,19 @@
           },
           "named": false,
           "value": "VerifyHostKeyDNS"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",
@@ -8062,6 +9527,19 @@
           "type": "CHOICE",
           "members": [
             {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
               "type": "STRING",
               "value": "="
             },
@@ -8127,6 +9605,19 @@
           },
           "named": false,
           "value": "XAuthLocation"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
         },
         {
           "type": "CHOICE",

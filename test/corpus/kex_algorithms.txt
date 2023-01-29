@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (kex_algorithms
     (kex_algorithms_value)))
+
+==================
+requires whitespace after key
+==================
+
+KexAlgorithms"ssh-ed25519"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 's')))

@@ -760,6 +760,10 @@
           "named": true
         },
         {
+          "type": "use_roaming",
+          "named": true
+        },
+        {
           "type": "user",
           "named": true
         },
@@ -2503,6 +2507,26 @@
     "fields": {}
   },
   {
+    "type": "use_roaming",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "use_roaming_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "use_roaming_value",
+    "named": false,
+    "fields": {}
+  },
+  {
     "type": "user",
     "named": true,
     "fields": {},
@@ -3072,6 +3096,10 @@
   },
   {
     "type": "UseKeychain",
+    "named": false
+  },
+  {
+    "type": "UseRoaming",
     "named": false
   },
   {

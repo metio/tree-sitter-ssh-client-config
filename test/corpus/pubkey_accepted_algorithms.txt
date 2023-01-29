@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (pubkey_accepted_algorithms
     (pubkey_accepted_algorithms_value)))
+
+==================
+requires whitespace after key
+==================
+
+PubkeyAcceptedAlgorithms"ssh-ed25519"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 's')))

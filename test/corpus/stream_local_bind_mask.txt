@@ -72,3 +72,14 @@ Host example.com
     (host_value))
   (stream_local_bind_mask
     (stream_local_bind_mask_value)))
+
+==================
+requires whitespace after key
+==================
+
+StreamLocalBindMask"0177"
+
+---
+
+(client_config
+  (ERROR))

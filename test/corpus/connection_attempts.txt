@@ -84,3 +84,14 @@ ConnectionAttempts -1
 (client_config
   (ERROR
     (UNEXPECTED '-')))
+
+==================
+requires whitespace after key
+==================
+
+ConnectionAttempts"2"
+
+---
+
+(client_config
+  (ERROR))

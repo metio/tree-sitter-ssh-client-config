@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (host_key_algorithms
     (host_key_algorithms_value)))
+
+==================
+requires whitespace after key
+==================
+
+HostKeyAlgorithms"ssh-ed25519"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 's')))

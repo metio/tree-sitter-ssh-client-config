@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (kbd_interactive_devices
     (kbd_interactive_devices_value)))
+
+==================
+requires whitespace after key
+==================
+
+KbdInteractiveDevices"pam"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'm')))

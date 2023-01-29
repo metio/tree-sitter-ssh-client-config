@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (user
     (user_value)))
+
+==================
+requires whitespace after key
+==================
+
+User"some-user"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

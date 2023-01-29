@@ -887,6 +887,7 @@ module.exports = grammar({
 function option(name, value) {
   return seq(
       keyword(name),
+      choice(/[ \t]/, '='),
       optional('='),
       optional('"'),
       value,

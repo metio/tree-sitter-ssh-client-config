@@ -165,3 +165,16 @@ host = "*"
 (client_config
   (host
     (host_value)))
+
+==================
+requires whitespace after key
+==================
+
+host"example.com"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'a')
+    (UNEXPECTED '.')))

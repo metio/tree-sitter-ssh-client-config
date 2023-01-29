@@ -108,3 +108,14 @@ Host example.com
     (host_value))
   (forward_agent
     (forward_agent_value)))
+
+==================
+requires whitespace after key
+==================
+
+fORwARDagent"yes"
+
+---
+
+(client_config
+  (ERROR))

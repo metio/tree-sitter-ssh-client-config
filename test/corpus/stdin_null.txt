@@ -156,3 +156,14 @@ StdINNull ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+StdINNull"no"
+
+---
+
+(client_config
+  (ERROR))

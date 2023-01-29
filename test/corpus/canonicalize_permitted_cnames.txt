@@ -72,3 +72,18 @@ Host example.com
     (host_value))
   (canonicalize_permitted_cnames
     (canonicalize_permitted_cnames_value)))
+
+==================
+requires whitespace after key
+==================
+
+CanonicalizePermittedCNAMEs"*.a.example.com:*.b.example.com,*.c.example.com"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '*')
+    (UNEXPECTED '.')
+    (UNEXPECTED '.')
+    (UNEXPECTED '.')))

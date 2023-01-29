@@ -132,3 +132,14 @@ AddressFamily net
 (client_config
   (ERROR
     (UNEXPECTED 'e')))
+
+==================
+requires whitespace after key
+==================
+
+AddressFamilY"inet6"
+
+---
+
+(client_config
+  (ERROR))

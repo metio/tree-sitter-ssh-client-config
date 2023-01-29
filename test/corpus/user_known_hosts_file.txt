@@ -72,3 +72,16 @@ Host example.com
     (host_value))
   (user_known_hosts_file
     (user_known_hosts_file_value)))
+
+==================
+requires whitespace after key
+==================
+
+UserKnownHostsFile"~/.ssh/known_hosts"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '~')
+    (UNEXPECTED '"')))

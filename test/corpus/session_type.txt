@@ -132,3 +132,14 @@ SessionTYPe ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+SessionTYPe"default"
+
+---
+
+(client_config
+  (ERROR))

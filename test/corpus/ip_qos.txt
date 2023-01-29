@@ -386,3 +386,14 @@ IPQoS af51
     (ERROR
       (UNEXPECTED '5'))
     (ip_qos_value)))
+
+==================
+requires whitespace after key
+==================
+
+IPQoS"af11"
+
+---
+
+(client_config
+  (ERROR))

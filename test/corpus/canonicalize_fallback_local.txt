@@ -156,3 +156,14 @@ CanonicalizeFALLbackLocal ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+CanonicalizeFALLbackLocALyes
+
+---
+
+(client_config
+  (ERROR))

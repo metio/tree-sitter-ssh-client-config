@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (remote_forward
     (remote_forward_value)))
+
+==================
+requires whitespace after key
+==================
+
+RemoteForward"*:3000"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '*')))

@@ -180,3 +180,14 @@ updaTEhostKeys ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+updaTEhostKeys"no"
+
+---
+
+(client_config
+  (ERROR))

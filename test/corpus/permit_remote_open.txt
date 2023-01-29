@@ -132,3 +132,15 @@ Host example.com
     (host_value))
   (permit_remote_open
     (permit_remote_open_value)))
+
+==================
+requires whitespace after key
+==================
+
+PermitRemoteOpen"*:3000"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '*')))

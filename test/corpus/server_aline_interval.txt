@@ -84,3 +84,14 @@ ServerAliveInterval -1
 (client_config
   (ERROR
     (UNEXPECTED '-')))
+
+==================
+requires whitespace after key
+==================
+
+ServerAliveInterval"3"
+
+---
+
+(client_config
+  (ERROR))

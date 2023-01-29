@@ -96,3 +96,15 @@ Host example.com
     (host_value))
   (ca_signature_algorithms
     (ca_signature_algorithms_value)))
+
+==================
+requires whitespace after key
+==================
+
+CASignatureAlgorithMS"some-algo"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

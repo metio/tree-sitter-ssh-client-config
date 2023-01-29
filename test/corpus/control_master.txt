@@ -228,3 +228,14 @@ ContrOLmASter ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+ContrOLmASter"no"
+
+---
+
+(client_config
+  (ERROR))

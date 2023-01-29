@@ -72,3 +72,16 @@ Host example.com
     (host_value))
   (log_verbose
     (log_verbose_value)))
+
+==================
+requires whitespace after key
+==================
+
+LogVerbose"kex.c:*:1000,*:kex_exchange_identification():*,packet.c:*"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '.')
+    (UNEXPECTED ',')))

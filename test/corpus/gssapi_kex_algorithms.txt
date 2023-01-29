@@ -72,3 +72,16 @@ Host example.com
     (host_value))
   (gssapi_kex_algorithms
     (gssapi_kex_algorithms_value)))
+
+==================
+requires whitespace after key
+==================
+
+GSSAPIKexAlgorithms"gss-gex-sha1-"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '-')
+    (UNEXPECTED '-')))

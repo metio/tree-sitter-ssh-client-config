@@ -84,3 +84,15 @@ Host example.com
     (host_value))
   (hostname
     (hostname_value)))
+
+==================
+requires whitespace after key
+==================
+
+Hostname"some-host"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

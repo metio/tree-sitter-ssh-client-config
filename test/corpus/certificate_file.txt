@@ -84,3 +84,15 @@ Host example.com
     (host_value))
   (certificate_file
     (certificate_file_value)))
+
+==================
+requires whitespace after key
+==================
+
+CertificateFile"~/.ssh/cert"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '~')))

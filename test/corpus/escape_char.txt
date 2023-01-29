@@ -106,7 +106,17 @@ EscapeChar ^||
 ---
 
 (client_config
-  (escape_char
-    (escape_char_value))
   (ERROR
     (UNEXPECTED '^')))
+
+==================
+requires whitespace after key
+==================
+
+EscapeChar"none"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'e')))

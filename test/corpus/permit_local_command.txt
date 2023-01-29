@@ -156,3 +156,14 @@ PermitLocALcommand ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+PermitLocALcommand"yes"
+
+---
+
+(client_config
+  (ERROR))

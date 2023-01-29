@@ -72,3 +72,14 @@ Host example.com
     (host_value))
   (fingerprint_hash
     (fingerprint_hash_value)))
+
+==================
+requires whitespace after key
+==================
+
+FingerprintHash"md5"
+
+---
+
+(client_config
+  (ERROR))

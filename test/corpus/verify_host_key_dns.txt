@@ -180,3 +180,14 @@ veRIFyHostKeyDNS ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+veRIFyHostKeyDNS"no"
+
+---
+
+(client_config
+  (ERROR))

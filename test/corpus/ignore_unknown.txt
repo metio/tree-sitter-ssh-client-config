@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (ignore_unknown
     (ignore_unknown_value)))
+
+==================
+requires whitespace after key
+==================
+
+IgnoreUnknown"SomeOption"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

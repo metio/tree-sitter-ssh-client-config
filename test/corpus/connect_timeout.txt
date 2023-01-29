@@ -84,3 +84,14 @@ ConnectTimeout -1
 (client_config
   (ERROR
     (UNEXPECTED '-')))
+
+==================
+requires whitespace after key
+==================
+
+ConnectTimeout"2"
+
+---
+
+(client_config
+  (ERROR))

@@ -83,3 +83,14 @@ ProTOcOL 3
 
 (client_config
   (ERROR))
+
+==================
+requires whitespace after key
+==================
+
+ProTOcOL"2"
+
+---
+
+(client_config
+  (ERROR))

@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (gssapi_client_identity
     (gssapi_client_identity_value)))
+
+==================
+requires whitespace after key
+==================
+
+GSSAPIClientIdentity"some-user"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

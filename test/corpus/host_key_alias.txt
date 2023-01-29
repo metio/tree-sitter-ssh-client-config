@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (host_key_alias
     (host_key_alias_value)))
+
+==================
+requires whitespace after key
+==================
+
+HostKeyAlias"some-user"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

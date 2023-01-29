@@ -264,3 +264,14 @@ Host example.com
     (host_value))
   (log_level
     (log_level_value)))
+
+==================
+requires whitespace after key
+==================
+
+LogLevel"info"
+
+---
+
+(client_config
+  (ERROR))

@@ -84,3 +84,17 @@ Host example.com
     (host_value))
   (bind_address
     (bind_address_value)))
+
+==================
+requires whitespace after key
+==================
+
+bINdaDDress"127.0.0.1"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '.')
+    (UNEXPECTED '.')
+    (UNEXPECTED '.')))

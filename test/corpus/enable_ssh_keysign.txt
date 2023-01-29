@@ -156,3 +156,14 @@ enabLEsshKEysign ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+enabLEsshKEysign"yes"
+
+---
+
+(client_config
+  (ERROR))

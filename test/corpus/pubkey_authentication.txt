@@ -180,3 +180,14 @@ PubkeyAuTHEntication ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+PubkeyAuTHEntication"yes"
+
+---
+
+(client_config
+  (ERROR))

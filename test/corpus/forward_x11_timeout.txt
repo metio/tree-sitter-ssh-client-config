@@ -143,3 +143,14 @@ ForwardX11TimeOUT no
 
 (client_config
   (ERROR))
+
+==================
+requires whitespace after key
+==================
+
+ForwardX11TimeOUT"0"
+
+---
+
+(client_config
+  (ERROR))

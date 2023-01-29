@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (local_forward
     (local_forward_value)))
+
+==================
+requires whitespace after key
+==================
+
+LocalForward"*:3000"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '*')))

@@ -156,3 +156,14 @@ forWARdX11 ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+forWARdX11"yes"
+
+---
+
+(client_config
+  (ERROR))

@@ -72,3 +72,14 @@ Host example.com
     (host_value))
   (revoked_host_keys
     (revoked_host_keys_value)))
+
+==================
+requires whitespace after key
+==================
+
+RevokedHostKeys"~/.ssh/revoked"
+
+---
+(client_config
+  (ERROR
+    (UNEXPECTED '~')))

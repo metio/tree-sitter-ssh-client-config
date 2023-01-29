@@ -192,3 +192,14 @@ CanonicalizeHostname ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+CanonicalizeHostnaMEyes
+
+---
+
+(client_config
+  (ERROR))

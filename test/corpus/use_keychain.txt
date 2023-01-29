@@ -156,3 +156,14 @@ usekEYChain ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+usekEYChain"no"
+
+---
+
+(client_config
+  (ERROR))

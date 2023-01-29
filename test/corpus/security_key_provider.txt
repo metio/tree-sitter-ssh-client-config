@@ -84,3 +84,15 @@ Host example.com
     (host_value))
   (security_key_provider
     (security_key_provider_value)))
+
+==================
+requires whitespace after key
+==================
+
+SecurityKeyProvider"some-provider"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

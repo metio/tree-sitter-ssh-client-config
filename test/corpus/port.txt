@@ -60,3 +60,14 @@ Host example.com
     (host_value))
   (port
     (port_value)))
+
+==================
+requires whitespace after key
+==================
+
+Port"12345"
+
+---
+
+(client_config
+  (ERROR))

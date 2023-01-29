@@ -156,3 +156,14 @@ HashKnownHOSts ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+HashKnownHOSts"no"
+
+---
+
+(client_config
+  (ERROR))

@@ -156,3 +156,14 @@ HostbasedAUTHentication ja
 (client_config
   (ERROR
     (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+HostbasedAUTHentication"no"
+
+---
+
+(client_config
+  (ERROR))

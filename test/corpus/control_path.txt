@@ -108,3 +108,15 @@ Host example.com
     (host_value))
   (control_path
     (control_path_value)))
+
+==================
+requires whitespace after key
+==================
+
+ControlPath"~/.ssh/control"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED '~')))

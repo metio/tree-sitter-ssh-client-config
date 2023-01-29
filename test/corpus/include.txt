@@ -72,3 +72,15 @@ Host example.com
     (host_value))
   (include
     (include_value)))
+
+==================
+requires whitespace after key
+==================
+
+Include"some-other.config"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))
