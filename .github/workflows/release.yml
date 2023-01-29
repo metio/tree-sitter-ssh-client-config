@@ -1,28 +1,80 @@
 name: Perform Release
 on:
-  push:
-    tags:
-      - '*'
+  schedule:
+    - cron: 53 2 * * THU
+  workflow_dispatch:
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - id: commits
+        name: Count Commits
+        run: echo "count=$(git rev-list --count HEAD --since='last week')" >> $GITHUB_OUTPUT
+      - id: release
+        name: Create Release Version
+        if: steps.commits.outputs.count > 0
+        run: echo "version=$(date +'%Y.%-m.%-d')" >> $GITHUB_OUTPUT
       - name: Set up Node
+        if: steps.commits.outputs.count > 0
         uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: npm
           registry-url: https://registry.npmjs.org
       - name: Set up Rust
+        if: steps.commits.outputs.count > 0
         uses: dtolnay/rust-toolchain@stable
+      - name: Cargo Version
+        if: steps.commits.outputs.count > 0
+        run: sed -i -e 's/^version = .*/version = "${{ steps.release.outputs.version }}"/' Cargo.toml
+      - name: NPM Version
+        if: steps.commits.outputs.count > 0
+        run: npm --no-git-tag-version version ${{ steps.release.outputs.version }}
       - name: Install dependencies
+        if: steps.commits.outputs.count > 0
         run: npm install
       - name: Generate grammar
+        if: steps.commits.outputs.count > 0
         run: npm run generate
       - name: Publish to npmjs.com
+        if: steps.commits.outputs.count > 0
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish to crates.io
-        run: cargo publish --token ${{ secrets.CRATES_IO_TOKEN }}
+        if: steps.commits.outputs.count > 0
+        run: cargo publish --allow-dirty --token ${{ secrets.CRATES_IO_TOKEN }}
+      - id: create_release
+        name: Create Release
+        if: steps.commits.outputs.count > 0
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.release.outputs.version }}
+          name: ${{ steps.release.outputs.version }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+      - id: mail
+        name: Send Mail
+        if: steps.commits.outputs.count > 0
+        uses: dawidd6/action-send-mail@v3.7.1
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: ${{ github.event.repository.name }} version ${{ steps.release.outputs.version }} published
+          body: See ${{ steps.create_release.outputs.url }} for details.
+          to: ${{ secrets.MAIL_RECIPIENT }}
+          from: ${{ secrets.MAIL_SENDER }}
+      - id: matrix
+        name: Send Matrix Message
+        if: steps.commits.outputs.count > 0
+        uses: s3krit/matrix-message-action@v0.0.3
+        with:
+          room_id: ${{ secrets.MATRIX_ROOM_ID }}
+          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
+          message: ${{ github.event.repository.name }} version [${{ steps.release.outputs.version }}](${{ steps.create_release.outputs.url }}) published
+          server: ${{ secrets.MATRIX_SERVER }}

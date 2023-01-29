@@ -1,7 +1,7 @@
 [package]
 name = "tree-sitter-ssh-client-config"
 description = "SSH client config grammar for the tree-sitter parsing library"
-version = "1.0.4"
+version = "9999.99.99"
 keywords = ["incremental", "parsing", "ssh", "client", "config"]
 categories = ["parsing", "text-editors"]
 repository = "https://github.com/metio/tree-sitter-ssh-client-config"
