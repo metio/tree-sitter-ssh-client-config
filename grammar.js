@@ -201,7 +201,7 @@ module.exports = grammar({
         ignoreCase('no'),
         ignoreCase('false'),
         ignoreCase('always'),
-        'none'
+        ignoreCase('none'),
     ),
 
     canonicalize_max_dots: $ => option(

@@ -1331,8 +1331,8 @@
           "value": "[aA][lL][wW][aA][yY][sS]"
         },
         {
-          "type": "STRING",
-          "value": "none"
+          "type": "PATTERN",
+          "value": "[nN][oO][nN][eE]"
         }
       ]
     },

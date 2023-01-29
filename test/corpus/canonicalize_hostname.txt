@@ -119,10 +119,22 @@ CanonicalizeHostname Always
     (canonicalize_hostname_value)))
 
 ==================
-disable ProxyJump host
+disable perform hostname canonicalization
 ==================
 
 CanonicalizeHostname none
+
+---
+
+(client_config
+  (canonicalize_hostname
+    (canonicalize_hostname_value)))
+
+==================
+Disable Perform Hostname Canonicalization
+==================
+
+CanonicalizeHostname None
 
 ---
 
