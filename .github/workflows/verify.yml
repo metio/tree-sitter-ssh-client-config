@@ -22,3 +22,5 @@ jobs:
         run: npm run generate
       - name: Run all tests
         run: npm run test
+      - name: Run all examples
+        run: npm run examples
