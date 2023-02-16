@@ -36,6 +36,7 @@ module.exports = grammar({
         $.control_path,
         $.control_persist,
         $.dynamic_forward,
+        $.enable_escape_commandline,
         $.enable_ssh_keysign,
         $.escape_char,
         $.exit_on_forward_failure,
@@ -313,6 +314,12 @@ module.exports = grammar({
         $.dynamic_forward_value
     ),
     dynamic_forward_value: $ => /\S.*/,
+
+    enable_escape_commandline: $ => option(
+        'EnableEscapeCommandline',
+        $.enable_escape_commandline_value
+    ),
+    enable_escape_commandline_value: $ => alias($.boolean, "enable_escape_commandline_value"),
 
     enable_ssh_keysign: $ => option(
         'EnableSSHKeysign',

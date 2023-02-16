@@ -444,6 +444,10 @@
           "named": true
         },
         {
+          "type": "enable_escape_commandline",
+          "named": true
+        },
+        {
           "type": "enable_ssh_keysign",
           "named": true
         },
@@ -928,6 +932,26 @@
   {
     "type": "dynamic_forward_value",
     "named": true,
+    "fields": {}
+  },
+  {
+    "type": "enable_escape_commandline",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "enable_escape_commandline_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enable_escape_commandline_value",
+    "named": false,
     "fields": {}
   },
   {
@@ -2768,6 +2792,10 @@
   },
   {
     "type": "DynamicForward",
+    "named": false
+  },
+  {
+    "type": "EnableEscapeCommandline",
     "named": false
   },
   {
