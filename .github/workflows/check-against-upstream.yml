@@ -1,0 +1,20 @@
+name: Check Upstream Options
+on:
+  schedule:
+    - cron: 5 7 3 * *
+  workflow_dispatch:
+jobs:
+  upstream:
+    name: Check Upstream Options
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+      - name: Install htmlq
+        run: cargo install htmlq
+      - name: Verify htmlq
+        run: htmlq --version
+      - name: Check Upstream Options
+        run: make upstream
