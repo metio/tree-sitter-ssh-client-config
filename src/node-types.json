@@ -692,6 +692,10 @@
           "named": true
         },
         {
+          "type": "required_rsa_size",
+          "named": true
+        },
+        {
           "type": "revoked_host_keys",
           "named": true
         },
@@ -2167,6 +2171,26 @@
     "fields": {}
   },
   {
+    "type": "required_rsa_size",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "required_rsa_size_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "required_rsa_size_value",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "revoked_host_keys",
     "named": true,
     "fields": {},
@@ -3027,6 +3051,10 @@
     "named": false
   },
   {
+    "type": "RequiredRSASize",
+    "named": false
+  },
+  {
     "type": "RevokedHostKeys",
     "named": false
   },
@@ -3176,6 +3204,10 @@
   },
   {
     "type": "port_value",
+    "named": false
+  },
+  {
+    "type": "required_rsa_size_value",
     "named": false
   },
   {

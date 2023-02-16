@@ -95,6 +95,7 @@ module.exports = grammar({
         $.remote_command,
         $.remote_forward,
         $.request_tty,
+        $.required_rsa_size,
         $.revoked_host_keys,
         $.security_key_provider,
         $.send_env,
@@ -708,6 +709,13 @@ module.exports = grammar({
         ignoreCase('auto'),
         ignoreCase('force'),
     ),
+
+    required_rsa_size: $ => option(
+        'RequiredRSASize',
+        $.required_rsa_size_value
+    ),
+    required_rsa_size_value: $ => alias($.number,
+        "required_rsa_size_value"),
 
     revoked_host_keys: $ => option(
         'RevokedHostKeys',
