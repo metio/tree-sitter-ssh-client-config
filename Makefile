@@ -38,3 +38,13 @@ aflfuzz: fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer
 
 fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer:
 	cargo build --manifest-path fuzz/aflplusplus/Cargo.toml --release
+
+test/upstream/options:
+	curl --silent https://man.openbsd.org/ssh_config | htmlq --text 'dt' | grep --invert-match '%' | grep --invert-match '/' > test/upstream/options
+
+test/upstream/missing: test/upstream/options
+	cat test/upstream/options | xargs --no-run-if-empty --replace sh -c "grep --no-ignore-case --recursive --quiet --include '*.txt' {} ./test/corpus || echo '{}'" > test/upstream/missing
+
+.PHONY: upstream
+upstream: test/upstream/missing
+	@if test "$$( wc --lines < test/upstream/missing )" -gt 0; then cat test/upstream/missing && exit 1; fi

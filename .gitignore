@@ -6,3 +6,5 @@ target/
 crash.txt
 fuzz/aflplusplus/out
 /.build/
+test/upstream/options
+test/upstream/missing
