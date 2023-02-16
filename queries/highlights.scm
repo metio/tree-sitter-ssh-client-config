@@ -255,6 +255,9 @@
 (request_tty) @keyword
 (request_tty_value) @constant.builtin.string
 
+(required_rsa_size) @keyword
+(required_rsa_size_value) @constant.numeric.integer
+
 (revoked_host_keys) @keyword
 (revoked_host_keys_value) @string.special.path
 

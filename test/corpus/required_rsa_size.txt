@@ -1,0 +1,97 @@
+==================
+RequiredRSASize 1024
+==================
+
+RequiredRSASize 1024
+
+---
+
+(client_config
+  (required_rsa_size
+    (required_rsa_size_value)))
+
+==================
+use irregular casing
+==================
+
+RequireDrsaSize 1024
+
+---
+
+(client_config
+  (required_rsa_size
+    (required_rsa_size_value)))
+
+==================
+can use equals sign
+==================
+
+RequireDrsaSize=1024
+
+---
+
+(client_config
+  (required_rsa_size
+    (required_rsa_size_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+RequireDrsaSize = 1024
+
+---
+
+(client_config
+  (required_rsa_size
+    (required_rsa_size_value)))
+
+==================
+can use tab character
+==================
+
+RequireDrsaSize	"1024"
+
+---
+
+(client_config
+  (required_rsa_size
+    (required_rsa_size_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  RequireDrsaSize 1025
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (required_rsa_size
+    (required_rsa_size_value)))
+
+==================
+detect invalid values
+==================
+
+RequireDrsaSize ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+RequireDrsaSize"1024"
+
+---
+
+(client_config
+  (ERROR))
