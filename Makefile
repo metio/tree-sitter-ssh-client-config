@@ -40,6 +40,7 @@ fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer:
 	cargo build --manifest-path fuzz/aflplusplus/Cargo.toml --release
 
 test/upstream/options:
+	mkdir --parents test/upstream
 	curl --silent https://man.openbsd.org/ssh_config | htmlq --text 'dt' | grep --invert-match '%' | grep --invert-match '/' > test/upstream/options
 
 test/upstream/missing: test/upstream/options
