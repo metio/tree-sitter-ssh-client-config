@@ -81,6 +81,9 @@
 (enable_ssh_keysign) @keyword
 (enable_ssh_keysign_value) @constant.builtin.boolean
 
+(enable_escape_commandline) @keyword
+(enable_escape_commandline_value) @constant.builtin.boolean
+
 (escape_char) @keyword
 (escape_char_value) @constant.character.escape
 

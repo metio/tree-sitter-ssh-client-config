@@ -1,0 +1,181 @@
+==================
+EnableEscapeCommandline = yes
+==================
+
+EnableEscapeCommandline yes
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+EnableEscapeCommandline = Yes
+==================
+
+EnableEscapeCommandline Yes
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+EnableEscapeCommandline = true
+==================
+
+EnableEscapeCommandline true
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+EnableEscapeCommandline = True
+==================
+
+EnableEscapeCommandline True
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+EnableEscapeCommandline = no
+==================
+
+EnableEscapeCommandline no
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+EnableEscapeCommandline = No
+==================
+
+EnableEscapeCommandline No
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+EnableEscapeCommandline = false
+==================
+
+EnableEscapeCommandline false
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+EnableEscapeCommandline = False
+==================
+
+EnableEscapeCommandline False
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+use irregular casing
+==================
+
+EnableEscAPeCommandline yes
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+can use equals sign
+==================
+
+EnableEscapeCommandline=yes
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+EnableEscapeCommandline = yes
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+can use tab character
+==================
+
+EnableEscapeCommandline	"yes"
+
+---
+
+(client_config
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  EnableEscapeCommandline no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (enable_escape_commandline
+    (enable_escape_commandline_value)))
+
+==================
+detect invalid values
+==================
+
+EnableEscapeCommandline ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+EnableEscapeCommandline"yes"
+
+---
+
+(client_config
+  (ERROR))

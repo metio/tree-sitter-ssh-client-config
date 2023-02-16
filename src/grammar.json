@@ -117,6 +117,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "enable_escape_commandline"
+        },
+        {
+          "type": "SYMBOL",
           "name": "enable_ssh_keysign"
         },
         {
@@ -2665,6 +2669,89 @@
     "dynamic_forward_value": {
       "type": "PATTERN",
       "value": "\\S.*"
+    },
+    "enable_escape_commandline": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PREC",
+              "value": 1,
+              "content": {
+                "type": "PATTERN",
+                "value": "[eE][nN][aA][bB][lL][eE][eE][sS][cC][aA][pP][eE][cC][oO][mM][mM][aA][nN][dD][lL][iI][nN][eE]"
+              }
+            }
+          },
+          "named": false,
+          "value": "EnableEscapeCommandline"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "="
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "enable_escape_commandline_value"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "enable_escape_commandline_value": {
+      "type": "ALIAS",
+      "content": {
+        "type": "SYMBOL",
+        "name": "boolean"
+      },
+      "named": false,
+      "value": "enable_escape_commandline_value"
     },
     "enable_ssh_keysign": {
       "type": "SEQ",
