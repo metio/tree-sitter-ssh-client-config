@@ -9063,20 +9063,20 @@
       "type": "CHOICE",
       "members": [
         {
-          "type": "STRING",
-          "value": "yes"
+          "type": "PATTERN",
+          "value": "[yY][eE][sS]"
         },
         {
-          "type": "STRING",
-          "value": "no"
+          "type": "PATTERN",
+          "value": "[nN][oO]"
         },
         {
-          "type": "STRING",
-          "value": "point-to-point"
+          "type": "PATTERN",
+          "value": "[pP][oO][iI][nN][tT][--][tT][oO][--][pP][oO][iI][nN][tT]"
         },
         {
-          "type": "STRING",
-          "value": "ethernet"
+          "type": "PATTERN",
+          "value": "[eE][tT][hH][eE][rR][nN][eE][tT]"
         }
       ]
     },

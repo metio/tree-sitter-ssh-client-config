@@ -3199,10 +3199,6 @@
     "named": false
   },
   {
-    "type": "ethernet",
-    "named": false
-  },
-  {
     "type": "forward_x11_timeout_value",
     "named": false
   },
@@ -3215,19 +3211,11 @@
     "named": false
   },
   {
-    "type": "no",
-    "named": false
-  },
-  {
     "type": "none",
     "named": false
   },
   {
     "type": "number_of_password_prompts_value",
-    "named": false
-  },
-  {
-    "type": "point-to-point",
     "named": false
   },
   {
@@ -3248,10 +3236,6 @@
   },
   {
     "type": "sha256",
-    "named": false
-  },
-  {
-    "type": "yes",
     "named": false
   }
 ]
