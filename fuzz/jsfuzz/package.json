@@ -6,8 +6,8 @@
     "fuzz": "jsfuzz fuzz.js ../../examples --exact-artifact-path crash.config --rss-limit-mb 1024"
   },
   "dependencies": {
-    "jsfuzz": "^1.0.15",
-    "tree-sitter": "^0.20.0",
+    "jsfuzz": "1.0.15",
+    "tree-sitter": "0.20.1",
     "tree-sitter-ssh-client-config": "file:../../"
   }
 }
