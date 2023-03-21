@@ -1,5 +1,5 @@
-#ifndef TREE_SITTER_SSHCLIENTCONFIG_H_
-#define TREE_SITTER_SSHCLIENTCONFIG_H_
+#ifndef TREE_SITTER_SSH_CLIENT_CONFIG_H_
+#define TREE_SITTER_SSH_CLIENT_CONFIG_H_
 
 typedef struct TSLanguage TSLanguage;
 
@@ -7,10 +7,10 @@ typedef struct TSLanguage TSLanguage;
 extern "C" {
 #endif
 
-extern TSLanguage *tree_sitter_sshclientconfig();
+extern TSLanguage *tree_sitter_ssh_client_config();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // TREE_SITTER_SSHCLIENTCONFIG_H_
+#endif // TREE_SITTER_SSH_CLIENT_CONFIG_H_

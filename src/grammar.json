@@ -1,5 +1,5 @@
 {
-  "name": "sshclientconfig",
+  "name": "ssh_client_config",
   "rules": {
     "client_config": {
       "type": "REPEAT",

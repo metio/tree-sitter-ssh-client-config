@@ -4,6 +4,7 @@ build/
 target/
 .nyc_output/
 crash.txt
+fuzz/afl.rs/out
 fuzz/aflplusplus/out
 /.build/
 test/upstream/options

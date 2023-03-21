@@ -11,14 +11,14 @@ use encoding_rs::UTF_8;
 use encoding_rs_io::DecodeReaderBytesBuilder;
 
 extern "C" {
-    fn tree_sitter_sshclientconfig() -> Language;
+    fn tree_sitter_ssh_client_config() -> Language;
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
     let filename = &args[1];
 
-    let language = unsafe { tree_sitter_sshclientconfig() };
+    let language = unsafe { tree_sitter_ssh_client_config() };
     let mut parser = Parser::new();
     parser.set_language(language).unwrap();
 
