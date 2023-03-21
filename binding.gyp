@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "tree_sitter_sshclientconfig_binding",
+      "target_name": "tree_sitter_ssh_client_config_binding",
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
         "src"

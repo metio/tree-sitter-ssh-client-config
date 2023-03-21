@@ -1,5 +1,5 @@
 module.exports = grammar({
-  name: 'sshclientconfig',
+  name: 'ssh_client_config',
 
   extras: $ => [
     $.comment,

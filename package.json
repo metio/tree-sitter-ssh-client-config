@@ -30,10 +30,10 @@
   "contributors": [],
   "license": "CC0-1.0",
   "dependencies": {
-    "nan": "^2.17.0"
+    "nan": "2.17.0"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.20.7"
+    "tree-sitter-cli": "0.20.7"
   },
   "tree-sitter": [
     {
