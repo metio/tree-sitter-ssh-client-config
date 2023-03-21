@@ -1,4 +1,5 @@
 shell
 --containerfile dev/Containerfile
+--pull
 metio/tree-sitter-ssh-config/ilo:latest
 bash
