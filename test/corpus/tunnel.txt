@@ -23,6 +23,30 @@ Tunnel no
     (tunnel_value)))
 
 ==================
+tunnel = Yes
+==================
+
+Tunnel Yes
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+tunnel = No
+==================
+
+Tunnel No
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
 tunnel = point-to-point
 ==================
 
@@ -39,6 +63,30 @@ tunnel = ethernet
 ==================
 
 Tunnel ethernet
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+tunnel = Point-to-Point
+==================
+
+Tunnel Point-to-Point
+
+---
+
+(client_config
+  (tunnel
+    (tunnel_value)))
+
+==================
+tunnel = Ethernet
+==================
+
+Tunnel Ethernet
 
 ---
 

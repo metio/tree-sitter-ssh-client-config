@@ -319,7 +319,8 @@ module.exports = grammar({
         'EnableEscapeCommandline',
         $.enable_escape_commandline_value
     ),
-    enable_escape_commandline_value: $ => alias($.boolean, "enable_escape_commandline_value"),
+    enable_escape_commandline_value: $ => alias($.boolean,
+        "enable_escape_commandline_value"),
 
     enable_ssh_keysign: $ => option(
         'EnableSSHKeysign',
@@ -828,7 +829,12 @@ module.exports = grammar({
         'Tunnel',
         $.tunnel_value
     ),
-    tunnel_value: $ => choice('yes', 'no', 'point-to-point', 'ethernet'),
+    tunnel_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('no'),
+        ignoreCase('point-to-point'),
+        ignoreCase('ethernet'),
+    ),
 
     tunnel_device: $ => option(
         'TunnelDevice',
@@ -924,7 +930,7 @@ function reserved(regex) {
 
 function caseInsensitive(word) {
   return word
-      .split('')
-      .map(letter => `[${letter.toLowerCase()}${letter.toUpperCase()}]`)
-      .join('')
+  .split('')
+  .map(letter => `[${letter.toLowerCase()}${letter.toUpperCase()}]`)
+  .join('')
 }
