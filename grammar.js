@@ -930,7 +930,12 @@ function reserved(regex) {
 
 function caseInsensitive(word) {
   return word
-  .split('')
-  .map(letter => `[${letter.toLowerCase()}${letter.toUpperCase()}]`)
-  .join('')
+    .split('')
+    .map(letter => {
+      if (letter.toLowerCase() === letter.toUpperCase()) {
+        return `[${letter}]`
+      }
+      return `[${letter.toLowerCase()}${letter.toUpperCase()}]`
+    })
+    .join('')
 }
