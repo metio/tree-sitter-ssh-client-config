@@ -12,8 +12,26 @@ updates:
       interval: daily
     assignees:
       - sebhoss
+  - package-ecosystem: cargo
+    directory: /fuzz/afl.rs
+    schedule:
+      interval: daily
+    assignees:
+      - sebhoss
+  - package-ecosystem: cargo
+    directory: /fuzz/aflplusplus
+    schedule:
+      interval: daily
+    assignees:
+      - sebhoss
   - package-ecosystem: npm
     directory: /
+    schedule:
+      interval: daily
+    assignees:
+      - sebhoss
+  - package-ecosystem: npm
+    directory: /fuzz/jsfuzz
     schedule:
       interval: daily
     assignees:
