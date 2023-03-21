@@ -34,7 +34,7 @@ jsfuzz-crash:
 
 .PHONY: aflfuzz
 aflfuzz: fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer
-	afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -m none -f fuzz/aflplusplus/out/current.config -- fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer fuzz/aflplusplus/out/current.config
+	afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -f fuzz/aflplusplus/out/current.config -- fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer fuzz/aflplusplus/out/current.config
 
 fuzz/aflplusplus/target/release/tree-sitter-afl-fuzzer:
 	cargo build --manifest-path fuzz/aflplusplus/Cargo.toml --release
