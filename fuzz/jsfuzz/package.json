@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "jsfuzz": "1.0.15",
-    "tree-sitter": "0.20.3",
+    "tree-sitter": "0.20.4",
     "tree-sitter-ssh-client-config": "file:../../"
   }
 }
