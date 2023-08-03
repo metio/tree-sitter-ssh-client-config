@@ -1,0 +1,83 @@
+==================
+specify tag
+==================
+
+Tag some-tag
+
+---
+
+(client_config
+  (tag
+    (tag_value)))
+
+==================
+use irregular casing
+==================
+
+tAg somE_tAg
+
+---
+
+(client_config
+  (tag
+    (tag_value)))
+
+==================
+can use equals sign
+==================
+
+Tag=something
+
+---
+
+(client_config
+  (tag
+    (tag_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+Tag = here is a tag
+
+---
+
+(client_config
+  (tag
+    (tag_value)))
+
+==================
+can use equals sign with whitespace and quotes
+==================
+
+Tag = "some tag here"
+
+---
+
+(client_config
+  (tag
+    (tag_value)))
+
+==================
+can use tab character
+==================
+
+tag	"taggedName"
+
+---
+
+(client_config
+  (tag
+    (tag_value)))
+
+==================
+requires whitespace after key
+==================
+
+Tag"some-name"
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'o')))

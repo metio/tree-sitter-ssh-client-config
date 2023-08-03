@@ -111,6 +111,7 @@ module.exports = grammar({
         $.syslog_facility,
         $.tcp_keep_alive,
         $.keep_alive,
+        $.tag,
         $.tunnel,
         $.tunnel_device,
         $.update_host_keys,
@@ -824,6 +825,12 @@ module.exports = grammar({
         $.keep_alive_value
     ),
     keep_alive_value: $ => alias($.boolean, "keep_alive_value"),
+
+    tag: $ => option(
+        'Tag',
+        $.tag_value
+    ),
+    tag_value: $ => /\S.*/,
 
     tunnel: $ => option(
         'Tunnel',
