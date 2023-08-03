@@ -302,6 +302,9 @@
 (keep_alive) @keyword
 (keep_alive_value) @constant.builtin.boolean
 
+(tag) @keyword
+(tag_value) @string
+
 (tunnel) @keyword
 (tunnel_value) @constant.builtin.string
 
