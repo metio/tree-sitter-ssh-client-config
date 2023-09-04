@@ -7,7 +7,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: commits
         name: Count Commits
         run: echo "count=$(git rev-list --count HEAD --since='last week')" >> $GITHUB_OUTPUT
