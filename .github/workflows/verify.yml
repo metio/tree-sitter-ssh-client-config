@@ -1,8 +1,5 @@
 name: Verify Commits
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
