@@ -48,7 +48,7 @@ fuzz/afl.rs/target/debug/tree-sitter-afl-rs:
 
 test/upstream/options:
 	mkdir --parents test/upstream
-	curl --silent https://man.openbsd.org/ssh_config | htmlq --text 'dt' | grep --invert-match '%' | grep --invert-match '/' > test/upstream/options
+	curl --silent https://man.openbsd.org/ssh_config | htmlq --text 'section > dl > dt' | grep --invert-match '%' | grep --invert-match '/' > test/upstream/options
 
 test/upstream/missing: test/upstream/options
 	cat test/upstream/options | xargs --no-run-if-empty --replace sh -c "grep --no-ignore-case --recursive --quiet --include '*.txt' {} ./test/corpus || echo '{}'" > test/upstream/missing
