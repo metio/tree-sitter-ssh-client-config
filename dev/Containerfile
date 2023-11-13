@@ -1,5 +1,6 @@
-FROM docker.io/aflplusplus/aflplusplus:latest
+FROM docker.io/metio/devcontainers-rust:latest
 
-RUN apt-get update && apt-get -y install nodejs npm rust-all
-RUN cargo install afl
-RUN echo "export PS1='"'[ilo] \w$(__git_ps1) \$ '"'" >> ~/.bashrc
+RUN apt-get update && apt-get -y install nodejs npm afl++
+RUN cargo install cargo-afl
+RUN cargo install htmlq
+RUN echo "export PS1='"'[ilo] \w \$ '"'" >> ~/.bashrc
