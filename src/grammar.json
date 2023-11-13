@@ -73,6 +73,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "channel_timeout"
+        },
+        {
+          "type": "SYMBOL",
           "name": "check_host_ip"
         },
         {
@@ -1747,6 +1751,137 @@
       },
       "named": false,
       "value": "challenge_response_authentication_value"
+    },
+    "channel_timeout": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PREC",
+              "value": 1,
+              "content": {
+                "type": "PATTERN",
+                "value": "[cC][hH][aA][nN][nN][eE][lL][tT][iI][mM][eE][oO][uU][tT]"
+              }
+            }
+          },
+          "named": false,
+          "value": "ChannelTimeout"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "="
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_channel_timeout_value"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "channel_timeout_type": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "[aA][gG][eE][nN][tT][-][cC][oO][nN][nN][eE][cC][tT][iI][oO][nN]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[dD][iI][rR][eE][cC][tT][-][tT][cC][pP][iI][pP]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[dD][iI][rR][eE][cC][tT][-][sS][tT][rR][eE][aA][mM][lL][oO][cC][aA][lL][@][oO][pP][eE][nN][sS][sS][hH][.][cC][oO][mM]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[fF][oO][rR][wW][aA][rR][dD][eE][dD][-][tT][cC][pP][iI][pP]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[fF][oO][rR][wW][aA][rR][dD][eE][dD][-][sS][tT][rR][eE][aA][mM][lL][oO][cC][aA][lL][@][oO][pP][eE][nN][sS][sS][hH][.][cC][oO][mM]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[sS][eE][sS][sS][iI][oO][nN]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[tT][uU][nN][-][cC][oO][nN][nN][eE][cC][tT][iI][oO][nN]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[xX][1][1][-][cC][oO][nN][nN][eE][cC][tT][iI][oO][nN]"
+        }
+      ]
+    },
+    "_channel_timeout_value": {
+      "type": "REPEAT1",
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "channel_timeout_type"
+          },
+          {
+            "type": "STRING",
+            "value": "="
+          },
+          {
+            "type": "SYMBOL",
+            "name": "time_format"
+          }
+        ]
+      }
     },
     "check_host_ip": {
       "type": "SEQ",

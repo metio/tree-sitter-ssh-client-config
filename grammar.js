@@ -25,6 +25,7 @@ module.exports = grammar({
         $.ca_signature_algorithms,
         $.certificate_file,
         $.challenge_response_authentication,
+        $.channel_timeout,
         $.check_host_ip,
         $.cipher,
         $.ciphers,
@@ -238,6 +239,22 @@ module.exports = grammar({
     ),
     challenge_response_authentication_value: $ => alias($.boolean,
         "challenge_response_authentication_value"),
+
+    channel_timeout: $ => option(
+        'ChannelTimeout',
+        $._channel_timeout_value
+    ),
+    channel_timeout_type: $ => choice(
+        ignoreCase('agent-connection'),
+        ignoreCase('direct-tcpip'),
+        ignoreCase('direct-streamlocal@openssh.com'),
+        ignoreCase('forwarded-tcpip'),
+        ignoreCase('forwarded-streamlocal@openssh.com'),
+        ignoreCase('session'),
+        ignoreCase('tun-connection'),
+        ignoreCase('x11-connection'),
+    ),
+    _channel_timeout_value: $ => repeat1(seq($.channel_timeout_type, '=', $.time_format)),
 
     check_host_ip: $ => option(
         'CheckHostIP',

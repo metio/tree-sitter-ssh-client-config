@@ -260,6 +260,30 @@
     "fields": {}
   },
   {
+    "type": "channel_timeout",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "channel_timeout_type",
+          "named": true
+        },
+        {
+          "type": "time_format",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "channel_timeout_type",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "check_host_ip",
     "named": true,
     "fields": {},
@@ -397,6 +421,10 @@
         },
         {
           "type": "challenge_response_authentication",
+          "named": true
+        },
+        {
+          "type": "channel_timeout",
           "named": true
         },
         {
@@ -2771,6 +2799,10 @@
     "named": false
   },
   {
+    "type": "ChannelTimeout",
+    "named": false
+  },
+  {
     "type": "CheckHostIP",
     "named": false
   },
@@ -3265,5 +3297,9 @@
   {
     "type": "sha256",
     "named": false
+  },
+  {
+    "type": "time_format",
+    "named": true
   }
 ]
