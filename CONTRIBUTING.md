@@ -6,7 +6,7 @@
 
 In order to build this project locally, you need the following software:
 
-- [NodeJS](https://nodejs.org/) >= 16 LTS
+- [NodeJS](https://nodejs.org/) >= 18 LTS
 - [GNU Make](https://www.gnu.org/software/make/) >= this decade (**optional** in case you want to use the `Makefile`)
 - [ilo](https://ilo.projects.metio.wtf/) >= 2020.10.12 (**optional** in case you want to run everything in a container)
 - [AFL++](https://aflplus.plus/) >= 4.00c (**optional** in case you want to do some fuzzing with AFL++)
