@@ -1,0 +1,313 @@
+==================
+Channel Timeout = agent-connection=5m
+==================
+
+ChannelTimeout agent-connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = Agent-Connection=5m
+==================
+
+ChannelTimeout Agent-Connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = direct-tcpip=5m
+==================
+
+ChannelTimeout direct-tcpip=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = Direct-Tcpip=5m
+==================
+
+ChannelTimeout Direct-Tcpip=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = direct-streamlocal@openssh.com=5m
+==================
+
+ChannelTimeout direct-streamlocal@openssh.com=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = Direct-Streamlocal@openssh.com=5m
+==================
+
+ChannelTimeout Direct-Streamlocal@openssh.com=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = forwarded-tcpip=5m
+==================
+
+ChannelTimeout forwarded-tcpip=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = Forwarded-Tcpip=5m
+==================
+
+ChannelTimeout Forwarded-Tcpip=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = forwarded-streamlocal@openssh.com=5m
+==================
+
+ChannelTimeout forwarded-streamlocal@openssh.com=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = Forwarded-Streamlocal@openssh.com=5m
+==================
+
+ChannelTimeout Forwarded-Streamlocal@openssh.com=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = session=5m
+==================
+
+ChannelTimeout session=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = Session=5m
+==================
+
+ChannelTimeout Session=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = tun-connection=5m
+==================
+
+ChannelTimeout tun-connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = Tun-Connection=5m
+==================
+
+ChannelTimeout Tun-Connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = x11-connection=5m
+==================
+
+ChannelTimeout x11-connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+Channel Timeout = X11-Connection=5m
+==================
+
+ChannelTimeout X11-Connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+multiple timeouts
+==================
+
+ChannelTimeout agent-connection=5m x11-connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+use irregular casing
+==================
+
+ChanNEltImEout agent-connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+can use equals sign
+==================
+
+ChannelTimeout=agent-connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ChannelTimeout = agent-connection=5m
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+can use tab character
+==================
+
+ChannelTimeout	"agent-connection=5m"
+
+---
+
+(client_config
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ChannelTimeout agent-connection=5m
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (channel_timeout
+    (channel_timeout_type)
+    (time_format)))
+
+==================
+detect invalid values
+==================
+
+ChannelTimeout ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+ChannelTimeout"yes"
+
+---
+
+(client_config
+  (ERROR))

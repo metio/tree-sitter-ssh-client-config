@@ -43,6 +43,9 @@
 (challenge_response_authentication) @keyword
 (challenge_response_authentication_value) @constant.builtin.boolean
 
+(channel_timeout) @keyword
+(channel_timeout_type) @constant.builtin.string
+
 (check_host_ip) @keyword
 (check_host_ip_value) @constant.builtin.boolean
 
@@ -304,6 +307,8 @@
 
 (tag) @keyword
 (tag_value) @string
+
+(time_format) @string.special.time
 
 (tunnel) @keyword
 (tunnel_value) @constant.builtin.string
