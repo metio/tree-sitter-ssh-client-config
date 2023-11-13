@@ -1,5 +1,7 @@
 shell
 --containerfile dev/Containerfile
 --pull
+--env AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+--env AFL_SKIP_CPUFREQ=1
 metio/tree-sitter-ssh-config/ilo:latest
 bash
