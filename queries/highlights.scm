@@ -210,6 +210,9 @@
 (number_of_password_prompts) @keyword
 (number_of_password_prompts_value) @constant.numeric.integer
 
+(obscure_keystroke_timing) @keyword
+(obscure_keystroke_timing_value) @constant.builtin.string
+
 (password_authentication) @keyword
 (password_authentication_value) @constant.builtin.boolean
 
