@@ -80,6 +80,7 @@ module.exports = grammar({
         $.macs,
         $.no_host_authentication_for_localhost,
         $.number_of_password_prompts,
+        $.obscure_keystroke_timing,
         $.password_authentication,
         $.permit_local_command,
         $.permit_remote_open,
@@ -617,6 +618,16 @@ module.exports = grammar({
     ),
     number_of_password_prompts_value: $ => alias($.number,
         "number_of_password_prompts_value"),
+
+    obscure_keystroke_timing: $ => option(
+        'ObscureKeystrokeTiming',
+        $.obscure_keystroke_timing_value
+    ),
+    obscure_keystroke_timing_value: $ => choice(
+        ignoreCase('yes'),
+        ignoreCase('no'),
+        /interval:[1234567890]+/,
+    ),
 
     password_authentication: $ => option(
         'PasswordAuthentication',

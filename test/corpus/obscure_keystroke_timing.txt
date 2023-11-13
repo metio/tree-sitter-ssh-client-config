@@ -1,0 +1,145 @@
+==================
+obscure keystroke timing = yes
+==================
+
+ObscureKeystrokeTiming yes
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+obscure keystroke timing = Yes
+==================
+
+ObscureKeystrokeTiming Yes
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+obscure keystroke timing = no
+==================
+
+ObscureKeystrokeTiming no
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+obscure keystroke timing = No
+==================
+
+ObscureKeystrokeTiming No
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+obscure keystroke timing = interval:80
+==================
+
+ObscureKeystrokeTiming interval:80
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+use irregular casing
+==================
+
+ObscurekEyStrokeTiming yes
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+can use equals sign
+==================
+
+ObscurekEyStrokeTiming=yes
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+ObscurekEyStrokeTiming = yes
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+can use tab character
+==================
+
+ObscurekEyStrokeTiming	"yes"
+
+---
+
+(client_config
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  ObscureKeystrokeTiming no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (obscure_keystroke_timing
+    (obscure_keystroke_timing_value)))
+
+==================
+detect invalid values
+==================
+
+ObscurekEyStrokeTiming ja
+
+---
+
+(client_config
+  (ERROR
+    (UNEXPECTED 'j')))
+
+==================
+requires whitespace after key
+==================
+
+ObscurekEyStrokeTiming"yes"
+
+---
+
+(client_config
+  (ERROR))

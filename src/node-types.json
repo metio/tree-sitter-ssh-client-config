@@ -656,6 +656,10 @@
           "named": true
         },
         {
+          "type": "obscure_keystroke_timing",
+          "named": true
+        },
+        {
           "type": "password_authentication",
           "named": true
         },
@@ -1887,6 +1891,26 @@
     "fields": {}
   },
   {
+    "type": "obscure_keystroke_timing",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "obscure_keystroke_timing_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "obscure_keystroke_timing_value",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "password_authentication",
     "named": true,
     "fields": {},
@@ -3064,6 +3088,10 @@
   },
   {
     "type": "NumberOfPasswordPrompts",
+    "named": false
+  },
+  {
+    "type": "ObscureKeystrokeTiming",
     "named": false
   },
   {

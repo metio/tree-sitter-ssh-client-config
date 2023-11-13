@@ -293,6 +293,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "obscure_keystroke_timing"
+        },
+        {
+          "type": "SYMBOL",
           "name": "password_authentication"
         },
         {
@@ -6426,6 +6430,97 @@
       },
       "named": false,
       "value": "number_of_password_prompts_value"
+    },
+    "obscure_keystroke_timing": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PREC",
+              "value": 1,
+              "content": {
+                "type": "PATTERN",
+                "value": "[oO][bB][sS][cC][uU][rR][eE][kK][eE][yY][sS][tT][rR][oO][kK][eE][tT][iI][mM][iI][nN][gG]"
+              }
+            }
+          },
+          "named": false,
+          "value": "ObscureKeystrokeTiming"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "="
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "obscure_keystroke_timing_value"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "obscure_keystroke_timing_value": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "[yY][eE][sS]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[nN][oO]"
+        },
+        {
+          "type": "PATTERN",
+          "value": "interval:[1234567890]+"
+        }
+      ]
     },
     "password_authentication": {
       "type": "SEQ",
