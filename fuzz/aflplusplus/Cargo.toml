@@ -20,4 +20,4 @@ encoding_rs = "0.8.34"
 encoding_rs_io = "0.1.7"
 
 [build-dependencies]
-cc = "1.0"
+cc = "1.1"
