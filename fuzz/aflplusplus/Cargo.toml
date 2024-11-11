@@ -15,7 +15,7 @@ include = [
 ]
 
 [dependencies]
-tree-sitter = "0.24.3"
+tree-sitter = "0.24.4"
 encoding_rs = "0.8.35"
 encoding_rs_io = "0.1.7"
 
