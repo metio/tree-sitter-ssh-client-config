@@ -366,6 +366,7 @@
   {
     "type": "client_config",
     "named": true,
+    "root": true,
     "fields": {},
     "children": {
       "multiple": true,

@@ -33,11 +33,11 @@
   "contributors": [],
   "license": "CC0-1.0",
   "dependencies": {
-    "node-addon-api": "^7.1.0",
-    "node-gyp-build": "^4.8.0"
+    "node-addon-api": "^8.3.0",
+    "node-gyp-build": "^4.8.4"
   },
   "peerDependencies": {
-    "tree-sitter": "^0.21.0"
+    "tree-sitter": "^0.22.4"
   },
   "peerDependenciesMeta": {
     "tree_sitter": {
@@ -45,17 +45,9 @@
     }
   },
   "devDependencies": {
-    "tree-sitter-cli": "0.22.6",
-    "prebuildify": "^6.0.0"
+    "tree-sitter-cli": "0.24.7",
+    "prebuildify": "^6.0.1"
   },
-  "tree-sitter": [
-    {
-      "scope": "text.ssh_client_config",
-      "file-types": [
-        "config"
-      ]
-    }
-  ],
   "files": [
     "/bindings/node/",
     "/queries/",
