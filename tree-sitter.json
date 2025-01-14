@@ -1,0 +1,36 @@
+{
+  "grammars": [
+    {
+      "name": "ssh-client-config",
+      "camelcase": "SshClientConfig",
+      "scope": "text.ssh_client_config",
+      "path": ".",
+      "file-types": [
+        "config"
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "9999.99.99",
+    "license": "CC0-1.0",
+    "description": "tree-sitter grammar for SSH client configuration files",
+    "authors": [
+      {
+        "name": "Sebastian Hoß",
+        "email": "seb@xn--ho-hia.de",
+        "url": "https://seb.xn--ho-hia.de/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/metio/tree-sitter-ssh-client-config.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
