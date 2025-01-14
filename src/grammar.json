@@ -461,6 +461,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "version_addendum"
+        },
+        {
+          "type": "SYMBOL",
           "name": "visual_host_key"
         },
         {
@@ -9990,6 +9994,84 @@
         }
       ]
     },
+    "version_addendum": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PREC",
+              "value": 1,
+              "content": {
+                "type": "PATTERN",
+                "value": "[vV][eE][rR][sS][iI][oO][nN][aA][dD][dD][eE][nN][dD][uU][mM]"
+              }
+            }
+          },
+          "named": false,
+          "value": "VersionAddendum"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "PATTERN",
+              "value": "[ \\t]"
+            },
+            {
+              "type": "STRING",
+              "value": "="
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "="
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "version_addendum_value"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\""
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "version_addendum_value": {
+      "type": "PATTERN",
+      "value": "\\S.*"
+    },
     "visual_host_key": {
       "type": "SEQ",
       "members": [
@@ -10168,4 +10250,3 @@
   "inline": [],
   "supertypes": []
 }
-

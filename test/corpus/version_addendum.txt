@@ -1,0 +1,85 @@
+==================
+version addendum = monkey
+==================
+
+VersionAddendum monkey
+
+---
+
+(client_config
+  (version_addendum
+    (version_addendum_value)))
+
+==================
+use irregular casing
+==================
+
+veRsIonaDdendum some
+
+---
+
+(client_config
+  (version_addendum
+    (version_addendum_value)))
+
+==================
+can use equals sign
+==================
+
+veRsIonaDdendum=some
+
+---
+
+(client_config
+  (version_addendum
+    (version_addendum_value)))
+
+==================
+can use equals sign with whitespace
+==================
+
+veRsIonaDdendum = yes
+
+---
+
+(client_config
+  (version_addendum
+    (version_addendum_value)))
+
+==================
+can use tab character
+==================
+
+veRsIonaDdendum	"yes"
+
+---
+
+(client_config
+  (version_addendum
+    (version_addendum_value)))
+
+==================
+can be specified after host
+==================
+
+Host example.com
+  VersionAddendum no
+
+---
+
+(client_config
+  (host
+    (host_value))
+  (version_addendum
+    (version_addendum_value)))
+
+==================
+requires whitespace after key
+==================
+
+veRsIonaDdendum"no"
+
+---
+
+(client_config
+  (ERROR))

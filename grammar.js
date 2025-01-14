@@ -122,6 +122,7 @@ module.exports = grammar({
         $.user,
         $.user_known_hosts_file,
         $.verify_host_key_dns,
+        $.version_addendum,
         $.visual_host_key,
         $.xauth_location,
     ),
@@ -924,6 +925,12 @@ module.exports = grammar({
         ignoreCase('false'),
         ignoreCase('ask'),
     ),
+
+    version_addendum: $ => option(
+        'VersionAddendum',
+        $.version_addendum_value
+    ),
+    version_addendum_value: $ => /\S.*/,
 
     visual_host_key: $ => option(
         'VisualHostKey',
