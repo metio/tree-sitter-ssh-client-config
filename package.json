@@ -10,12 +10,15 @@
     "config"
   ],
   "main": "bindings/node",
+  "types": "bindings/node",
   "scripts": {
     "init": "tree-sitter init-config",
     "generate": "tree-sitter generate",
     "test": "tree-sitter test",
     "parse": "tree-sitter parse",
-    "examples": "tree-sitter parse 'examples/*' --quiet --stat"
+    "examples": "tree-sitter parse 'examples/*' --quiet --stat",
+    "install": "node-gyp-build",
+    "prebuildify": "prebuildify --napi --strip"
   },
   "homepage": "https://github.com/metio/tree-sitter-ssh-client-config",
   "repository": {
@@ -30,10 +33,20 @@
   "contributors": [],
   "license": "CC0-1.0",
   "dependencies": {
-    "nan": "2.22.0"
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree_sitter": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "tree-sitter-cli": "0.22.6"
+    "tree-sitter-cli": "0.22.6",
+    "prebuildify": "^6.0.0"
   },
   "tree-sitter": [
     {

@@ -820,6 +820,10 @@
           "named": true
         },
         {
+          "type": "version_addendum",
+          "named": true
+        },
+        {
           "type": "visual_host_key",
           "named": true
         },
@@ -2711,6 +2715,26 @@
     "fields": {}
   },
   {
+    "type": "version_addendum",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "version_addendum_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "version_addendum_value",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "visual_host_key",
     "named": true,
     "fields": {},
@@ -3256,6 +3280,10 @@
   },
   {
     "type": "VerifyHostKeyDNS",
+    "named": false
+  },
+  {
+    "type": "VersionAddendum",
     "named": false
   },
   {
