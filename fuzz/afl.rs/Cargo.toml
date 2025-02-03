@@ -15,7 +15,7 @@ include = [
 ]
 
 [dependencies]
-tree-sitter = "0.24.7"
+tree-sitter = "0.25.1"
 afl = "*"
 
 [build-dependencies]
