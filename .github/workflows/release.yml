@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: 53 2 * * THU
   workflow_dispatch:
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -49,8 +52,6 @@ jobs:
       - name: Publish to npmjs.com
         if: steps.commits.outputs.count > 0
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish to crates.io
         if: steps.commits.outputs.count > 0
         run: cargo publish --allow-dirty --token ${{ secrets.CRATES_IO_TOKEN }}
