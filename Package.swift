@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "TreeSitterSSHClientConfig",
+    name: "TreeSitterSshClientConfig",
     platforms: [.macOS(.v10_13), .iOS(.v11)],
     products: [
-        .library(name: "TreeSitterSSHClientConfig", targets: ["TreeSitterSSHClientConfig"]),
+        .library(name: "TreeSitterSshClientConfig", targets: ["TreeSitterSshClientConfig"]),
     ],
     dependencies: [],
     targets: [
-        .target(name: "TreeSitterSSHClientConfig",
+        .target(name: "TreeSitterSshClientConfig",
                 path: ".",
                 exclude: [
                     "binding.gyp",
