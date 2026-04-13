@@ -58,7 +58,7 @@ jobs:
       - id: create_release
         name: Create Release
         if: steps.commits.outputs.count > 0
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.release.outputs.version }}
           name: ${{ steps.release.outputs.version }}
