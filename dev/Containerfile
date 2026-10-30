@@ -1,6 +1,0 @@
-FROM docker.io/metio/devcontainers-rust:latest
-
-RUN apt-get update && apt-get -y install nodejs npm afl++
-RUN cargo install cargo-afl
-RUN cargo install htmlq
-RUN echo "export PS1='"'[ilo] \w \$ '"'" >> ~/.bashrc

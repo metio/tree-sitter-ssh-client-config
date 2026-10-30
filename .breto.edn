@@ -1,0 +1,4 @@
+;; SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+;; SPDX-License-Identifier: CC0-1.0
+
+{:packages ["@rust" "node" "htmlq"]}

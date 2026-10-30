@@ -8,7 +8,7 @@ In order to build this project locally, you need the following software:
 
 - [NodeJS](https://nodejs.org/) >= 18 LTS
 - [GNU Make](https://www.gnu.org/software/make/) >= this decade (**optional** in case you want to use the `Makefile`)
-- [ilo](https://ilo.projects.metio.wtf/) >= 2020.10.12 (**optional** in case you want to run everything in a container)
+- [breto](https://github.com/metio/breto) (**optional** in case you want breto to install Node.js, Rust and htmlq)
 - [AFL++](https://aflplus.plus/) >= 4.00c (**optional** in case you want to do some fuzzing with AFL++)
 - [Rust](https://www.rust-lang.org/) >= 1.57 (**optional** in case you want to use AFL++)
 
@@ -70,30 +70,12 @@ Parse a single example and show syntax tree:
 $ make parse file=examples/github-maskray-config
 ```
 
-### Using ilo
+### Using breto
 
-Generate the grammar:
-
-```shell
-$ ilo @dev/run generate
-```
-
-Run the tests:
+Put the tools named in `.breto.edn` on your `PATH`, then use the NPM or Make commands above:
 
 ```shell
-$ ilo @dev/run test
-```
-
-Parse all examples:
-
-```shell
-$ ilo @dev/run examples
-```
-
-Parse a single example and show syntax tree:
-
-```shell
-$ ilo @dev/run parse file=examples/github-maskray-config
+$ eval "$(breto env)"
 ```
 
 ## Helpful Tasks
@@ -123,9 +105,6 @@ $ npm --prefix fuzz/jsfuzz run fuzz
 
 # using make
 $ make jsfuzz
-
-# using ilo
-$ ilo @dev/run jsfuzz
 ```
 
 **Note**: This setup is experimental and seems to produce lots of false-positives, e.g. it produces SSH client configs that do **NOT** actually crash tree-sitter using this grammar. In order to verify that, run:
@@ -136,9 +115,6 @@ $ npm run parse fuzz/jsfuzz/crash.config
 
 # using make
 $ make jsfuzz-crash
-
-# using ilo
-$ ilo @dev/run jsfuzz-crash
 ```
 
 In case the above command actually crashes this grammar, please open a bug report and attach the file `<project-root>/fuzz/jsfuzz/crash.config`.
@@ -154,9 +130,6 @@ $ afl-fuzz -i examples/ -o fuzz/aflplusplus/out -n -d -m none -f fuzz/aflplusplu
 
 # using make
 $ make aflfuzz
-
-# using ilo
-$ ilo @dev/run aflfuzz
 ```
 
 AFL++ will write any crashes that it could produce to `<project-root>/fuzz/aflplusplus/out/crashes`. Please open a bug report and attach any crashes that were produced.
