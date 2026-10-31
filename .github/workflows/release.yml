@@ -12,7 +12,7 @@ jobs:
     steps:
       - id: checkout
         name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           fetch-depth: 0
       - id: last_release
@@ -29,14 +29,14 @@ jobs:
         run: echo "version=$(date +'%Y.%-m.%-d')" >> $GITHUB_OUTPUT
       - name: Set up Node
         if: steps.commits.outputs.count > 0
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
         with:
           node-version: 24
           cache: npm
           registry-url: https://registry.npmjs.org
       - name: Set up Rust
         if: steps.commits.outputs.count > 0
-        uses: dtolnay/rust-toolchain@stable
+        uses: dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec # stable
       - name: Cargo Version
         if: steps.commits.outputs.count > 0
         run: sed -i -e 's/^version = .*/version = "${{ steps.release.outputs.version }}"/' Cargo.toml
@@ -58,7 +58,7 @@ jobs:
       - id: create_release
         name: Create Release
         if: steps.commits.outputs.count > 0
-        uses: softprops/action-gh-release@v3
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3
         with:
           tag_name: ${{ steps.release.outputs.version }}
           name: ${{ steps.release.outputs.version }}
@@ -69,7 +69,7 @@ jobs:
       - id: mail
         name: Send Mail
         if: steps.commits.outputs.count > 0
-        uses: dawidd6/action-send-mail@v22
+        uses: dawidd6/action-send-mail@67ce3558d613188179559c61d3565140cf389968 # v22
         with:
           server_address: ${{ secrets.MAIL_SERVER }}
           server_port: ${{ secrets.MAIL_PORT }}
@@ -82,7 +82,7 @@ jobs:
       - id: matrix
         name: Send Matrix Message
         if: steps.commits.outputs.count > 0
-        uses: s3krit/matrix-message-action@v0.0.3
+        uses: s3krit/matrix-message-action@70ad3fb812ee0e45ff8999d6af11cafad11a6ecf # v0.0.3
         with:
           room_id: ${{ secrets.MATRIX_ROOM_ID }}
           access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
