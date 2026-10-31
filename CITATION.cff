@@ -1,8 +1,20 @@
+# SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+# SPDX-License-Identifier: CC0-1.0
+
 cff-version: 1.2.0
 title: tree-sitter-ssh-client-config
-message: 'If you use this software, please cite it as below.'
+message: If you use this software, please cite it as below.
 type: software
 authors:
-  - given-names: Sebastian
-    family-names: Hoß
-    email: seb@hoß.de
+- family-names: Hoß
+  given-names: Sebastian
+  email: seb@hoß.de
+url: https://github.com/metio/tree-sitter-ssh-client-config/
+license: CC0-1.0
+keywords:
+  - client
+  - config
+  - grammar
+  - parser
+  - ssh
+  - tree-sitter

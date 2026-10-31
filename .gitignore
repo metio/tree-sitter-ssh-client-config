@@ -1,7 +1,19 @@
+# SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+# SPDX-License-Identifier: CC0-1.0
+
 .idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.DS_Store
+.claude/settings.local.json
+.breto.local.edn
+target/
 node_modules/
 build/
-target/
 .nyc_output/
 crash.txt
 fuzz/afl.rs/out

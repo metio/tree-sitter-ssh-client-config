@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+# SPDX-License-Identifier: CC0-1.0
+
+[default]
+extend-ignore-re = []
+
+[default.extend-words]
+edn = "edn"
+
+[default.extend-identifiers]
+
+[files]
+extend-exclude = ["LICENSES/"]

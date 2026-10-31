@@ -1,11 +1,24 @@
-* text eol=lf
+# SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+# SPDX-License-Identifier: CC0-1.0
 
-src/*.json linguist-generated
-src/parser.c linguist-generated
-src/tree_sitter/* linguist-generated
+# Handle line endings automatically for files detected as text
+# and leave all files detected as binary untouched.
+* text=auto
 
-bindings/** linguist-generated
-binding.gyp linguist-generated
-setup.py linguist-generated
-Makefile linguist-generated
-Package.swift linguist-generated
+#
+# The above will handle all files NOT found below
+#
+# These files are text and should be normalized (Convert crlf => lf)
+*.css           text
+*.spec          text
+*.rb            text
+*.java          text
+*.js            text
+*.md            text
+*.properties    text
+*.txt           text
+*.yml           text
+*.yaml          text
+*.html          text
+*.xml           text
+*.rc            text

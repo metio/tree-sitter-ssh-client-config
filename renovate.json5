@@ -1,0 +1,8 @@
+// SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+// SPDX-License-Identifier: CC0-1.0
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>metio/renovate-config"
+  ]
+}

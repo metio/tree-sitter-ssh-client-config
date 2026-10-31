@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+# SPDX-License-Identifier: CC0-1.0
+
+default: true
+MD010:
+  code_blocks: false
+MD013: false
+MD024:
+  siblings_only: true
+MD025:
+  front_matter_title: ""
+MD033: false
+MD060: false
