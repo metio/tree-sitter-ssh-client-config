@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: The tree-sitter-ssh-client-config Authors
+# SPDX-License-Identifier: CC0-1.0
+
+version = 1
+
+[[annotations]]
+path = "**"
+precedence = "closest"
+SPDX-FileCopyrightText = "The tree-sitter-ssh-client-config Authors"
+SPDX-License-Identifier = "CC0-1.0"
