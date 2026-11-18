@@ -37,7 +37,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: Set up Rust
         if: steps.commits.outputs.count > 0
-        uses: dtolnay/rust-toolchain@b725eda525362e7cf34af9a7243cac1e3f01a7ec # stable
+        uses: dtolnay/rust-toolchain@39008827e6b4319a349e9a42dfc90579dd25f1ca # stable
       - name: Cargo Version
         if: steps.commits.outputs.count > 0
         run: sed -i -e 's/^version = .*/version = "${{ steps.release.outputs.version }}"/' Cargo.toml
@@ -59,7 +59,7 @@ jobs:
       - id: create_release
         name: Create Release
         if: steps.commits.outputs.count > 0
-        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3
+        uses: softprops/action-gh-release@8a0cd651e5b2365bd640854a3fa5dfc70e4875f3 # v3
         with:
           tag_name: ${{ steps.release.outputs.version }}
           name: ${{ steps.release.outputs.version }}
